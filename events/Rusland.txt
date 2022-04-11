@@ -369,7 +369,13 @@ country_event = {
 	
 	option = {
 		name = russia.21.a
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 50 }
+		add_to_faction = FROM
+	}
+	
+	option = {
+		name = russia.22.a
+		ai_chance = { factor = 50 }
 		
 	}
 }
@@ -446,7 +452,7 @@ country_event = {
 	}
 	
 	option = {
-		name = russia.24.b
+		name = russia.24.c
 		ai_chance = { factor = 0 }
 		
 		FROM = {
@@ -455,7 +461,7 @@ country_event = {
 	}
 	
 	option = {
-		name = russia.24.b
+		name = russia.24.e
 		ai_chance = { factor = 0 }
 		
 		FROM = {

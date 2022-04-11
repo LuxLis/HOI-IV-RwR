@@ -383,4 +383,88 @@ RUS_all_decisions = {
 			base = 0
 		}
 	}
+	
+	RUS_zhe1_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_influence_zhe_flag
+		}
+
+		fire_only_once = yes
+		cost = 10
+
+		complete_effect = {
+			ZHE = {
+				
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_zhe2_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_influence_zhe_flag
+		}
+
+		fire_only_once = yes
+		cost = 10
+
+		complete_effect = {
+			ZHE = {
+				
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_zhe3_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_influence_zhe_flag
+		}
+
+		fire_only_once = yes
+		cost = 10
+
+		complete_effect = {
+			ZHE = {
+				
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_zhe4_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_influence_zhe_flag
+		}
+
+		fire_only_once = yes
+		cost = 10
+
+		complete_effect = {
+			ZHE = {
+				
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

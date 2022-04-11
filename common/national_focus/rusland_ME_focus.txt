@@ -603,7 +603,9 @@ focus_tree = {
 		relative_position_id = RUS_simplifying_autonomy
 
 		completion_reward = {
-			country_event = russia.21
+			YUG = {
+				country_event = russia.21
+			}
 		}
 	}
 	focus = {
@@ -863,7 +865,11 @@ focus_tree = {
 		relative_position_id = RUS_operation_taming_the_dragon
 
 		completion_reward = {
-			
+			set_country_flag = RUS_influence_zhe_flag
+			unlock_decision_tooltip = RUS_zhe1_decision
+			unlock_decision_tooltip = RUS_zhe2_decision
+			unlock_decision_tooltip = RUS_zhe3_decision
+			unlock_decision_tooltip = RUS_zhe4_decision
 		}
 	}
 }

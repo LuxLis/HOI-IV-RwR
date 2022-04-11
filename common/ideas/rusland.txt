@@ -553,18 +553,6 @@ ideas = {
 			}
 		}
 		
-		RUS_expand_existing_businesses_idea = {
-		
-			removal_cost = -1
-			allowed = { always = no }
-			
-			picture = generic_manpower_bonus
-			
-			modifier = { 
-				industrial_capacity_factory = 0.05
-			}
-		}
-		
 		RUS_meeting_in_tsargrad_idea = {
 		
 			removal_cost = -1
