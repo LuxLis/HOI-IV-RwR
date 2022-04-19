@@ -1,6 +1,5 @@
 ﻿capital = 195
 
-oob = "RUS_1936"
 set_cosmetic_tag = RUS_imperia
 
 set_research_slots = 3

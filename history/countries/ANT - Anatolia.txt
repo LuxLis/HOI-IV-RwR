@@ -1,6 +1,5 @@
 ﻿capital = 342
 
-#oob = ""
 set_cosmetic_tag = ANT_ITA
 
 # Starting tech

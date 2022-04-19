@@ -1,6 +1,5 @@
 ﻿capital = 113
 
-oob = "IRE_1936"
 set_cosmetic_tag = IRE_ENG
 
 set_research_slots = 3
