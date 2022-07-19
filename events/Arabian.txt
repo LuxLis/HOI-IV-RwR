@@ -1,0 +1,52 @@
+﻿###########################
+# Arabian Uprising Events
+###########################
+
+add_namespace = arabian
+
+country_event = { # Арабское восстание
+    id = arabian.1
+	title = arabian.1.t
+	desc = arabian.1.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    hidden_effect = {
+		    end_puppet = EGY
+		    end_puppet = IRQ
+		    EGY = {
+			    drop_cosmetic_tag = yes
+				create_faction = arabian_league
+				add_to_faction = IRQ
+		    }
+		}
+	}
+	
+	option = {
+		name = arabian.1.a
+	}
+}
+
+country_event = { # Сирийское восстание
+    id = arabian.2
+	title = arabian.2.t
+	desc = arabian.2.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    hidden_effect = {
+		    end_puppet = EGY
+		    end_puppet = IRQ
+		    EGY = {
+				create_faction = arabian_league
+				add_to_faction = IRQ
+		    }
+		}
+	}
+	
+	option = {
+		name = arabian.2.a
+	}
+}

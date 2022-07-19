@@ -1,0 +1,52 @@
+RHI_problem = {
+
+	Solution = {
+		icon = infiltrate_state
+		fire_only_once = yes
+		allowed = { tag = GER }
+			
+		visible = { 
+			has_country_flag = RHI_problems	
+		}
+		available = { 
+								
+		}
+		highlight_states = {
+			state = 51			
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		is_good = yes
+		complete_effect = {
+			country_event = {
+				id = RHI_problemo.1				
+			}			
+		}
+	}
+	
+	Solution_2 = {
+		icon = infiltrate_state
+		fire_only_once = yes
+		allowed = { tag = GER }
+			
+		visible = { 
+			has_country_flag = RHI_problems_2
+		}
+		available = { 
+			
+		}
+		highlight_states = {
+			state = 51			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		is_good = yes
+		complete_effect = {
+			GER = {
+				annex_country = { target = RHI transfer_troops = yes }
+			}			
+		}
+	}		
+}

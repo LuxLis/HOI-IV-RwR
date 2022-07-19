@@ -1,0 +1,13 @@
+on_actions = {
+
+	on_startup = {
+	    effect = {
+		    CHI = {
+			    country_event = {
+				    id = info_event.1
+					days = 1
+				}
+			}
+		}
+	}
+}

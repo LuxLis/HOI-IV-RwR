@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_RHI_democratic_group"
+		texturefile = "gfx/interface/ideologies/RHI/RHI_party.dds"
+	}
+	
+}

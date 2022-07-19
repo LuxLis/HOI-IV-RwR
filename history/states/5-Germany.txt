@@ -4,9 +4,6 @@ state={
 	name="STATE_5"
 
 	history={
-		victory_points = {
-			6375 3 
-		}
 		owner = GER
 		controller = GER
 		buildings = {
@@ -18,7 +15,7 @@ state={
 	}
 
 	provinces={
-		266 3351 3380 6375 6402 9327 9398 11245 
+		266 3351 3380 6402 9327 9398 11245 
 	}
 	manpower=1238108
 	buildings_max_level_factor=1.000

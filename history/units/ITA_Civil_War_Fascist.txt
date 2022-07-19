@@ -1,0 +1,165 @@
+﻿division_template = {
+	name = "Milizia Nationale"
+	is_locked = yes
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Milizia Nationale 2"
+	is_locked = yes
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Camicie Nere"
+	is_locked = yes
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1. Milizia Nationale"
+		location = 6973
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "2. Milizia Nationale"
+		location = 1616
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "3. Milizia Nationale"
+		location = 11889
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "4. Milizia Nationale"
+		location = 9879
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "5. Milizia Nationale"
+		location = 11861
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "6. Milizia Nationale"
+		location = 967
+		division_template = "Milizia Nationale"
+	}
+	
+	###
+	
+	division = {
+		name = "7. Milizia Nationale"
+		location = 923
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "8. Milizia Nationale"
+		location = 923
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "9. Milizia Nationale"
+		location = 3923
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "10. Milizia Nationale"
+		location = 3923
+		division_template = "Milizia Nationale"
+	}
+	division = {
+		name = "11. Milizia Nationale"
+		location = 3966
+		division_template = "Milizia Nationale"
+	}
+	
+	###
+	
+	division = {
+		name = "1. Milizia Nationale 2"
+		location = 11833
+		division_template = "Milizia Nationale 2"
+	}
+	division = {
+		name = "2. Milizia Nationale 2"
+		location = 6831
+		division_template = "Milizia Nationale 2"
+	}
+	division = {
+		name = "3. Milizia Nationale 2"
+		location = 9907
+		division_template = "Milizia Nationale 2"
+	}
+	
+	###
+	
+	division = {
+		name = "1. Camicie Nere"
+		location = 9904
+		division_template = "Camicie Nere"
+		start_experience_factor = 2
+	}
+	division = {
+		name = "2. Camicie Nere"
+		location = 9904
+		division_template = "Camicie Nere"
+		start_experience_factor = 2
+	}
+	division = {
+		name = "3. Camicie Nere"
+		location = 11846
+		division_template = "Camicie Nere"
+		start_experience_factor = 2
+	}
+	division = {
+		name = "4. Camicie Nere"
+		location = 925
+		division_template = "Camicie Nere"
+		start_experience_factor = 2
+	}
+	
+}

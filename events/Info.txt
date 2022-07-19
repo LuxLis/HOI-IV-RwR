@@ -1,0 +1,29 @@
+﻿###########################
+# Info Events
+###########################
+
+add_namespace = info_event
+
+country_event = { # Националистический Китай
+	id = info_event.1
+	title = info_event.1.t
+	desc = info_event.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = info_event.1.a
+	}
+}
+
+country_event = { # Великобритания
+	id = info_event.2
+	title = info_event.2.t
+	desc = info_event.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = info_event.2.a
+	}
+}

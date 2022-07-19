@@ -4,7 +4,7 @@
 
 shared_focus  = {
 	id = RUS_empire_fleet
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	x = 28
 	y = 0
@@ -14,7 +14,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_state_army
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	x = 38
 	y = 0
@@ -25,7 +25,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_new_era
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_empire_fleet
@@ -43,7 +43,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_new_generation_army
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_state_army
@@ -57,7 +57,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_special_forces
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_new_generation_army
@@ -71,7 +71,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_old_order
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_empire_fleet
@@ -88,7 +88,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_cruiser_development
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_old_order
@@ -102,7 +102,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_new_destroyers
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_cruiser_development
@@ -116,7 +116,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_admiralty_expansion
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_old_order
@@ -131,7 +131,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_creation_of_the_baltic_line
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_admiralty_expansion
@@ -243,7 +243,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_submarine_development
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_new_era
@@ -257,7 +257,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_breakthrough_in_maritime
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_submarine_development
@@ -271,7 +271,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_new_shipyards_in_the_baltic
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_new_destroyers
@@ -303,7 +303,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_cheaper_maritime_business
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_flot
 	cost = 5
 	prerequisite = {
 		focus  = RUS_creation_of_the_baltic_line
@@ -320,7 +320,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_imperial_aviation
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_aviatsyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_state_army
@@ -335,7 +335,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_russian_aces
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_aviatsyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_imperial_aviation
@@ -349,7 +349,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_development_of_the_ground_forces
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_state_army
@@ -363,7 +363,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_talented_generals
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_development_of_the_ground_forces
@@ -377,7 +377,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_promotion_of_motorization
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_development_of_the_ground_forces
@@ -394,7 +394,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_new_summon_wave
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_talented_generals
@@ -411,7 +411,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_army_of_victors
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_new_summon_wave
@@ -425,7 +425,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_tsars_tanks
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_new_generation_army
@@ -439,7 +439,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = RUS_advanced_technique
-	icon = GFX_rus_work
+	icon = GFX_zaglushka_na_armiyu
 	cost = 5
 	prerequisite = {
 		focus  = RUS_tsars_tanks

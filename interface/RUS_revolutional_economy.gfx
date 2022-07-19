@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_planed_economy_icon"
+		texturefile = "gfx/interface/planed_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_regulated_economy_icon"
+		texturefile = "gfx/interface/regulated_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_market_economy_icon"
+		texturefile = "gfx/interface/market_economy.dds"
+	}
+}

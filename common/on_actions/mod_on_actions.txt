@@ -6,6 +6,10 @@ on_actions = {
 				
 				add_dynamic_modifier = { modifier = economy_dynamic_modifier }
 			}
+			
+			RUS = {
+				set_variable = { economicType = 0 }
+			}
 		}
 	}
 

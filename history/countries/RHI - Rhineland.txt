@@ -1,7 +1,8 @@
-﻿capital = 10
+﻿capital = 563
 
 set_research_slots = 3
 
+oob = "RHI_1928"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -38,8 +39,20 @@ add_ideas = {
 	fritz_schaeffer
 	josef_wirth
 	johannes_belle
+	RHI_crisis
+	RHI_army
+	RHI_fra
+	disarmed_nation
 }
 
+	set_rule = {
+		can_not_declare_war = yes
+	}
+	country_lock_all_division_template = yes
+
+add_to_variable = { var = HUN_military_influence_var value = 15 }
+add_to_variable = { var = HUN_democratic_influence_var value = 100 }
+add_to_variable = { var = HUN_communist_influence_var value = 5 }
 
 create_country_leader = {
 	name = "Heinrich Brüning"

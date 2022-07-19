@@ -1,0 +1,81 @@
+ideas = {
+
+	army_level = {
+		law = yes
+		use_list_view = yes
+		
+		army_level_1_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = opolchenie
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.10
+				army_speed_factor = -0.10
+			}
+		}
+		
+		army_level_2_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = nekvalifitsirovannaya_armia
+			
+			modifier = {
+				army_attack_factor = -0.10
+				army_defence_factor = -0.05
+				army_speed_factor = -0.05
+			}
+			
+			default = yes
+		}
+		
+		army_level_3_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = maloobespechennoe_voysko
+			
+			modifier = {
+				army_attack_factor = -0.05
+			}
+		}
+		
+		army_level_4_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = distsiplinirovannaya_armia
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		
+		army_level_5_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = armia_professionalov
+			
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+	}
+}

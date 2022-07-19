@@ -1,0 +1,253 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = italia
+
+country_event = { # Великая Депрессия бьёт по Италии
+	id = italia.1
+	title = italia.1.t
+	desc = italia.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italia.1.a
+		hidden_effect = {
+		    country_event = { id = italia.2 days = 3 }
+		}
+	}
+}
+
+country_event = { # Кризис 1
+	id = italia.2
+	title = italia.2.t
+	desc = italia.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italia.2.a
+		add_political_power = -100
+		hidden_effect = {
+		    country_event = { id = italia.3 days = 3 }
+		}
+	}
+	option = {
+		name = italia.2.b
+		add_stability = -0.15
+		set_country_flag = bankan_pizda
+		hidden_effect = {
+		    country_event = { id = italia.3 days = 3 }
+		}
+	}
+}
+
+country_event = { # Кризис 2
+	id = italia.3
+	title = italia.3.t
+	desc = italia.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italia.3.a
+		add_political_power = -100
+		hidden_effect = {
+		    country_event = { id = italia.4 days = 3 }
+		}
+	}
+	option = {
+		name = italia.3.b
+		add_stability = -0.15
+		set_country_flag = ne_viebal_fermerov
+		hidden_effect = {
+		    country_event = { id = italia.4 days = 3 }
+		}
+	}
+}
+
+country_event = { # Кризис 3
+	id = italia.4
+	title = italia.4.t
+	desc = italia.4.d
+	
+	trigger = {
+	    
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italia.4.a
+		add_political_power = -100
+	}
+	option = {
+		name = italia.4.b
+		add_stability = -0.15
+		hidden_effect = {
+		    country_event = { id = italia.5 days = 30 }
+		}
+	}
+}
+
+country_event = { # Гражданская война
+	id = italia.5
+	title = italia.5.t
+	desc = italia.5.d
+	
+	trigger = {
+	    has_country_flag = bankan_pizda
+		has_country_flag = ne_viebal_fermerov
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+	    hidden_effect = {
+		    ITA = {
+			    delete_unit_template_and_units = {
+				    division_template  = "Divisione di Fanteria"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+				    division_template  = "Divisione Alpina"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+				    division_template  = "Divisione Coloniale" 
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+				    division_template  = "Divisione Celere" 
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+				    division_template  = "Reggimento di Cavalleria" 
+					disband = yes
+				}
+			}
+		}
+	    hidden_effect = {
+		    YUG = {
+		        transfer_state = 103
+		        transfer_state = 163
+		    }
+		    TUR = {
+		        transfer_state = 342
+		        transfer_state = 345
+		    }
+		    GRE = {
+		        transfer_state = 164
+		    }
+		}
+		hidden_effect = {
+			ITA = {
+			    release_puppet = ERI
+				release_puppet = SOM
+				load_oob = ITA_Civil_War_Fascist
+				add_ideas = ITA_civil_war
+			}
+		    IFW = {
+			    transfer_state = 736
+			    transfer_state = 160
+				transfer_state = 39
+				transfer_state = 159
+				transfer_state = 158
+				transfer_state = 161
+				set_cosmetic_tag = ITA_communist
+				load_oob = ITA_Civil_War_Anarchists
+				add_ideas = ITA_civil_war
+				every_state = {
+					limit = { is_core_of = ITA }
+					add_core_of = IFW
+				}
+			}
+			ITK = {
+			    transfer_state = 114
+			    transfer_state = 115
+				transfer_state = 156
+				transfer_state = 117
+				set_cosmetic_tag = ITA_monarchists
+				load_oob = ITA_Civil_War_Monarchists
+				add_ideas = ITA_civil_war
+				every_state = {
+					limit = { is_core_of = ITA }
+					add_core_of = ITK
+				}
+			}
+		}
+		set_global_flag = italian_civil_war
+	}
+	option = { # Фашисткая Италия
+		name = italia.5.a
+		hidden_effect = {
+			ITA = {
+			    declare_war_on = {
+			    	target = ITK
+			    	type = annex_everything
+			    }
+			    declare_war_on = {
+			    	target = IFW
+			    	type = annex_everything
+			    }
+		    }
+			ITK = {
+			    declare_war_on = {
+			    	target = IFW
+			    	type = annex_everything
+			    }
+		    }
+		}
+	}
+	option = { # Федерация Рабочих Италии
+		name = italia.5.b
+		IFW = {
+		    change_tag_from = ITA
+		}
+		hidden_effect = {
+			IFW = {
+			    declare_war_on = {
+			    	target = ITA
+			    	type = annex_everything
+			    }
+				declare_war_on = {
+			    	target = ITK
+			    	type = annex_everything
+			    }
+		    }
+			ITK = {
+			    declare_war_on = {
+			    	target = ITA
+			    	type = annex_everything
+			    }
+		    }
+		}
+	}
+	option = { # Королевство Италия
+		name = italia.5.c
+		ITK = {
+		    change_tag_from = ITA
+		}
+		hidden_effect = {
+			ITK = {
+			    declare_war_on = {
+			    	target = IFW
+			    	type = annex_everything
+			    }
+				declare_war_on = {
+			    	target = ITA
+			    	type = annex_everything
+			    }
+		    }
+			IFW = {
+			    declare_war_on = {
+			    	target = ITA
+			    	type = annex_everything
+			    }
+		    }
+		}
+	}
+}

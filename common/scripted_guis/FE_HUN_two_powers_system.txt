@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	HUN_the_two_power_decision_ui = {
+		context_type = decision_category
+		window_name = "HUN_the_two_power_decision_ui_window"
+
+		visible = {
+			tag = HUN
+		}
+		
+	}
+	
+}
+

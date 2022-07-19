@@ -1,0 +1,68 @@
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "HUN_the_two_power_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100%  height = 150 }
+
+		iconType = {
+			name ="military_influence_icon"
+			spriteType = "GFX_icon_HUN_military_influence_ui"
+			position = { x= 50	 y = 10 }
+			pdx_tooltip = "com_influ_txt"
+		}
+		
+		instantTextBoxType = {
+			name ="military_influence_text_number"
+			position = { x = 71 y = 65 }
+			font = "hoi_24header"
+			text = "HUN_military_influence"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 60
+			pdx_tooltip = "mil_influ_txt"
+		}
+		
+		iconType = {
+			name ="democratic_influence_icon"
+			spriteType = "GFX_icon_HUN_democratic_influence_ui"
+			position = { x= 200	 y = 10 }
+			pdx_tooltip = "com_influ_txt"
+		}
+		
+		instantTextBoxType = {
+			name ="democratic_influence_text_number"
+			position = { x = 221 y = 65 }
+			font = "hoi_24header"
+			text = "HUN_democratic_influence"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 60
+			pdx_tooltip = "dem_influ_txt"
+		}
+		
+		iconType = {
+			name ="communist_influence_icon"
+			spriteType = "GFX_icon_HUN_communist_influence_ui"
+			position = { x= 341 y = 10 }
+			pdx_tooltip = "com_influ_txt"
+		}
+		
+		instantTextBoxType = {
+			name ="communist_influence_text_number"
+			position = { x = 372 y = 65 }
+			font = "hoi_24header"
+			text = "HUN_communist_influence"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 60
+			pdx_tooltip = "com_influ_txt"
+		}
+		
+	}
+}

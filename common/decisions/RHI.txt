@@ -1,0 +1,28 @@
+RHI_education = {
+	
+	RHI_colaps = {
+		allowed = {
+			original_tag = RHI
+		}
+		available = {		
+            Not = {
+				has_idea = RHI_crisis
+			}
+		}
+		activation = {		
+			has_completed_focus = newfocus_2
+		}
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			country_event = {
+				id = RHI_colaps.1
+			}
+		}
+		days_mission_timeout = 1820
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+
+}

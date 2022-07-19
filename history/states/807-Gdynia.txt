@@ -14,15 +14,14 @@ state={
 		victory_points = {
 			279 1 
 		}
+		victory_points = {
+			6375 3 
+		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 2
-			9263 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = POL
@@ -35,7 +34,7 @@ state={
 	}
 
 	provinces={
-		243 279 3295 6347 9346 9372 
+		243 279 3295 6347 6375 9346 9372 
 	}
 	manpower=713370
 	buildings_max_level_factor=1.000

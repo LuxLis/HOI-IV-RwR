@@ -58,12 +58,12 @@ guiTypes = {
 			clipping = yes
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 6 left = 0 bottom = 5 right = 0}
-
 			
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
 			}
+			
 			
 			gridBoxType = {
 				name = "parties_grid"

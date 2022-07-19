@@ -1,0 +1,14 @@
+
+HUN_the_two_power = {
+	
+	allowed = {
+		original_tag = RHI
+		
+	}
+	
+	scripted_gui = HUN_the_two_power_decision_ui	
+	
+	visible = {
+		}
+	}
+}

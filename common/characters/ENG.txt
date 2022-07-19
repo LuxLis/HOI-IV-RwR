@@ -1,0 +1,31 @@
+characters={
+	ENG_Rotha_Lintorn_Orman={ #Вайфу всея РВР
+		name=ENG_Rotha_Lintorn_Orman
+		portraits={
+			civilian={
+				large = GFX_portrait_ENG_Rotha_Lintorn_Orman
+			}
+			country_leader = {
+			    ideology=nazism
+			    expire="1965.1.1.1"
+			    id=-1
+			    traits = {  }
+		    }
+		}
+	}
+	
+	ENG_George_V={ #Дед (Не Октябрь)
+		name=ENG_George_V
+		portraits={
+			civilian={
+				large = GFX_portrait_ENG_George_V
+			}
+			country_leader = {
+			    ideology=despotism
+			    expire="1965.1.1.1"
+			    id=-1
+			    traits = {  }
+		    }
+		}
+	}
+}

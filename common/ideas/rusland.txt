@@ -576,5 +576,179 @@ ideas = {
 				training_time_factor = 0.05
 			}
 		}
+		
+		RUS_idea1 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_idea2 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_idea3 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.2
+			}
+		}
+		
+		RUS_idea4 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.2
+			}
+		}
+		
+		RUS_idea5 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		RUS_idea6 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_idea7 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				training_time_factor = -0.05
+			}
+		}
+		
+		RUS_idea8 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RUS_idea9 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				research_speed_factor = 0.05
+			}
+		}
+		
+		RUS_idea10 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				army_leader_cost_factor = -0.10
+			}
+		}
+		
+		RUS_idea11 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		RUS_idea12 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		RUS_idea13 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				min_export = -0.5
+			}
+		}
+		
+		RUS_idea14 = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				production_speed_buildings_factor = 0.05
+			}
+		}
 	}
 }

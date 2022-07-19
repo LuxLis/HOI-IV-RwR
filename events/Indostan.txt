@@ -1,0 +1,52 @@
+﻿###########################
+# British Events
+###########################
+
+add_namespace = indostan
+
+country_event = { # Индийская гражданка
+    id = indostan.1
+	title = indostan.1.t
+	desc = indostan.1.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    hidden_effect = {
+		    RAJ = {
+			    declare_war_on = {
+			    	target = PAK
+			    	type = annex_everything
+			    }
+				declare_war_on = {
+			    	target = BAN
+			    	type = annex_everything
+			    }
+				declare_war_on = {
+			    	target = BRM
+			    	type = annex_everything
+			    }
+			}
+		    PAK = {
+			    transfer_state = 440
+				transfer_state = 441
+			    transfer_state = 442
+		        transfer_state = 443
+		        transfer_state = 444
+				transfer_state = 445
+				transfer_state = 787
+		    }
+		    BAN = {
+		        transfer_state = 430
+		    }
+		    BRM = {
+		        transfer_state = 288
+				transfer_state = 640
+		    }
+		}
+	}
+	
+	option = {
+		name = indostan.1.a
+	}
+}

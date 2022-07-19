@@ -1,0 +1,31 @@
+ENG_Industry_decisions = {
+	icon = GFX_decision_category_generic_industry
+	priority = 80
+
+	allowed = {
+		ENG = {
+		    OR = {
+		        has_compleated_focus = ENG_Investments_in_auto
+				has_compleated_focus = ENG_Nationalisation_of_railway
+			}
+		}
+	}
+}
+
+ENG_path_to_greatness_decision = {
+	icon = GFX_decision_category_generic_industry
+	priority = 100
+
+	visible = {
+		has_compleated_focus = ENG_path_to_greatness
+	}
+}
+
+ENG_Alliance_Economic = {
+	icon = GFX_decision_category_generic_industry
+	priority = 80
+
+	visible = {
+		has_compleated_focus = ENG_Economic_Integration
+	}
+}

@@ -16,11 +16,14 @@ state={
 			8085 = {
 				naval_base = 4
 			}
+			12702 = {
+				naval_base = 6
+			}
 		}
 
 	}
 	provinces={
-		8085
+		8085 1955 12702
 	}
 
 	local_supplies=0.0 

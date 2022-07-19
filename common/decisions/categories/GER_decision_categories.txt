@@ -1,0 +1,6 @@
+RHI_problem = {
+	icon = generic_independence
+	visible = {
+		always = yes
+	}
+}

@@ -468,3 +468,69 @@ RUS_all_decisions = {
 		}
 	}
 }
+
+RUS_reveco_decisions = {
+	RUS_goto_plan_decision = {
+		icon = generic_research
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = economicType
+					value = 0
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = { economicType = 0 }
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	RUS_goto_reg_decision = {
+		icon = generic_research
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = economicType
+					value = 1
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = { economicType = 1 }
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	RUS_goto_market_decision = {
+		icon = generic_research
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = economicType
+					value = 2
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = { economicType = 2 }
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

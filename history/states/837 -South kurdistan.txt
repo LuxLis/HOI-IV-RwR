@@ -1,0 +1,23 @@
+
+state = {
+	id = 837
+	name = "STATE_837"
+	manpower = 183748
+	
+	state_category = town
+
+	history = {
+		owner = KUR
+		buildings = {
+		
+			
+		}
+		add_core_of = KUR
+	}
+
+	provinces = {
+		10811 5014 6826 3916
+	}
+
+	local_supplies = 6.0 
+}

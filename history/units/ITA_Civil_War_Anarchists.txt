@@ -1,0 +1,181 @@
+﻿division_template = {
+	name = "Milizia"
+	is_locked = yes
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Milizia 2"
+	is_locked = yes
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1. Milizia"
+		location = 782
+		division_template = "Milizia"
+	}
+	division = {
+		name = "2. Milizia"
+		location = 6606
+		division_template = "Milizia"
+	}
+	division = {
+		name = "3. Milizia"
+		location = 6788
+		division_template = "Milizia"
+	}
+	division = {
+		name = "4. Milizia"
+		location = 3780
+		division_template = "Milizia"
+	}
+	division = {
+		name = "5. Milizia"
+		location = 6780
+		division_template = "Milizia"
+	}
+	division = {
+		name = "6. Milizia"
+		location = 9741
+		division_template = "Milizia"
+	}
+	division = {
+		name = "7. Milizia"
+		location = 3773
+		division_template = "Milizia"
+	}
+	division = {
+		name = "8. Milizia"
+		location = 11584
+		division_template = "Milizia"
+	}
+	division = {
+		name = "9. Milizia"
+		location = 3976
+		division_template = "Milizia"
+	}
+	division = {
+		name = "10. Milizia"
+		location = 6656
+		division_template = "Milizia"
+	}
+	division = {
+		name = "11. Milizia"
+		location = 770
+		division_template = "Milizia"
+	}
+	division = {
+		name = "12. Milizia"
+		location = 3782
+		division_template = "Milizia"
+	}
+	division = {
+		name = "13. Milizia"
+		location = 969
+		division_template = "Milizia"
+	}
+	division = {
+		name = "14. Milizia"
+		location = 9613
+		division_template = "Milizia"
+	}
+	division = {
+		name = "15. Milizia"
+		location = 782
+		division_template = "Milizia"
+	}
+	division = {
+		name = "16. Milizia"
+		location = 11730
+		division_template = "Milizia"
+	}
+	division = {
+		name = "17. Milizia"
+		location = 611
+		division_template = "Milizia"
+	}
+	division = {
+		name = "18. Milizia"
+		location = 9598
+		division_template = "Milizia"
+	}
+	division = {
+		name = "19. Milizia"
+		location = 11598
+		division_template = "Milizia"
+	}
+	division = {
+		name = "20. Milizia"
+		location = 776
+		division_template = "Milizia"
+	}
+	division = {
+		name = "1. Milizia 2"
+		location = 3780
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "2. Milizia 2"
+		location = 3780
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "3. Milizia 2"
+		location = 6985
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "4. Milizia 2"
+		location = 3773
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "5. Milizia 2"
+		location = 3776
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "6. Milizia 3"
+		location = 9924
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "7. Milizia 3"
+		location = 773
+		division_template = "Milizia 2"
+	}
+	division = {
+		name = "8. Milizia 3"
+		location = 6985
+		division_template = "Milizia 2"
+	}
+	
+}

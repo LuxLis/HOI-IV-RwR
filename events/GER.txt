@@ -1,0 +1,122 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = RHI_problemo
+
+country_event = { 
+	id = RHI_problemo.1
+	title = RHI_problemo.1.t
+	desc = RHI_problemo.1.d
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = RHI_problemo.1.b		
+		RHI = {
+			country_event = {
+				id = RHI_problemo.2	
+				days = 2
+			}	
+		}		
+	}
+	option = {
+		name = RHI_problemo.1.c	
+		ai_chance = {
+			factor = 20000
+		}		
+		FRA = {
+			country_event = {
+				id = RHI_problemo.3
+				days = 2
+			}	
+		}
+	}	
+}
+country_event = { 
+	id = RHI_problemo.2
+	title = RHI_problemo.2.t
+	desc = RHI_problemo.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_problemo.2.a
+		GER = {
+			add_stability = 0.05
+			annex_country = { target = RHI transfer_troops = yes }
+		}
+		FRA = {
+			add_stability = 0.05
+			annex_country = { target = RHW transfer_troops = yes }
+		}		
+	}	
+}
+country_event = { 
+	id = RHI_problemo.3
+	title = RHI_problemo.3.t
+	desc = RHI_problemo.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_problemo.3.a
+		RHI = {
+			add_stability = 0.05
+			annex_country = { target = RHW transfer_troops = yes }
+		}
+		RHI = { end_puppet = GER }
+		RHI = { drop_cosmetic_tag = yes }
+	}	
+	option = {
+		name = RHI_problemo.3.b
+		RHI = {
+			add_stability = 0.05
+			annex_country = { target = RHW transfer_troops = yes }
+		}
+		GER = {
+			set_country_flag = RHI_problems_2
+		}		
+	}
+	option = {
+		name = RHI_problemo.3.c
+		ai_chance = {
+			factor = 20000
+		}		
+		GER = {
+			country_event = {
+				id = RHI_problemo.4	
+				days = 2
+			}	
+		}
+	}	
+}
+country_event = { 
+	id = RHI_problemo.4
+	title = RHI_problemo.4.t
+	desc = RHI_problemo.4.d
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = RHI_problemo.4.b
+		GER = {
+			add_stability = 0.05
+			annex_country = { target = RHI transfer_troops = yes }
+		}		
+		declare_war_on = {
+			target = RHW
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = FRA
+			type = annex_everything
+		}
+		news_event = {
+			id = news.341
+			days = 3				
+		}		
+	}
+}

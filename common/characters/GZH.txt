@@ -1,0 +1,15 @@
+characters={
+	GZH_chinese_warlord={
+		name="Chinese Warlord"
+		portraits={
+			civilian={
+				large=GFX_chinese_warlord
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

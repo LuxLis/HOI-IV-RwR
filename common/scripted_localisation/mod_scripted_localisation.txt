@@ -1,0 +1,67 @@
+defined_text = { 
+	name = get_economics_icon_texture
+	text = {
+		trigger = {
+			check_variable = {
+				var = economicType
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = "GFX_planed_economy_icon"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = economicType
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = "GFX_regulated_economy_icon"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = economicType
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = "GFX_market_economy_icon"
+	}
+}
+
+defined_text = { 
+	name = get_economics_localisation
+	text = {
+		trigger = {
+			check_variable = {
+				var = economicType
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = "RUS_planed_economy_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = economicType
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = "RUS_regulated_economy_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = economicType
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = "RUS_market_economy_tt"
+	}
+}

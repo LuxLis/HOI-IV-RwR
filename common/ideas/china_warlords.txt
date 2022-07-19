@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+
+        low_legetimicy = { 
+
+			picture = FRA_matignon_agreements
+			
+			allowed = {
+			    original_tag = CHI
+				original_tag = MAN
+				original_tag = ANH
+				original_tag = SHX
+				original_tag = HBI
+				original_tag = XSM
+				original_tag = NNC
+				original_tag = GZH
+				original_tag = KUO
+				original_tag = SCH
+				original_tag = YUN
+				original_tag = TIB
+				original_tag = SIK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    join_faction_tension = 1
+				ai_get_ally_desire_factor = -500
+				ai_join_ally_desire_factor = -500
+			}
+
+
+		}
+		
+		chinese_civil_war = { 
+
+			picture = chi_warlord_integration
+			
+			allowed = {
+			    original_tag = CHI
+				original_tag = MAN
+				original_tag = ANH
+				original_tag = SHX
+				original_tag = HBI
+				original_tag = XSM
+				original_tag = NNC
+				original_tag = GZH
+				original_tag = KUO
+				original_tag = SCH
+				original_tag = YUN
+				original_tag = TIB
+				original_tag = SIK
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor = -0.2
+				army_core_defence_factor = 0.05
+				attack_bonus_against_cores = 0.05
+				offensive_war_stability_factor = 0.3
+				defensive_war_stability_factor = 0.3
+			}
+
+		}
+    }
+}

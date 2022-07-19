@@ -1,0 +1,556 @@
+ideas = {
+	country = {
+	    
+		ENG_general_strike = { 
+
+			picture = ENG_general_strike
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_cost = 0.25
+			    stability_factor = -0.1
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.15
+			}
+
+
+		}
+	
+	   ENG_Depression_1 = { 
+
+			picture = ENG_Depression_1
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.3
+				consumer_goods_factor = 0.5
+				conscription_factor = -0.5
+				local_resources_factor = -0.2
+			}
+
+
+		}
+		
+		ENG_Depression_2 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.2
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.1
+			}
+
+
+		}
+	
+		ENG_political_fight = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.5
+				democratic_drift = -0.1
+				liberalism_drift = -0.1
+			}
+
+
+		}
+		
+		ENG_memories_of_the_war = {
+			
+			picture = ENG_memories_of_the_war
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				conscription_factor = -0.2
+				war_support_factor = -0.3
+			}
+		}
+		
+		ENG_british_nationalism = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = -0.05
+				fascism_drift = 0.1
+			}
+		}
+		
+		ENG_national_revolution_1 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_acceptance = 50
+				conscription_factor = 0.05
+				war_support_factor = 0.2
+			}
+		}
+		
+		ENG_national_revolution_2 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_acceptance = 50
+				conscription_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				war_support_factor = 0.3
+				max_surrender_limit_offset = 0.15
+			}
+		}
+		
+		ENG_corporativism_1 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.1
+				global_building_slots_factor = 0.2
+			}
+		}
+		
+		ENG_corporativism_2 = { # Инвестиции в автомобилестроение
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.1
+				global_building_slots_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		ENG_corporativism_3 = { # Механизация производства
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.1
+				global_building_slots_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		ENG_corporativism_4 = { #TOP
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.1
+				global_building_slots_factor = 0.2
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		ENG_colonial_economic = { 
+
+			picture = ENG_colonial_economic
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    non_core_manpower = 0.05
+			    cic_to_overlord_factor = 0.5
+				autonomy_manpower_share = 0.4
+                extra_trade_to_overlord_factor = 0.6
+			}
+		}
+		
+		ENG_MI_6 = { 
+
+			picture = ENG_MI_6
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    operative_slot = 1
+			    intel_network_gain_factor = 0.1
+			}
+		}
+		
+		ENG_reformed_society_1 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = 0.05
+			}
+		}
+		
+		ENG_reformed_society_2 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = 0.05
+				conscription_factor = 0.1
+			}
+		}
+		
+		ENG_reformed_society_3 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = 0.05
+			    conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		ENG_reformed_society_4 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = 0.05
+				party_popularity_stability_factor = 0.25
+				offensive_war_stability_factor = 0.25
+			    conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		ENG_fascist_international = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				guarantee_tension = -0.3
+				mobilization_laws_cost_factor = -0.1
+			}
+		}
+		
+		ENG_great_training = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.25
+			    experience_gain_navy_factor = 0.25
+			    experience_gain_air_factor = 0.25
+			}
+		}
+		
+		ENG_first_stage = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+			}
+		}
+		
+		ENG_second_stage = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				global_building_slots_factor = 0.15
+			}
+		}
+		
+		ENG_third_stage = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				global_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		
+		ENG_fourth_stage = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		
+		ENG_resources_eng = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.2
+			}
+		}
+		
+		ENG_resources_por = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+}

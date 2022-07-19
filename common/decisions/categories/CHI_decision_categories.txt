@@ -1,0 +1,27 @@
+CHI_education = {
+	icon = generic_independence
+	visible = {
+		always = yes
+	}
+}
+
+CHI_famine = {
+	icon = generic_independence
+	visible = {
+		always = yes
+	}
+}
+
+CHI_war_warlords = {
+	icon = generic_foreign_policy
+	visible = {
+		always = yes
+	}
+}
+
+CHI_manchuria_castle = {
+    icon = generic_foreign_policy
+	visible = {
+	    always = yes
+	}
+}

@@ -1,0 +1,41 @@
+﻿###########################
+# Greek Civil War
+###########################
+
+add_namespace = greek_civil
+
+country_event = { # Выборы в Греции
+	id = greek_civil.1
+	title = greek_civil.1.t
+	desc = greek_civil.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greek_civil.1.a
+	}
+}
+
+country_event = { # Ивент ВБ
+	id = greek_civil.2
+	title = greek_civil.2.t
+	desc = greek_civil.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greek_civil.2.a
+	}
+}
+
+country_event = { # Ивент России
+	id = greek_civil.2
+	title = greek_civil.2.t
+	desc = greek_civil.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greek_civil.2.a
+	}
+}

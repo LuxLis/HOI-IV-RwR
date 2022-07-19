@@ -1,0 +1,22 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+	
+	chiang_generalissimus = {
+		random = no
+		war_support_factor = 0.2
+		army_morale_factor = 0.05
+		annex_cost_factor = -0.1
+	}
+	
+	rotha_nationalism = {
+		random = no
+		fascism_drift = 0.1
+		master_ideology_drift = 0.1
+		war_support_weekly_factor = 0.05
+		army_org_factor = 0.1
+	}
+
+}

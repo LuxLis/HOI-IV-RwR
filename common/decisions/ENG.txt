@@ -1,0 +1,291 @@
+ENG_Industry_decisions = {
+
+    ENG_Develop_Military_Industry_In_State = {
+		name = ENG_Develop_Military_Industry_In_State
+		icon = generic_construction
+
+		allowed = { always = no }
+
+		available = {
+			FROM = { is_owned_and_controlled_by = ROOT }
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		cost = 30
+		days_remove = 90
+		fire_only_once = yes
+		state_target = yes
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+		    log = "[GetDateText]: [Root.GetName]: Decision remove ENG_Develop_Military_Industry_In_State"
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	ENG_Develop_Civilian_Industry_In_State = {
+		name = ENG_Develop_Civilian_Industry_In_State
+		icon = generic_construction
+
+		allowed = { always = no }
+
+		available = {
+			FROM = { is_owned_and_controlled_by = ROOT }
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		cost = 45
+		days_remove = 90
+		fire_only_once = yes
+		state_target = yes
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+		    log = "[GetDateText]: [Root.GetName]: Decision remove ENG_Develop_Civilian_Industry_In_State"
+			FROM = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+}
+
+ENG_path_to_greatness_decision_category = {
+    
+	ENG_Development_Of_Portugal = {
+		name = ENG_Development_Of_Portugal
+		icon = generic_construction
+
+		visible = {
+		    has_compleated_focus = ENG_Fascist_International
+		}
+
+		available = {
+			POR = { is_in_faction_with = ENG }
+			ENG = { has_compleated_focus = ENG_Industrial_help }
+		}
+
+		cost = 50
+		days_remove = 100
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		remove_effect = {
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+}
+
+ENG_Alliance_Economic = {
+
+    ENG_first_stage_decision = {
+	    visible = {
+            has_completed_focus = ENG_Economic_Integration
+        }
+		ai_will_do = {
+		    base = 30
+		}
+	    cost = 50
+		days_remove = 30
+		fire_only_once = yes
+        remove_effect = {
+		    ENG = {
+			    add_ideas = ENG_first_stage
+			}
+			if = {
+		        limit = {
+			        ITA = { is_in_faction_with = ENG }
+			    }
+				add_ideas = ENG_first_stage
+		    }
+			if = {
+		        limit = {
+			        POR = { is_in_faction_with = ENG }
+			    }
+				add_ideas = ENG_first_stage
+		    }
+        }
+    }
+	
+	ENG_second_stage_decision = {
+	    visible = {
+            has_completed_focus = ENG_Economic_Integration
+        }
+		available = {
+		    has_idea = ENG_first_stage
+		}
+		ai_will_do = {
+		    base = 30
+		}
+	    cost = 75
+		days_remove = 80
+		fire_only_once = yes
+		modifier = {
+		    civilian_factory_use = 3
+		}
+        remove_effect = {
+		    ENG = {
+			    swap_ideas = {
+				    remove_idea = ENG_first_stage
+					add_idea = ENG_second_stage
+				}
+			}
+			if = {
+		        limit = {
+			        ITA = { is_in_faction_with = ENG }
+			    }
+				swap_ideas = {
+				    remove_idea = ENG_first_stage
+					add_idea = ENG_second_stage
+				}
+		    }
+			if = {
+		        limit = {
+			        POR = { is_in_faction_with = ENG }
+			    }
+				swap_ideas = {
+				    remove_idea = ENG_first_stage
+					add_idea = ENG_second_stage
+				}
+		    }
+        }
+    }
+	
+	ENG_third_stage_decision = {
+	    visible = {
+            has_completed_focus = ENG_Economic_Integration
+        }
+		available = {
+		    has_idea = ENG_second_stage
+		}
+		ai_will_do = {
+		    base = 30
+		}
+	    cost = 75
+		days_remove = 100
+		fire_only_once = yes
+		modifier = {
+		    civilian_factory_use = 3
+		}
+        remove_effect = {
+		    ENG = {
+			    swap_ideas = {
+				    remove_idea = ENG_second_stage
+					add_idea = ENG_third_stage
+				}
+			}
+			if = {
+		        limit = {
+			        ITA = { is_in_faction_with = ENG }
+			    }
+				swap_ideas = {
+				    remove_idea = ENG_second_stage
+					add_idea = ENG_third_stage
+				}
+		    }
+			if = {
+		        limit = {
+			        POR = { is_in_faction_with = ENG }
+			    }
+				swap_ideas = {
+				    remove_idea = ENG_second_stage
+					add_idea = ENG_third_stage
+				}
+		    }
+        }
+    }
+	
+	ENG_fourth_stage_decision = {
+	    visible = {
+            has_completed_focus = ENG_Economic_Integration
+        }
+		available = {
+		    has_idea = ENG_third_stage
+		}
+		ai_will_do = {
+		    base = 30
+		}
+	    cost = 120
+		days_remove = 120
+		fire_only_once = yes
+		modifier = {
+		    civilian_factory_use = 3
+		}
+        remove_effect = {
+		    ENG = {
+			    swap_ideas = {
+				    remove_idea = ENG_third_stage
+					add_idea = ENG_fourth_stage
+				}
+			}
+			if = {
+		        limit = {
+			        ITA = { is_in_faction_with = ENG }
+			    }
+				swap_ideas = {
+				    remove_idea = ENG_third_stage
+					add_idea = ENG_fourth_stage
+				}
+		    }
+			if = {
+		        limit = {
+			        POR = { is_in_faction_with = ENG }
+			    }
+				swap_ideas = {
+				    remove_idea = ENG_third_stage
+					add_idea = ENG_fourth_stage
+				}
+		    }
+        }
+    }
+	
+}

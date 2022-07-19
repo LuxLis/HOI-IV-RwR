@@ -1,0 +1,66 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = nanjing
+
+# Нанкинская конференция
+country_event = { # Нанкинская конференция 1
+	id = nanjing.1
+	title = nanjing.1.t
+	desc = nanjing.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nanjing.1.a
+		CHI = { country_event = {id = nanjing.2 days = 6} }
+	}
+}
+
+country_event = { # Нанкинская конференция 2
+	id = nanjing.2
+	title = nanjing.2.t
+	desc = nanjing.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nanjing.2.a
+		remove_idea = CHI_advi
+	}
+}
+
+country_event = { # Победа
+	id = nanjing.3
+	title = nanjing.3.t
+	desc = nanjing.3.d
+	picture = news_event_chinese_soldiers_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nanjing.3.a
+		230 = {
+		    remove_core_of = GZH
+		}
+		add_war_support = 0.15
+	}
+}
+
+country_event = { # Проигрыш
+	id = nanjing.4
+	title = nanjing.4.t
+	picture = news_event_056
+	desc = nanjing.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nanjing.4.a
+		white_peace = {
+            tag = GZH
+        }
+		add_war_support = -0.3
+	}
+}

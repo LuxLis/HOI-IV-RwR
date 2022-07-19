@@ -1,0 +1,70 @@
+﻿
+add_namespace = chinese
+
+# Вопрос о Гуанчжоу
+country_event = {
+	id = chinese.1
+	title = chinese.1.t
+	desc = chinese.1.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = chinese.1.a
+		ai_chance = { base = 10 }
+		modifier = {
+			add = 100
+			CHI = has_army_manpower = { size > 399999 }
+		}
+		FROM = {
+			puppet = ROOT
+			country_event = { id = chinese.2 }
+		}
+	}
+	option = {
+
+		name = chinese.1.b
+		ai_chance = {
+			base = 10
+		}
+		FROM = {
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+			country_event = { id = chinese.3 }
+		}
+	}
+}
+
+# Answer from ROOT china.10 - Yes
+country_event = {
+	id = chinese.2
+	title = chinese.2.t
+	desc = chinese.2.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chinese.2.a
+		annex_country = { target = TIB transfer_troops = yes }
+	}
+}
+
+
+# Answer from ROOT china.10 - No
+country_event = {
+	id = chinese.3
+	title = chinese.3.t
+	desc = chinese.3.desc
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chinese.3.a
+	}
+}

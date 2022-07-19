@@ -1,0 +1,16 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_icon_HUN_democratic_influence_ui"
+		texturefile = "gfx/interface/decisions/HUN_democratic_influence_ui.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_icon_HUN_communist_influence_ui"
+		texturefile = "gfx/interface/decisions/HUN_communist_influence_ui.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_icon_HUN_military_influence_ui"
+		texturefile = "gfx/interface/decisions/HUN_military_influence_ui.dds"
+	}
+}

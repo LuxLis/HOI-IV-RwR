@@ -1,0 +1,16 @@
+characters={
+	JAP_emperor_hirohito={
+		name=JAP_emperor_hirohito
+		portraits={
+			civilian={
+				large=GFX_portrait_JAP_emperor_hirohito
+			}
+		}
+		country_leader={
+			ideology=paternalautocracy
+			traits={ warrior_code emperor_showa }
+			expire="1989.1.1.1"
+			id=700
+		}
+	}
+}

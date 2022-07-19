@@ -1,0 +1,59 @@
+##Hungarina decisions
+HUN_the_two_power = {
+
+	POP_1 = {
+		icon = eng_trade_unions_support
+		cost = 0
+		visible = {
+
+		}
+
+		modifier = {
+			
+		}
+		days_remove = 1
+		complete_effect = {
+			custom_effect_tooltip = HUN_military_influence_var_-10_tt
+			add_to_variable = { var = HUN_military_influence_var value = -10 }
+
+		}
+	}
+	
+	POP_2 = {
+		icon = eng_trade_unions_support
+		cost = 0
+		visible = {
+
+		}	
+
+		modifier = {
+
+		}
+		days_remove = 1
+		complete_effect = {
+			custom_effect_tooltip = HUN_democratic_influence_var_-10_tt
+			add_to_variable = { var = HUN_democratic_influence_var value = -10 }
+		}
+		
+
+	}	
+	
+	POP_3 = {
+		icon = eng_trade_unions_support
+		cost = 0
+		visible = {
+
+		}
+
+		modifier = {
+			
+		}
+		days_remove = 1  
+		complete_effect = {
+			custom_effect_tooltip = HUN_communist_influence_var_-10_tt 
+			add_to_variable = { var = HUN_communist_influence_var value = -10 }			
+		}
+		
+
+	}
+}

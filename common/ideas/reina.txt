@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+	
+		RHI_crisis = { 
+
+			picture = great_depression
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = 0.7
+				civilian_factory_use = 1
+				industrial_capacity_factory = -0.5
+				production_speed_buildings_factor = -0.5 
+			}
+
+
+		}
+		
+		RHI_fra = { 
+
+			picture = FRA_scw_intervention_nationalists_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				
+			}
+
+
+		}	
+
+		RHI_army = { 
+
+			picture = ferdinand_schorner
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			on_remove = {
+				if = {
+					has_completed_focus = newfocus_2
+				}
+
+				country_lock_all_division_template = no
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+			
+			modifier = {
+			    conscription = -0.005
+				army_attack_factor = 0.01
+				army_core_attack_factor = 0.01
+				army_attack_speed_factor = 0.01
+				army_core_defence_factor = 0.02
+			}
+
+
+		}		
+	}
+}

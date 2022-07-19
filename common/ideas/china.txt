@@ -1,0 +1,248 @@
+ideas = {
+	country = {
+	
+		CHI_bad_army_1 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				tag = CHI
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = -0.3
+				conscription_factor = -0.25
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_speed_factor = -0.1
+			}
+
+
+		}
+		
+		CHI_bad_army_2 = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				tag = CHI
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = -0.15
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+
+
+		}
+
+		CHI_starving_people_1 = {
+
+			picture = raj_risk_of_famine
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.2
+				political_power_gain = -0.4
+				conscription_factor = -0.1
+				monthly_population = -0.4
+			}
+
+		}
+		CHI_starving_people_2 = {
+
+			picture = raj_risk_of_famine
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.1
+				political_power_gain = -0.2
+				conscription_factor = -0.05
+				monthly_population = -0.2
+			}
+
+		}
+		CHI_low_education_1 = {
+
+			picture = generic_disjointed_gov
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.25
+				land_doctrine_cost_factor = 0.5
+				air_doctrine_cost_factor = 0.5
+				naval_doctrine_cost_factor = 0.5
+				political_advisor_cost_factor = 0.2
+			}
+
+		}
+		CHI_low_education_2 = {
+
+			picture = generic_disjointed_gov
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.2
+				land_doctrine_cost_factor = 0.25
+				air_doctrine_cost_factor = 0.25
+				naval_doctrine_cost_factor = 0.25
+				political_advisor_cost_factor = 0.1
+			}
+		}
+		CHI_advi = {
+
+			picture = idea_jap_duplicate_research
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_advisor_cost_factor = -0.25
+			}
+		}
+		CHI_adm_purge = {
+
+			picture = idea_ast_classify_aliens
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.1
+				political_power_factor = -0.2
+			    political_advisor_cost_factor = 0.1
+				weekly_manpower = -1500
+			}
+		}
+		CHI_arm_purge = {
+
+			picture = idea_generic_purge
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = -0.1
+				military_leader_cost_factor = 0.1
+			    army_leader_cost_factor = 0.1
+				weekly_manpower = -1500
+			}
+		}
+		CHI_money_out = {
+		
+		    picture = idea_jap_duplicate_research
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    consumer_goods_factor = 0.15
+			}
+		}
+		CHI_kvantun_army = {
+		
+		    picture = idea_jap_duplicate_research
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    
+			}
+		}
+		CHI_unification_of_nation = {
+		
+		    picture = idea_jap_duplicate_research
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly_factor = 0.05
+			}
+		}
+	}
+}

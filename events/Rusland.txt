@@ -680,3 +680,35 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = russia.37
+	title = russia.37.t
+	desc = russia.37.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.37.a
+		ai_chance = { factor = 100 }
+		
+		add_political_power = -20
+		add_stability = 0.03
+	}
+	
+	option = {
+		name = russia.37.b
+		ai_chance = { factor = 100 }
+		
+		
+	}
+	
+	option = {
+		name = russia.37.c
+		ai_chance = { factor = 100 }
+		
+		add_political_power = 20
+		add_stability = -0.03
+	}
+}

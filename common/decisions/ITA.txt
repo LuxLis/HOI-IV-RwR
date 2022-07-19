@@ -1,0 +1,82 @@
+ITA_the_seeds_of_revolution = {
+
+	ITA_integrate_commune_1 = {
+
+		name = ITA_integrate_commune
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			FROM = {
+				compliance > 50
+				OR = {
+					is_coastal = yes
+					any_neighbor_state = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+
+		#targets = {  }
+
+		target_array = controlled_states
+
+		target_trigger = {
+			has_completed_focus = ITA_anarchism_knows_no_borders
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				OR = {
+					is_coastal = yes
+					any_neighbor_state = {
+						is_core_of = ROOT
+					}
+				}
+				OR = {
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+				compliance > 35
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 60
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		visible = {
+			tag = ITA
+			has_completed_focus = ITA_anarchism_knows_no_borders
+			always = yes
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+			transfer_state = FROM
+		}
+	}
+	
+}

@@ -15,7 +15,8 @@ focus_tree = {
 		x = 8
 		y = 1
 		completion_reward = {
-			
+			add_political_power = 20
+			add_stability = 0.05
 		}
 	}
 	
@@ -30,7 +31,7 @@ focus_tree = {
 			focus = RUS_focus1
 		}
 		completion_reward = {
-			
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -44,7 +45,7 @@ focus_tree = {
 			focus = RUS_focus2
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea1
 		}
 	}
 	focus = {
@@ -58,7 +59,7 @@ focus_tree = {
 			focus = RUS_focus2
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea2
 		}
 	}
 	focus = {
@@ -72,7 +73,7 @@ focus_tree = {
 			focus = RUS_focus2
 		}
 		completion_reward = {
-			
+			country_event = russia.37
 		}
 	}
 	focus = {
@@ -86,7 +87,7 @@ focus_tree = {
 			focus = RUS_focus2
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -109,7 +110,7 @@ focus_tree = {
 			focus = RUS_focus6
 		}
 		completion_reward = {
-			
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -123,7 +124,10 @@ focus_tree = {
 			focus = RUS_focus7
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RUS_idea3
+				days = 90
+			}
 		}
 	}
 	focus = {
@@ -137,7 +141,10 @@ focus_tree = {
 			focus = RUS_focus8
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RUS_idea4
+				days = 90
+			}
 		}
 	}
 	focus = {
@@ -151,7 +158,10 @@ focus_tree = {
 			focus = RUS_focus7
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = socdem
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -165,7 +175,18 @@ focus_tree = {
 			focus = RUS_focus10
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = paternalism
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -179,7 +200,7 @@ focus_tree = {
 			focus = RUS_focus7
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -193,7 +214,10 @@ focus_tree = {
 			focus = RUS_focus12
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RUS_idea5
+				days = 360
+			}
 		}
 	}
 	focus = {
@@ -213,7 +237,7 @@ focus_tree = {
 			focus = RUS_focus13
 		}
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -227,7 +251,7 @@ focus_tree = {
 			focus = RUS_focus14
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea6
 		}
 	}
 	focus = {
@@ -241,7 +265,7 @@ focus_tree = {
 			focus = RUS_focus14
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea7
 		}
 	}
 	focus = {
@@ -255,7 +279,10 @@ focus_tree = {
 			focus = RUS_focus14
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = socdem
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -269,7 +296,14 @@ focus_tree = {
 			focus = RUS_focus14
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -283,7 +317,8 @@ focus_tree = {
 			focus = RUS_focus14
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea8
+			add_political_power = -40
 		}
 	}
 	focus = {
@@ -309,7 +344,13 @@ focus_tree = {
 			focus = RUS_focus19
 		}
 		completion_reward = {
+			add_political_power = 25
+			remove_ideas = RUS_great_depression
 			
+			add_timed_idea = {
+				idea = RUS_great_depression
+				days = 180
+			}
 		}
 	}
 	focus = {
@@ -323,7 +364,7 @@ focus_tree = {
 			focus = RUS_focus22
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -333,7 +374,7 @@ focus_tree = {
 		x = 17
 		y = 2
 		completion_reward = {
-			
+			add_political_power = 10
 		}
 	}
 	focus = {
@@ -347,7 +388,7 @@ focus_tree = {
 			focus = RUS_focus22
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea9
 		}
 	}
 	focus = {
@@ -361,7 +402,7 @@ focus_tree = {
 			focus = RUS_focus22
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea10
 		}
 	}
 	focus = {
@@ -381,7 +422,7 @@ focus_tree = {
 			focus = RUS_focus24
 		}
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -395,7 +436,7 @@ focus_tree = {
 			focus = RUS_focus25
 		}
 		completion_reward = {
-			
+			remove_ideas = RUS_illiteracy
 		}
 	}
 	focus = {
@@ -404,12 +445,16 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 1
+		mutually_exclusive = {
+			focus = RUS_focus28
+		}
 		relative_position_id = RUS_focus35
 		prerequisite = {
 			focus = RUS_focus35
 		}
 		completion_reward = {
-			
+			add_political_power = 10
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -418,12 +463,16 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 1
+		mutually_exclusive = {
+			focus = RUS_focus27
+		}
 		relative_position_id = RUS_focus35
 		prerequisite = {
 			focus = RUS_focus35
 		}
 		completion_reward = {
-			
+			add_political_power = -10
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -437,7 +486,11 @@ focus_tree = {
 			focus = RUS_focus28
 		}
 		completion_reward = {
-			
+			set_country_flag = RUS_limited_nationalization_flag
+			unlock_decision_tooltip = RUS_redeem_the_volga_bankrupts_decision
+			unlock_decision_tooltip = RUS_nationalize_northern_enterprises_decision
+			unlock_decision_tooltip = RUS_take_control_of_the_ural_factories_decision
+			unlock_decision_tooltip = RUS_buy_out_siberian_companies_decision
 		}
 	}
 	focus = {
@@ -451,7 +504,18 @@ focus_tree = {
 			focus = RUS_focus29
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_popularity = {
+				ideology = socdem
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -465,7 +529,7 @@ focus_tree = {
 			focus = RUS_focus30
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea11
 		}
 	}
 	focus = {
@@ -520,7 +584,7 @@ focus_tree = {
 		x = 22
 		y = 6
 		completion_reward = {
-			
+			add_political_power = 10
 		}
 	}
 	focus = {
@@ -534,7 +598,10 @@ focus_tree = {
 			focus = RUS_focus27
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RUS_idea12
+				days = 360
+			}
 		}
 	}
 	focus = {
@@ -548,7 +615,14 @@ focus_tree = {
 			focus = RUS_focus36
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -562,7 +636,7 @@ focus_tree = {
 			focus = RUS_focus37
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea13
 		}
 	}
 	focus = {
@@ -576,7 +650,12 @@ focus_tree = {
 			focus = RUS_focus36
 		}
 		completion_reward = {
-			
+			set_country_flag = RUS_siberian_heart_project_flag
+			unlock_decision_tooltip = RUS_industrialize_yekaterinburg_decision
+			unlock_decision_tooltip = RUS_develop_omsk_industry_decision
+			unlock_decision_tooltip = RUS_expand_the_role_of_novosibirsk_decision
+			unlock_decision_tooltip = RUS_industrialize_krasnoyarsk_decision
+			unlock_decision_tooltip = RUS_enlarge_irkutsk_capacities_decision
 		}
 	}
 	focus = {
@@ -590,7 +669,70 @@ focus_tree = {
 			focus = RUS_focus39
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_on_continent = europe }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -607,7 +749,8 @@ focus_tree = {
 			focus = RUS_focus39
 		}
 		completion_reward = {
-			
+			add_ideas = RUS_idea14
+			add_political_power = 20
 		}
 	}
 	focus = {
@@ -627,7 +770,7 @@ focus_tree = {
 			focus = RUS_focus40
 		}
 		completion_reward = {
-			
+			remove_ideas = RUS_weak_industrialization
 		}
 	}
 	focus = {
@@ -637,7 +780,7 @@ focus_tree = {
 		x = 12
 		y = 10
 		completion_reward = {
-			
+			add_political_power = 25
 		}
 	}
 	focus = {

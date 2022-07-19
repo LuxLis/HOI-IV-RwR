@@ -1,0 +1,45 @@
+﻿focus_tree = {
+	id = anarchist_italy_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = IFW
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 0 y = 2500 }
+	
+    focus = {
+		id = ITA_anarchism_knows_no_borders
+		icon = GFX_
+		x = 0
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            
+		}
+	}
+	
+}

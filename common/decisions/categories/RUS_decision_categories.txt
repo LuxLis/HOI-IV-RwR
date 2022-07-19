@@ -8,3 +8,16 @@ RUS_all_decisions = {
 	
 	}
 }
+
+RUS_reveco_decisions = {
+	icon = generic_independence
+	allowed = {
+		tag = RUS
+	}
+	
+	visible = {
+	
+	}
+	
+	scripted_gui = rus_reveco_ui
+}

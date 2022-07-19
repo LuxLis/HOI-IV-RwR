@@ -6,10 +6,8 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = TIB
 		add_core_of = CHI
-		add_core_of = TIB
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
@@ -19,7 +17,7 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				infrastructure = 1
+				infrastructure = 2
 
 			}
 
@@ -33,6 +31,4 @@ state={
 	manpower=368200
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-
-	local_supplies=1.0 
 }

@@ -1,0 +1,168 @@
+﻿focus_tree = {
+
+	id = luxembourg_focus
+	
+	country = {
+	
+		factor = 0
+		
+		modifier = {
+		
+			add = 10
+			
+			tag = LUX
+			
+		}
+
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+focus = {
+
+	id = luxembourg_focus_first
+	
+	icon = GFX_focus_lux_holy_empire
+	
+	x = 8
+	
+	y = 0
+	
+	cost = 0
+	
+	prerequisite = { focus = }
+	
+	relative_position_id = /
+	
+	ai_will_do = {
+	
+		factor = 1
+		
+	}
+
+	available = {
+		
+	}
+
+	completion_reward = {
+	
+		add_tech_bonus = {
+		
+                name = industrial_bonus
+				
+                bonus = 3.0
+				
+                uses = 3
+				
+                category = industry
+		}
+	
+		add_war_support = 0.1
+		
+		add_stability = 0.1
+		
+		add_political_power = 100
+
+    }	
+
+focus = {
+
+	id = luxembourg_focus_second
+	
+	icon = GFX_focus_lux_holy_empire
+	
+	prerequisite = { focus = luxembourg_focus_first}
+	
+	mutually_exclusive = { focus = luxembourg_focus_second_parallel }
+	
+	x = -2
+	
+	y = 2
+	
+	cost = 1
+	
+	relative_position_id = luxembourg_focus_first
+	
+	ai_will_do = {
+	
+		factor = 1
+		
+	}
+
+	available = {	
+		
+	}
+
+	completion_reward = {
+	
+		add_tech_bonus = {
+		
+                name = industrial_bonus
+				
+                bonus = 2.0
+				
+                uses = 2
+				
+                category = industry
+		}
+	
+		add_war_support = 0.1
+		
+		add_stability = 0.1
+		
+		add_political_power = 200
+
+}
+
+focus = {
+
+	id = luxembourg_focus_second_parallel
+	
+	icon = GFX_focus_lux_holy_empire
+	
+	prerequisite = { focus = luxembourg_focus_first}
+	
+	mutually_exclusive = { focus = luxembourg_focus_second }
+
+	x = 2
+	
+	y = 2
+	
+	cost = 1
+	
+	relative_position_id = luxembourg_focus_first
+	
+	ai_will_do = {
+	
+		factor = 1
+		
+	}
+
+	available = {
+	
+	
+	}
+
+	completion_reward = {
+	
+		add_tech_bonus = {
+		
+                name = industrial_bonus
+				
+                bonus = 2.0
+				
+                uses = 2
+				
+                category = industry
+		}
+	
+		add_war_support = 0.1
+		
+		add_stability = 0.1
+		
+		add_political_power = 200
+
+}
+

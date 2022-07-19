@@ -1,0 +1,52 @@
+﻿capital = 563
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	trench_warfare = 1
+}
+
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1923.11.3"
+	election_frequency = 96
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 100
+}
+add_ideas = {
+	jakob_kaiser
+	erich_von_manstein
+	matthias_erzberger
+	fritz_schaeffer
+	josef_wirth
+	johannes_belle
+}
+
+create_country_leader = {
+	name = "Kurt von Schleicher"
+	desc = ""
+	picture = "Kurt_von_Schleicher.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

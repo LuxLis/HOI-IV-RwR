@@ -1,0 +1,163 @@
+﻿###########################
+# British Events
+###########################
+
+add_namespace = england
+
+country_event = { # Кризис
+	id = england.1
+	title = england.1.t
+	desc = england.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.1.a
+		add_ideas = ENG_Depression_1
+		add_stability = -0.15
+		add_political_power = -100
+		hidden_effect = {
+		    country_event = { id = england.2 days = 3 }
+		}
+	}
+}
+
+country_event = { # Отставка правительства
+	id = england.2
+	title = england.2.t
+	desc = england.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.2.a
+		ENG = { add_ideas = ENG_political_fight }
+		add_stability = -0.25
+		add_political_power = -100
+		add_popularity = {
+            ideology = democratic
+            popularity = -0.17
+        }
+		add_popularity = {
+            ideology = liberalism
+            popularity = -0.17
+        }
+		create_country_leader = {
+			name = "Fallen Government"
+			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
+			picture = GFX_portrait_Fallen_Government
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				cabinet_crisis
+			}
+		}
+	}
+}
+
+country_event = { # Победа вайфу
+	id = england.3
+	title = england.3.t
+	desc = england.3.d
+	picture = GFX_report_event_rotha_won
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.3.a
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+        }
+		set_politics = {
+		 	ruling_party = fascism
+		}
+	}
+}
+
+country_event = { # Выступление вайфу
+	id = england.4
+	title = england.4.t
+	desc = england.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.4.a
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+	}
+}
+
+country_event = { # Столкновения с полицией
+	id = england.5
+	title = england.5.t
+	desc = england.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.5.a
+		add_stability = -0.05
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+	}
+}
+
+country_event = { # Штурм Лондона
+	id = england.6
+	title = england.6.t
+	desc = england.6.d
+	picture = GFX_report_event_assasult_of_London
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.6.a
+		add_political_power = -75
+		add_stability = -0.1
+		add_manpower = -200
+	}
+}
+
+country_event = {
+	id = england.7
+	title = england.7.t
+	desc = england.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.7.a
+		add_political_power = -200
+		set_autonomy = {
+            target = CAN
+            autonomy_state = autonomy_wtt_imperial_protectorate
+        }
+		set_autonomy = {
+            target = SAF
+            autonomy_state = autonomy_wtt_imperial_protectorate
+        }
+		set_autonomy = {
+            target = AST
+            autonomy_state = autonomy_wtt_imperial_protectorate
+        }
+		set_autonomy = {
+            target = NZL
+            autonomy_state = autonomy_wtt_imperial_protectorate
+        }
+		set_autonomy = {
+            target = RAJ
+            autonomy_state = autonomy_wtt_imperial_subject
+        }
+	}
+	option = {
+		name = england.7.b
+		add_political_power = 150
+		add_war_support = -0.15
+	}
+}

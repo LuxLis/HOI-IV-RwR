@@ -1,0 +1,98 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+	division_names_group = CHI_INF_01
+									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+
+
+### OOB ###
+units = {
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6469
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6469
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 587
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 495
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}	
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11435
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11531
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11494
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = { # "9 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11547
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

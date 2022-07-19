@@ -1,0 +1,158 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = RHI_colaps
+
+country_event = { 
+	id = RHI_colaps.1
+	title = RHI_colaps.1.t
+	desc = RHI_colaps.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_colaps.1.a
+		add_stability = -0.5
+		country_event = {
+			id = RHI_colaps.2
+			days = 5				
+		}		
+	}
+}
+
+country_event = { 
+	id = RHI_colaps.2
+	title = RHI_colaps.2.t
+	desc = RHI_colaps.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_colaps.2.a
+		create_country_leader = {
+			name = "Council"
+			desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+			picture = "Parliament.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+		}
+		country_event = {
+			id = RHI_colaps.3
+			days = 25				
+		}
+		news_event = {
+			id = news.338
+			days = 1				
+		}		
+	}
+}
+
+country_event = { 
+	id = RHI_colaps.3
+	title = RHI_colaps.3.t
+	desc = RHI_colaps.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_colaps.3.a
+		RHW = {
+			transfer_state = 42
+			add_state_core = 42
+				division_template = {
+					name = "Legion"
+					priority = 2
+					division_names_group = ROM_INF_01
+					regiments = {
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}	
+				support = 	{
+					military_police = { x = 0 y = 0 }
+					}
+				}
+				42 = {
+				prioritize = { 46 }
+				create_unit = {
+					division = "name = \"Legion\" division_template = \"Legion\" start_experience_factor = 1.0"
+					owner = RHW		
+				}
+				create_unit = {
+					division = "name = \"Legion\" division_template = \"Legion\" start_experience_factor = 1.0"
+					owner = RHW				
+				}
+				create_unit = {
+					division = "name = \"Legion\" division_template = \"Legion\" start_experience_factor = 1.0"
+					owner = RHW				
+				}
+				create_unit = {
+					division = "name = \"Legion\" division_template = \"Legion\" start_experience_factor = 1.0"
+					owner = RHW				
+				}							
+				}			
+		}
+		declare_war_on = {
+			target = RHW
+			type = annex_everything
+		}		
+		GER = {
+			country_event = {
+				id = RHI_colaps.4 
+				days = 15				
+			}
+		}
+		FRA = {
+			country_event = {
+				id = RHI_colaps.5
+				days = 15				
+			}
+		}
+		news_event = {
+			id = news.339
+			days = 1				
+		}		
+	}
+}
+
+country_event = { 
+	id = RHI_colaps.4
+	title = RHI_colaps.4.t
+	desc = RHI_colaps.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_colaps.4.a
+		GER = { puppet = RHI }
+		set_country_flag = RHI_problems
+		RHI = {
+			set_cosmetic_tag = GER_RHI	
+		}
+		news_event = {
+			id = news.340
+			days = 3				
+		}
+	}
+
+}
+
+country_event = { 
+	id = RHI_colaps.5
+	title = RHI_colaps.5.t
+	desc = RHI_colaps.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHI_colaps.5.a		
+		FRA = { puppet = RHW }	
+		RHW = {
+			set_cosmetic_tag = FRA_RHI	
+		}
+	}
+}

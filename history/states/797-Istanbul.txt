@@ -2,7 +2,7 @@ state={
 	id=797
 	name="STATE_797"
 	provinces={
-		9833 11829 
+		9833 11811 11829 
 	}
 	manpower = 1042276
 	resources={
@@ -16,6 +16,9 @@ state={
 		owner = GRE
 		victory_points = {
 			9833 25
+		}
+		victory_points = {
+			11811 1 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

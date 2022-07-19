@@ -1,0 +1,8 @@
+ITA_the_seeds_of_revolution = {
+	icon = spr_the_seeds_of_revolution
+	
+	visible = {
+		original_tag = ITA
+		has_completed_focus = ITA_anarchism_knows_no_borders
+	}
+}

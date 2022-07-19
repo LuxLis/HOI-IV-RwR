@@ -1,0 +1,7 @@
+
+
+graphical_culture = eastern_european_gfx
+graphical_culture_2d = eastern_european_gfx  
+
+color = { 55 125 65 }
+color_ui = { 55 125 65 }

@@ -1,0 +1,51 @@
+ideas = {
+
+	economic_level = {
+		law = yes
+		use_list_view = yes
+		
+		economic_level_1_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = agarrnost
+			
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		economic_level_2_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = agrarno_industrialnoe_gosudarstvo
+			
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+			
+			default = yes
+		}
+		
+		economic_level_3_idea = {
+		
+			removal_cost = -1
+			available = { always = no }
+			cancel_if_invalid = no
+			
+			picture = industrialnoe_gosudarstvo
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+}

@@ -1,5 +1,14 @@
 ﻿capital = 107
 
+oob = "YUG_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "YUG_1936_naval_mtg"
+	else = {
+		set_naval_oob = "YUG_1936_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 
 add_ideas = {
@@ -17,6 +26,30 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	superior_firepower = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+	}
 }
 
 set_convoys = 10

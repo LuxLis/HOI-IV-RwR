@@ -1,0 +1,6 @@
+RHI_education = {
+	icon = generic_independence
+	visible = {
+		always = yes
+	}
+}

@@ -117,7 +117,7 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Boris III"
+	name = "Борис III"
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "Boris_3.dds"
 	expire = "1965.1.1"

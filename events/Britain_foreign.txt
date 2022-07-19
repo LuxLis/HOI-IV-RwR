@@ -1,0 +1,279 @@
+﻿###########################
+# British Events
+###########################
+
+add_namespace = england_foreign
+
+country_event = { # Запрос помощи Италии (борьба за власть в ВБ)
+	id = england_foreign.1
+	title = england_foreign.1.t
+	desc = england_foreign.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # Да
+		name = england_foreign.1.a
+		ENG = { country_event = { id = england_foreign.2 days = 2 } }
+		ai_chance = {
+		    factor = 50
+		}
+	}
+	option = { # Нет
+		name = england_foreign.1.b
+		ENG = { country_event = { id = england_foreign.3 days = 2 } }
+		ai_chance = {
+		    factor = 0
+		}
+	}
+}
+
+country_event = { # Италия согласилась
+	id = england_foreign.2
+	title = england_foreign.2.t
+	desc = england_foreign.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.2.a
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+		add_opinion_modifier = { modifier = medium_increase target = ITA }
+	}
+}
+
+country_event = { # Италия отказалась
+	id = england_foreign.3
+	title = england_foreign.3.t
+	desc = england_foreign.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.3.a
+		add_opinion_modifier = { modifier = small_decrease target = ITA }
+	}
+}
+
+country_event = { # Индия отделяется
+    id = england_foreign.4
+	title = england_foreign.4.t
+	desc = england_foreign.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.4.a
+		end_puppet = RAJ
+		RAJ = {
+			leave_faction = yes
+			drop_cosmetic_tag = yes
+			hidden_effect = {
+			    country_event = { id = indostan.1 days = 20 }
+			}
+		}
+	}
+}
+
+country_event = { # Запрос к Португалии (фаш.)
+	id = england_foreign.5
+	title = england_foreign.5.t
+	desc = england_foreign.5.d
+	
+	is_triggered_only = yes
+	
+	option = { # Да
+		name = england_foreign.5.a
+		give_military_access = ENG
+		ENG = {
+			country_event = { id = england_foreign.6 days = 2 }
+		}
+		ai_chance = {
+		    factor = 50
+		}
+	}
+	option = { # Нет
+		name = england_foreign.5.a
+		ENG = { country_event = { id = england_foreign.7 days = 2 } }
+		ai_chance = {
+		    factor = 0
+		}
+	}
+}
+
+country_event = { # Португалия согласилась
+	id = england_foreign.6
+	title = england_foreign.6.t
+	desc = england_foreign.6.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.6.a
+		give_guarantee = POR
+		add_opinion_modifier = { modifier = large_increase target = POR }
+		set_country_flag = portugal_accepted
+	}
+}
+
+country_event = { # Португалия отказалась
+	id = england_foreign.7
+	title = england_foreign.7.t
+	desc = england_foreign.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.7.a
+		add_opinion_modifier = { modifier = medium_decrease_decrease target = POR }
+	}
+}
+
+country_event = { # Запрос к Италии
+	id = england_foreign.8
+	title = england_foreign.8.t
+	desc = england_foreign.8.d
+	
+	is_triggered_only = yes
+	
+	option = { # Да
+		name = england_foreign.8.a
+		give_military_access = ENG
+		ENG = {
+			country_event = { id = england_foreign.9 days = 2 }
+		}
+		ai_chance = {
+		    factor = 50
+		}
+	}
+	option = { # Нет
+		name = england_foreign.8.a
+		ENG = { country_event = { id = england_foreign.10 days = 2 } }
+		ai_chance = {
+		    factor = 0
+		}
+	}
+}
+
+country_event = { # Италия согласилась
+	id = england_foreign.9
+	title = england_foreign.9.t
+	desc = england_foreign.9.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.9.a
+		give_guarantee = ITA
+		add_opinion_modifier = { modifier = large_increase target = ITA }
+		set_country_flag = italy_accepted
+	}
+}
+
+country_event = { # Италия отказалась
+	id = england_foreign.10
+	title = england_foreign.10.t
+	desc = england_foreign.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.7.a
+		add_opinion_modifier = { modifier = medium_decrease target = ITA }
+	}
+}
+
+country_event = { # Лондонский диктат
+	id = england_foreign.11
+	title = england_foreign.11.t
+	desc = england_foreign.11.d
+	
+	is_triggered_only = yes
+	
+	option = { # Да
+		name = england_foreign.11.a
+		ENG = {
+			country_event = { id = england_foreign.10 days = 2 }
+		}
+		ai_chance = {
+		    factor = 0
+			modifier = {
+			    factor = 20
+				ENG = { is_faction_leader = yes }
+			}
+			modifier = {
+			    factor = 100
+				ITA = { is_in_faction_with = ENG }
+			}
+			modifier = {
+			    factor = 50
+				POR = { is_in_faction_with = ENG }
+			}
+		}
+	}
+	option = { # Нет
+		name = england_foreign.11.a
+		ENG = { 
+		    country_event = { id = england_foreign.11 days = 2 } 
+		}
+		ai_chance = {
+		    factor = 0
+			modifier = {
+			    factor = -50
+				ENG = { has_war_with = RUS }
+			}
+		}
+	}
+}
+
+country_event = { #Испания согласилась
+	id = england_foreign.12
+	title = england_foreign.12.t
+	desc = england_foreign.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.12.a
+		SPR = {
+		    add_ideas = neutrality_idea
+			give_military_access = ENG
+		}
+		ENG = { give_guarantee = SPR }
+		if = {
+		    limit = {
+			    POR = { is_in_faction_with = ENG }
+			}
+			SPR = { give_military_access = POR }
+			POR = { give_guarantee = SPR }
+		}
+		if = {
+		    limit = {
+			    ITA = { is_in_faction_with = ENG }
+			}
+			SPR = { give_military_access = ITA }
+			ITA = { give_guarantee = SPR }
+		}
+		169 = { set_demilitarized_zone = yes }
+		173 = { set_demilitarized_zone = yes }
+		290 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = { # Испания отказалась
+	id = england_foreign.13
+	title = england_foreign.13.t
+	desc = england_foreign.13.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_foreign.13.a
+		declare_war_on = {
+            target = SPR
+            type = puppet_wargoal_focus
+        }
+	}
+}
