@@ -1,98 +1,25 @@
 spriteTypes = {	
-    ### Development
-	
+    
 	SpriteType = {
-		name = "GFX_idea_progressivnoe_gosudarstvo"
-		texturefile = "gfx/interface/goals/progressivnoe_gosudarstvo.png"			
+		name = "GFX_idea_TUR_afrod"
+		texturefile = "gfx/interface/ideas/TUR/afrod.png"
 	}
-	
+    
 	SpriteType = {
-		name = "GFX_idea_razvitoe_gosudarstvo"
-		texturefile = "gfx/interface/goals/razvitoe_gosudarstvo.png"			
+		name = "GFX_idea_TUR_polch"
+		texturefile = "gfx/interface/ideas/TUR/polch.png"
 	}
-	
+    
 	SpriteType = {
-		name = "GFX_idea_nekvalifitsirovannaya_armia"
-		texturefile = "gfx/interface/goals/nekvalifitsirovannaya_armia.png"			
+		name = "GFX_idea_TUR_repar"
+		texturefile = "gfx/interface/ideas/TUR/repar.png"
 	}
-	
+    
 	SpriteType = {
-		name = "GFX_idea_maloobespechennoe_voysko"
-		texturefile = "gfx/interface/goals/maloobespechennoe_voysko.png"			
+		name = "GFX_idea_TUR_ruins"
+		texturefile = "gfx/interface/ideas/TUR/ruins.png"
 	}
-	
-	SpriteType = {
-		name = "GFX_idea_distsiplinirovannaya_armia"
-		texturefile = "gfx/interface/goals/distsiplinirovannaya_armia.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_armia_professionalov"
-		texturefile = "gfx/interface/goals/armia_professionalov.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_vysokaya_negramotnost"
-		texturefile = "gfx/interface/goals/vysokaya_negramotnost.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_srednyaya_negramotnost"
-		texturefile = "gfx/interface/goals/srednyaya_negramotnost.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_nizkaya_negramotnost"
-		texturefile = "gfx/interface/goals/nizkaya_negramotnost.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_obrazovannoe_obschestvo"
-		texturefile = "gfx/interface/goals/obrazovannoe_obschestvo.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_agrarno_industrialnoe_gosudarstvo"
-		texturefile = "gfx/interface/goals/agrarno-industrialnoe_gosudarstvo.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_industrialnoe_gosudarstvo"
-		texturefile = "gfx/interface/goals/industrialnoe_gosudarstvo.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_opolchenie"
-		texturefile = "gfx/interface/goals/opolchenie.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_agarrnost"
-		texturefile = "gfx/interface/goals/agarrnost.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_negramotnost"
-		texturefile = "gfx/interface/goals/negramotnost.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_otstaloe_gosudarstvo"
-		texturefile = "gfx/interface/goals/otstaloe_gosudarstvo.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_nerazvitoe_gosudarstvo"
-		texturefile = "gfx/interface/goals/nerazvitoe_gosudarstvo.png"			
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_umerennoe_gosudarstvo"
-		texturefile = "gfx/interface/goals/umerennoe_gosudarstvo.png"			
-	}
-	
-	### 
-	
+    
 	SpriteType = {
 		name = "GFX_idea_ENG_Depression_1"
 		texturefile = "gfx/interface/ideas/idea_ENG_Depression_1.dds"

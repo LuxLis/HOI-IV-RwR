@@ -83,12 +83,12 @@ ENG_path_to_greatness_decision_category = {
 		icon = generic_construction
 
 		visible = {
-		    has_compleated_focus = ENG_Fascist_International
+		    has_completed_focus = ENG_Fascist_International
 		}
 
 		available = {
 			POR = { is_in_faction_with = ENG }
-			ENG = { has_compleated_focus = ENG_Industrial_help }
+			ENG = { has_completed_focus = ENG_Industrial_help }
 		}
 
 		cost = 50

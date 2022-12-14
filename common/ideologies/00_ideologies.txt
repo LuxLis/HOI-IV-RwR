@@ -56,11 +56,11 @@ ideologies = {
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
 	
-	liberalism = {
+	liberalisms = {
 	
 		types = {
 			
-			libetrade = {
+			liberalism = {
 			}
 		
 		}
@@ -114,6 +114,9 @@ ideologies = {
 	socdem = {
 	
 		types = {
+			
+			socialism = {
+			}
 			
 			socdemocrat = {
 			}
@@ -216,10 +219,10 @@ ideologies = {
 
 	}
 
-	marxism = {
+	marxisms = {
 		types = {
 		
-			marxist = {
+			marxism = {
 			}
 			
 		}

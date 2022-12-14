@@ -22,7 +22,7 @@ set_technology = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberalisms
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
@@ -30,7 +30,7 @@ set_politics = {
 
 set_popularities = {
 	democratic = 12
-	liberalism = 65
+	liberalisms = 65
 	socdem = 13
 	communism = 3
 	fascism = 2
@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Tomas_Masaryk.dds"
 	expire = "1965.1.1"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 		#
 	}

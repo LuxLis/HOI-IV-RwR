@@ -1085,7 +1085,7 @@
 
 		completion_reward = {
 			army_experience = 50
-			naval_experience = 50
+			navy_experience = 50
 			add_timed_idea = {
 			    idea = ENG_great_training
 			    days = 180
@@ -1096,7 +1096,7 @@
 				}
 				ITA = {
 				    army_experience = 50
-			        naval_experience = 50
+			        navy_experience = 50
 					add_timed_idea = {
 			            idea = ENG_great_training
 			            days = 180
@@ -1109,7 +1109,7 @@
 				}
 				POR = {
 				    army_experience = 40
-			        naval_experience = 40
+			        navy_experience = 40
 					add_timed_idea = {
 			            idea = ENG_great_training
 			            days = 180
@@ -1261,7 +1261,7 @@
 			add_tech_bonus = {
                 bonus = 1
                 uses = 2
-                category = infantry_folder
+                category = infantry_tech
             }
 		}
 	}
@@ -1294,7 +1294,7 @@
 			add_tech_bonus = {
                 bonus = 1
                 uses = 2
-                category = support_folder
+                category = support_tech
             }
 		}
 	}

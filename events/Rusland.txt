@@ -712,3 +712,18 @@ country_event = {
 		add_stability = -0.03
 	}
 }
+
+country_event = {
+	id = russia.38
+	title = russia.38.t
+	desc = russia.38.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.38.a
+		ai_chance = { factor = 100 }
+		
+	}
+}

@@ -1,0 +1,301 @@
+focus_tree = {
+	id = turkey
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	focus = {
+		id = TUR_focus1
+		icon = GFX_unkown
+		cost = 5
+		x = 6
+		y = 0
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus2
+		icon = GFX_focus_TUR_Vozrozhdenie_iz_ruin
+		cost = 5
+		x = 13
+		y = 0
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus3
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_focus1
+		prerequisite = {
+			focus = TUR_focus1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus4
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_focus2
+		prerequisite = {
+			focus = TUR_focus2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus5
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_focus3
+		prerequisite = {
+			focus = TUR_focus3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus6
+		icon = GFX_unkown
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TUR_focus3
+		prerequisite = {
+			focus = TUR_focus3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus7
+		icon = GFX_unkown
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TUR_focus3
+		prerequisite = {
+			focus = TUR_focus3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus8
+		icon = GFX_unkown
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_focus4
+		prerequisite = {
+			focus = TUR_focus4
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus9
+		icon = GFX_unkown
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TUR_focus4
+		prerequisite = {
+			focus = TUR_focus4
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus10
+		icon = GFX_unkown
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_focus5
+		prerequisite = {
+			focus = TUR_focus5
+		}
+		prerequisite = {
+			focus = TUR_focus6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus11
+		icon = GFX_unkown
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TUR_focus5
+		prerequisite = {
+			focus = TUR_focus7
+		}
+		prerequisite = {
+			focus = TUR_focus5
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus12
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = TUR_focus4
+		prerequisite = {
+			focus = TUR_focus8
+		}
+		prerequisite = {
+			focus = TUR_focus9
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus13
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = TUR_focus5
+		prerequisite = {
+			focus = TUR_focus10
+		}
+		prerequisite = {
+			focus = TUR_focus11
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus14
+		icon = GFX_unkown
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TUR_focus12
+		prerequisite = {
+			focus = TUR_focus12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus15
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_focus12
+		prerequisite = {
+			focus = TUR_focus12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus16
+		icon = GFX_unkown
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TUR_focus12
+		prerequisite = {
+			focus = TUR_focus12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus17
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_focus13
+		prerequisite = {
+			focus = TUR_focus13
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus18
+		icon = GFX_unkown
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_focus15
+		prerequisite = {
+			focus = TUR_focus14
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus19
+		icon = GFX_unkown
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TUR_focus15
+		prerequisite = {
+			focus = TUR_focus16
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_focus20
+		icon = GFX_unkown
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = TUR_focus15
+		prerequisite = {
+			focus = TUR_focus18
+		}
+		prerequisite = {
+			focus = TUR_focus19
+		}
+		prerequisite = {
+			focus = TUR_focus15
+		}
+		completion_reward = {
+			
+		}
+	}
+}

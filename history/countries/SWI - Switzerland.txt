@@ -17,14 +17,14 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberalisms
 	last_election = "1924.10.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 24
-	liberalism = 47
+	liberalisms = 47
 	socdem = 22
 	marxism = 4
 	communism = 3
@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 		#
 	}

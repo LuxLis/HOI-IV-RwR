@@ -12,7 +12,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_michaels_empire
-		icon = GFX_Imperia_Mikhaila
+		icon = GFX_rus_work
 		cost = 5
 		x = 10
 		y = 0
@@ -23,7 +23,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_the_eagle_took_to_the_sky
-		icon = GFX_oryol_podnyalsya_v_nebo
+		icon = GFX_rus_work
 		cost = 5
 		x = 21
 		y = 2
@@ -68,7 +68,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_the_question_of_industrialization
-		icon = GFX_Vopros_industrializatsii
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_michaels_empire
@@ -101,7 +101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_provide_schools_with_funds
-		icon = GFX_snabdit_shkoly_sredstvami
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_allrussian_education_project
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_opening_of_new_institutions
-		icon = GFX_otkrytie_novykh_universitetov
+		icon = GFX_rus_work
 		cost = 5
 		available = {
 			has_completed_focus = RUS_allrussian_education_project
@@ -174,7 +174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_doubleheaded_eagle_project
-		icon = GFX_proekt_dvuglavy_oryol
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_phased_recovery
@@ -289,7 +289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_ally_with_companies
-		icon = GFX_sotrudnichestvo_s_kompaniami
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_new_year_new_stage
@@ -324,7 +324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_limited_nationalization
-		icon = GFX_zaglushka_na_ekonomiku
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_new_year_new_stage
@@ -344,7 +344,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_the_new_role_of_the_state
-		icon = GFX_novaya_rol_gosudarstva
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_limited_nationalization
@@ -359,7 +359,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_support_for_farmers
-		icon = GFX_podderzhka_krestyan
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_new_year_new_stage
@@ -376,7 +376,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_stolypins_ideas_are_not_forgotten
-		icon = GFX_zaglushka_na_selskoe_khozyaystvo
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_support_for_farmers
@@ -391,7 +391,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_hopes_are_justified
-		icon = GFX_nadezhdy_opravdany
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_generous_lending
@@ -437,7 +437,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_development_plan_development
-		icon = GFX_zaglushka_na_ekonomiku
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_the_question_of_industrialization
@@ -455,7 +455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_expand_existing_businesses
-		icon = GFX_zaglushka_na_ekonomiku
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_recognize_your_position
@@ -473,7 +473,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_new_factories_of_the_volga_region
-		icon = GFX_novye_zavody_povolzhya
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_expand_existing_businesses
@@ -500,7 +500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_siberian_heart_project
-		icon = GFX_zaglushka_na_ekonomiku
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_new_factories_of_the_volga_region
@@ -527,7 +527,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_eye_to_the_west
-		icon = GFX_vzor_na_zapad
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_the_eagle_took_to_the_sky
@@ -559,7 +559,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_simplifying_autonomy
-		icon = GFX_uproschenie_avtonomiy
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_new_doctrine
@@ -581,7 +581,7 @@ focus_tree = {
 			
 			hidden_effect = {
 				country_event = {
-					event = russia.20
+					id = russia.20
 					days = 60
 				}
 			}
@@ -623,7 +623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_petrograd_sphere_of_influence
-		icon = GFX_sfera_vliania_petrograda
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_meeting_in_tsargrad
@@ -695,7 +695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_way_to_berlin
-		icon = GFX_na_berlin
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_claims_for_koenigsberg
@@ -716,7 +716,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_eye_to_the_east
-		icon = GFX_vzor_na_vostok
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_the_eagle_took_to_the_sky
@@ -785,7 +785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_operation_taming_the_dragon
-		icon = GFX_ukroschenie_drakona
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_search_for_loyal_forces_in_the_region

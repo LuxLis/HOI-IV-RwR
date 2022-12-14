@@ -111,7 +111,7 @@ set_politics = {
 
 set_popularities = {
 	democratic = 62
-	liberalism = 22
+	liberalisms = 22
 	fascism = 5
 	strasserism = 7
 	neutrality = 4
@@ -135,7 +135,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Pavlos_Kountouriotis.dds"
 	expire = "1939.1.16"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 	}
 }

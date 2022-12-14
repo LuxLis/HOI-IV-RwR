@@ -5,12 +5,11 @@ characters={
 			civilian={
 				large = GFX_portrait_ENG_Rotha_Lintorn_Orman
 			}
-			country_leader = {
-			    ideology=nazism
-			    expire="1965.1.1.1"
-			    id=-1
-			    traits = {  }
-		    }
+		}
+		country_leader = {
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 	
@@ -20,12 +19,11 @@ characters={
 			civilian={
 				large = GFX_portrait_ENG_George_V
 			}
-			country_leader = {
-			    ideology=despotism
-			    expire="1965.1.1.1"
-			    id=-1
-			    traits = {  }
-		    }
+		}
+		country_leader = {
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 }

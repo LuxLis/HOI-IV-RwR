@@ -8,6 +8,11 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 1900 y = 1650 }
+	
+	shared_focus = RUS_empire_fleet
+	shared_focus = RUS_state_army
+	
 	focus = {
 		id = RUS_focus1
 		icon = GFX_rus_work
@@ -794,13 +799,13 @@ focus_tree = {
 			focus = RUS_focus43
 		}
 		completion_reward = {
-			
+			country_event = russia.38
 		}
 	}
 	focus = {
 		id = RUS_focus45
 		icon = GFX_rus_work
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = RUS_focus44
@@ -808,7 +813,50 @@ focus_tree = {
 			focus = RUS_focus44
 		}
 		completion_reward = {
-			
+			831 = {
+				set_state_category = town
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			823 = {
+				set_state_category = town
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			585 = {
+				set_state_category = town
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			405 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			586 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {

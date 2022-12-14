@@ -1,3 +1,0 @@
-economy_dynamic_modifier = {
-	consumer_goods_factor = consumer_goods_factor_after
-}

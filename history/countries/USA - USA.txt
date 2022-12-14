@@ -269,7 +269,7 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 60
-	liberalism = 24
+	liberalisms = 24
 	socdem = 5
 	communism = 3
 	strasserism = 8
@@ -314,7 +314,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Franklin_Roosevelt.dds"
 	expire = "1947.1.1"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 	}
 }

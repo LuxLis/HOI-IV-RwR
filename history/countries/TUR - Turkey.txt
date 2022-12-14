@@ -37,7 +37,10 @@ set_technology = {
 }
 
 add_ideas = {
-	TUR_antisemitism
+	TUR_reparations
+	TUR_afrod
+	TUR_ruined_industry
+	TUR_political_chaos
 }
 
 set_politics = {

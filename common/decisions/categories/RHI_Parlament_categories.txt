@@ -9,6 +9,6 @@ HUN_the_two_power = {
 	scripted_gui = HUN_the_two_power_decision_ui	
 	
 	visible = {
-		}
+		
 	}
 }

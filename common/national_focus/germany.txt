@@ -992,7 +992,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = worst _is_probably_over
+		id = worst_is_probably_over
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {

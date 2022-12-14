@@ -1,6 +1,11 @@
 spriteTypes = {	
 
     SpriteType = {
+	name = "GFX_focus_TUR_Vozrozhdenie_iz_ruin"
+	texturefile = "gfx/interface/goals/Vozrozhdenie_iz_ruin.png"			
+	}
+
+    SpriteType = {
 	name = "GFX_focus_CHI_united"
 	texturefile = "gfx/interface/goals/focus_CHI_united.dds"			
 	}
@@ -310,34 +315,6 @@ spriteTypes = {
 	}
 	
 		### Russia
-### cap icons
-
-	SpriteType = {
-		name = "GFX_zaglushka_na_armiyu"
-		texturefile = "gfx/interface/goals/zaglushka_na_armiyu.png"			
-	}	
-
-	SpriteType = {
-		name = "GFX_zaglushka_na_ekonomiku"
-		texturefile = "gfx/interface/goals/zaglushka_na_ekonomiku.png"			
-	}	
-
-	SpriteType = {
-		name = "GFX_zaglushka_na_flot"
-		texturefile = "gfx/interface/goals/zaglushka_na_flot.png"			
-	}	
-
-	SpriteType = {
-		name = "GFX_zaglushka_na_selskoe_khozyaystvo"
-		texturefile = "gfx/interface/goals/zaglushka_na_selskoe_khozyaystvo.png"			
-	}	
-
-	SpriteType = {
-		name = "GFX_zaglushka_na_aviatsyu"
-		texturefile = "gfx/interface/goals/zaglushka_na_aviatsyu.png"			
-	}	
-
-	### Russia
 
 	SpriteType = {
 		name = "GFX_rus_duma"
@@ -359,7 +336,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/rus_work.dds"			
 	}	
 	
-	### June crisis
+	### 
 
 	SpriteType = {
 		name = "GFX_cadets_victory"
@@ -429,115 +406,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_weakening_of_the_radicals_in_the_duma"
 		texturefile = "gfx/interface/goals/weakening_of_the_radicals_in_the_duma.dds"			
-	}	
-	
-	### Paternalists
-	
-	SpriteType = {
-	name = "GFX_Imperia_Mikhaila"
-	texturefile = "gfx/interface/goals/Imperia_Mikhaila.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_krizis_agrarnosti"
-	texturefile = "gfx/interface/goals/krizis_agrarnosti.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_Novoe_polozhenie_azii"
-	texturefile = "gfx/interface/goals/Novoe_polozhenie_azii.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_novye_zavody_povolzhya"
-	texturefile = "gfx/interface/goals/novye_zavody_povolzhya.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_oryol_podnyalsya_v_nebo"
-	texturefile = "gfx/interface/goals/oryol_podnyalsya_v_nebo.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_otkrytie_novykh_universitetov"
-	texturefile = "gfx/interface/goals/otkrytie_novykh_universitetov.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_proekt_dvuglavy_oryol"
-	texturefile = "gfx/interface/goals/proekt_dvuglavy_oryol.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_snabdit_shkoly_sredstvami"
-	texturefile = "gfx/interface/goals/snabdit_shkoly_sredstvami.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_uproschenie_avtonomiy"
-	texturefile = "gfx/interface/goals/uproschenie_avtonomiy.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_Vopros_industrializatsii"
-	texturefile = "gfx/interface/goals/Vopros_industrializatsii.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_sotrudnichestvo_s_kompaniami"
-	texturefile = "gfx/interface/goals/sotrudnichestvo_s_kompaniami.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_nadezhdy_opravdany"
-	texturefile = "gfx/interface/goals/nadezhdy_opravdany.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_novaya_rol_gosudarstva"
-	texturefile = "gfx/interface/goals/novaya_rol_gosudarstva.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_vzor_na_zapad"
-	texturefile = "gfx/interface/goals/vzor_na_zapad.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_vzor_na_vostok"
-	texturefile = "gfx/interface/goals/vzor_na_vostok.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_sfera_vliania_petrograda"
-	texturefile = "gfx/interface/goals/sfera_vliania_petrograda.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_ukroschenie_drakona"
-	texturefile = "gfx/interface/goals/ukroschenie_drakona.png"			
-	}	
-	
-	SpriteType = {
-	name = "GFX_na_berlin"
-	texturefile = "gfx/interface/goals/na_berlin.png"			
-	}	
-	
-	### SR-monarhists
-	
-	SpriteType = {
-	name = "GFX_plan_vosstanovlenia"
-	texturefile = "gfx/interface/goals/plan_vosstanovlenia.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_podderzhka_krestyan"
-	texturefile = "gfx/interface/goals/podderzhka_krestyan.png"			
-	}
-	
-	SpriteType = {
-	name = "GFX_podderzhka_profsoyuzov"
-	texturefile = "gfx/interface/goals/podderzhka_profsoyuzov.png"			
 	}
 
 	

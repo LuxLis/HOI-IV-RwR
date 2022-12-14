@@ -114,7 +114,7 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 17
-	liberalism = 8
+	liberalisms = 8
 	socdem = 31
 	libsoc = 3
 	marxism = 6
@@ -167,7 +167,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
 	expire = "1965.1.1"
-	ideology = marxist
+	ideology = marxism
 	traits = {
 	}
 }

@@ -46,7 +46,7 @@ set_politics = {
 }
 set_popularities = {
 	conservatism = 53
-	liberalism = 21
+	liberalisms = 21
 	socdem = 8
 	libsoc = 1
 	marxism = 11
@@ -80,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_MIKHAIL_ROMANOV_DESC"
 	picture = "Mikhail_Romanov.dds"
 	expire = "1965.1.1"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 		his_imperial_majesty
 	}
@@ -102,7 +102,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Juliy_Martov.dds"
 	expire = "1965.1.1"
-	ideology = marxist
+	ideology = marxism
 	traits = {
 		#
 	}

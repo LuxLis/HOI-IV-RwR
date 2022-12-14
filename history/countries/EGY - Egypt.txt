@@ -77,7 +77,7 @@ create_country_leader = {
 	name = "Muhammad Naguib"
 	desc = ""
 	picture = GFX_portrait_Muhammad_Naguib
-	ideology = liberalism
+	ideology = liberalisms
 	traits = {
 		#
 	}

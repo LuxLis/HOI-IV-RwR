@@ -14,11 +14,9 @@ country_event = { # Арабское восстание
 	immediate = {
 	    hidden_effect = {
 		    end_puppet = EGY
-		    end_puppet = IRQ
 		    EGY = {
 			    drop_cosmetic_tag = yes
 				create_faction = arabian_league
-				add_to_faction = IRQ
 		    }
 		}
 	}
@@ -37,10 +35,11 @@ country_event = { # Сирийское восстание
 	
 	immediate = {
 	    hidden_effect = {
-		    end_puppet = EGY
 		    end_puppet = IRQ
+			IRQ = {
+			    drop_cosmetic_tag = yes
+			}
 		    EGY = {
-				create_faction = arabian_league
 				add_to_faction = IRQ
 		    }
 		}

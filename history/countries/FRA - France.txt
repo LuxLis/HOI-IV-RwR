@@ -229,14 +229,14 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberalisms
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 14
-	liberalism = 45
+	liberalisms = 45
 	socdem = 14
 	libsoc = 8
 	marxism = 6
@@ -264,7 +264,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Raymond_Poincare.dds"
 	expire = "1965.1.1"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -274,7 +274,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = 	marxist
+	ideology = 	marxism
 	traits = {
 		
 	}

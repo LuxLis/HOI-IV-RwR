@@ -63,13 +63,14 @@ ideas = {
 			
 			on_remove = {
 				if = {
-					has_completed_focus = newfocus_2
+					limit = { has_completed_focus = newfocus_2 }
+					country_lock_all_division_template = no
+					set_rule = {
+						can_not_declare_war = no
+					}
 				}
 
-				country_lock_all_division_template = no
-				set_rule = {
-					can_not_declare_war = no
-				}
+				
 			}
 			
 			modifier = {

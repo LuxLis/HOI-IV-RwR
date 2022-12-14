@@ -183,7 +183,7 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 40
-	liberalism = 40
+	liberalisms = 40
 	socdem = 4
 	neutrality = 10
 	fascism = 6

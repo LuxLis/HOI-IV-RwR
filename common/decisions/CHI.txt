@@ -298,11 +298,11 @@ CHI_war_warlords = {
 
 	    allowed = {
 	    	original_tag = CHI
-			has_completed_focus = CHI_south_6
 	    }
 
 	    available =  {
 	    	GZH = { has_capitulated = yes }
+			has_completed_focus = CHI_south_6
 	    }
 		
 		ai_will_do = {
@@ -332,357 +332,355 @@ CHI_war_warlords = {
 	
 }
 	
-	CHI_manchuria_castle = {
 	
-	    beginning_stage = {
-	        visible = {
-                has_completed_focus = CHI_north_4
-            }
-	        cost = 0
-		    fire_only_once = yes
-            complete_effect = {
-		        add_ideas = CHI_money_out
-            }
-        }
-	
-	    first_stage = {
-	        available = {
-				has_full_control_of_state = 761
-		    }
-	        visible = {
-		        has_idea = CHI_money_out
-            }
-	        cost = 50
-		    fire_only_once = yes
-		    days_remove = 60
-		
-            remove_effect = {
-			    761 = {
-			        add_building_construction = {
-				    type = bunker
-				    level = 1
-				    province = 10612
-				    instant_build = yes
-			        }
-			        add_building_construction = {
-				    type = bunker
-				    level = 1
-				    province = 7743
-				    instant_build = yes
-			        }
-			        add_building_construction = {
-				    type = bunker
-				    level = 1
-				    province = 7697
-				    instant_build = yes
-			        }
-			        add_building_construction = {
-				    type = bunker
-				    level = 1
-				    province = 12537
-				    instant_build = yes
-			        }
-			        add_building_construction = {
-				    type = bunker
-				    level = 1
-				    province = 10541
-				    instant_build = yes
-			        }
-			    }
-				add_manpower = -50000
-				set_country_flag = ended_first_stage
-		    }
-        }
-		second_stage = {
-	        available = {
-				has_full_control_of_state = 714
-				has_country_flag = ended_first_stage
-		    }
-	        visible = {
-		        has_idea = CHI_money_out
-            }
-	        cost = 50
-		    fire_only_once = yes
-		    days_remove = 60
-		
-            remove_effect = {
-			    714 = {
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 7848
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 10675
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 7832
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 12548
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 1693
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 10698
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 1732
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 10368
-				instant_build = yes
-			    }
-			    }
-				add_manpower = -50000
-				set_country_flag = ended_second_stage
-		    }
-        }
-		third_stage = {
-	        available = {
-				has_full_control_of_state = 717
-				has_country_flag = ended_second_stage
-		    }
-	        visible = {
-		        has_idea = CHI_money_out
-            }
-	        cost = 50
-		    fire_only_once = yes
-		    days_remove = 60
-		
-            remove_effect = {
-			    717 = {
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 4551
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 2=1
-				province = 10521
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 7569
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 12500
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 9798
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 5427
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 3843
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 810
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 783
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 6806
-				instant_build = yes
-			    }
-			    add_building_construction = {
-				type = bunker
-				level = 1
-				province = 3944
-				instant_build = yes
-			    }
-				add_manpower = -50000
-				set_country_flag = ended_third_stage
-			}
-			
-		    }
-        }
-		fourth_stage = {
-	        available = {
-			    has_country_flag = ended_third_stage
-		    }
-	        visible = {
-		        has_idea = CHI_money_out
-            }
-	        cost = 50
-		    fire_only_once = yes
-		    days_remove = 60
-		
-            remove_effect = {
-			    716 = {
-				    add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 6981
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 6860
-				    instant_build = yes
-			        }
-				}
-				328 = {
-				    add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 9848
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 3949
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 9803
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 11781
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 800
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 861
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 3929
-				    instant_build = yes
-			        }
-				}
-				783 = {
-				    add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 944
-				    instant_build = yes
-			        }
-					add_building_construction = {
-				    type = bunker
-				    level = 2
-				    province = 9897
-				    instant_build = yes
-			        }
-				}
-				add_manpower = -50000
-				set_country_flag = ended_fourth_stage
-				}
-			}
-		fifth_stage = {
-	        available = {
-			    has_country_flag = ended_fourth_stage
-		    }
-	        visible = {
-		        has_idea = CHI_money_out
-            }
-	        cost = 50
-		    fire_only_once = yes
-		    days_remove = 60
-		
-            remove_effect = {
-			    715 = {
-				    add_building_construction = {
-				        type = air_base
-				        level = 5
-				        instant_build = yes
-			        }
-					add_building_construction = {
-				        type = anti_air_building
-				        level = 2
-				        instant_build = yes
-			        }
-				}
-				328 = {
-				    add_building_construction = {
-				        type = air_base
-				        level = 5
-				        instant_build = yes
-			        }
-					add_building_construction = {
-				        type = anti_air_building
-				        level = 2
-				        instant_build = yes
-			        }
-				}
-				add_manpower = -50000
-			}
+CHI_manchuria_castle = {
+
+	beginning_stage = {
+		visible = {
+			has_completed_focus = CHI_north_4
 		}
-		finishing_stage = {
-	        visible = {
-                has_completed_focus = CHI_north_4
-            }
-	        cost = 0
-		    fire_only_once = yes
-            complete_effect = {
-		        remove_ideas = CHI_money_out
-            }
-        }
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			add_ideas = CHI_money_out
+		}
 	}
 
+	first_stage = {
+		available = {
+			has_full_control_of_state = 761
+		}
+		visible = {
+			has_idea = CHI_money_out
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+	
+		remove_effect = {
+			761 = {
+				add_building_construction = {
+				type = bunker
+				level = 1
+				province = 10612
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 1
+				province = 7743
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 1
+				province = 7697
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 1
+				province = 12537
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 1
+				province = 10541
+				instant_build = yes
+				}
+			}
+			add_manpower = -50000
+			set_country_flag = ended_first_stage
+		}
+	}
+	second_stage = {
+		available = {
+			has_full_control_of_state = 714
+			has_country_flag = ended_first_stage
+		}
+		visible = {
+			has_idea = CHI_money_out
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+	
+		remove_effect = {
+			714 = {
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 7848
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 10675
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 7832
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 12548
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 1693
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 10698
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 1732
+			instant_build = yes
+			}
+			add_building_construction = {
+			type = bunker
+			level = 1
+			province = 10368
+			instant_build = yes
+			}
+			}
+			add_manpower = -50000
+			set_country_flag = ended_second_stage
+		}
+	}
+	third_stage = {
+		available = {
+			has_full_control_of_state = 717
+			has_country_flag = ended_second_stage
+		}
+		visible = {
+			has_idea = CHI_money_out
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+	
+		remove_effect = {
+			717 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4551
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10521
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7569
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 12500
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9798
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5427
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3843
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 810
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 783
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6806
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3944
+					instant_build = yes
+				}
+			add_manpower = -50000
+			}
+		set_country_flag = ended_third_stage
+		}
+	}
+	fourth_stage = {
+		available = {
+			has_country_flag = ended_third_stage
+		}
+		visible = {
+			has_idea = CHI_money_out
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+	
+		remove_effect = {
+			716 = {
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6981
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6860
+				instant_build = yes
+				}
+			}
+			328 = {
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 9848
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 3949
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 9803
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 11781
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 800
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 861
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 3929
+				instant_build = yes
+				}
+			}
+			783 = {
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 944
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 9897
+				instant_build = yes
+				}
+			}
+			add_manpower = -50000
+			set_country_flag = ended_fourth_stage
+			}
+		}
+	fifth_stage = {
+		available = {
+			has_country_flag = ended_fourth_stage
+		}
+		visible = {
+			has_idea = CHI_money_out
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+	
+		remove_effect = {
+			715 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			328 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_manpower = -50000
+		}
+	}
+	finishing_stage = {
+		visible = {
+			has_completed_focus = CHI_north_4
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			remove_ideas = CHI_money_out
+		}
+	}
 }

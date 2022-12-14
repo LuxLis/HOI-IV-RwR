@@ -236,8 +236,8 @@ HON = {
 	color_ui = rgb { 128 145 65 }
 }
 IRQ = {
-	color = rgb { 179 48 37 }
-	color_ui = rgb { 231 148 129 }
+	color = rgb { 15 163 151 }
+	color_ui = rgb { 8 145 133 }
 }
 JAP = {
 	color = hsv { 0.05 0.3 1 }
@@ -772,10 +772,6 @@ RHW = {
 ANT = {
 	color = rgb { 200 40 25 }
 	color_ui = rgb { 200 40 25 }
-}
-FIU = {
-	color = rgb { 200 100 170 }
-	color_ui = rgb { 200 100 170 }
 }
 ALT = {
 	color = rgb { 60 150 60 }

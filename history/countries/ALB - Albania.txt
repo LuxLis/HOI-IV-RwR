@@ -9,14 +9,14 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberalisms
 	last_election = "1925.3.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	liberalism = 100
+	liberalisms = 100
 }
 
 set_convoys = 5
@@ -26,7 +26,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Ahmet_Zogu.dds"
 	expire = "1965.1.1"
-	ideology = libetrade
+	ideology = liberalism
 	traits = {
 		#
 	}

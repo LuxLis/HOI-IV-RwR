@@ -1,0 +1,15 @@
+add_namespace = turkey
+
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.1.a
+		ai_chance = { factor = 100 }
+	}
+}
