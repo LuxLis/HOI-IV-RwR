@@ -81,7 +81,7 @@
 		}
 
 		completion_reward = {
-			
+			RHI = { country_event = { days = 1 id = RHI.1 } }
 		}
 	}
 

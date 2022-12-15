@@ -1,0 +1,23 @@
+
+state = {
+	id = 838
+	name = "STATE_838"
+	manpower = 812384
+	
+	state_category = town
+
+	history = {
+		owner = RHI
+		buildings = {}
+		victory_points = {
+			11531 5 
+		}
+		add_core_of = RHI
+	}
+
+	provinces = {
+		11531
+	}
+
+	local_supplies=0.000
+}
