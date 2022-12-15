@@ -1,0 +1,2452 @@
+﻿focus_tree = {
+	id = france
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = FRA
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 0 y = 2500 }
+
+
+	#Пережившие бурю
+	focus = {
+		id = FRA_survivors_of_the_storm
+		icon = GFX_focus_FRA_survivors_of_the_storm
+		x = 5
+		y = 0
+
+		cost = 4.6
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+
+	#Требования к Германии
+	focus = {
+		id = FRA_requirements_for_germany
+		icon = GFX_focus_FRA_requirements_for_germany
+		x = 1
+		y = 1
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_survivors_of_the_storm
+		}
+
+		cost = 5.8
+
+		available = {
+			is_subject = no
+			has_war = no
+			GER = { exists = yes }
+		}
+
+		completion_reward = {
+			GER = { country_event = { days = 1 id = GER.1 } }
+		}
+	}
+
+	#Надавить на Рейланд
+	focus = {
+		id = FRA_put_pressure_on_reiland
+		icon = GFX_focus_FRA_put_pressure_on_reiland
+		x = -1
+		y = 1
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_survivors_of_the_storm
+		}
+
+		cost = 5.8
+
+		available = {
+			is_subject = no
+			has_war = no
+			RHI = { exists = yes }
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Затормозить падение
+	focus = {
+		id = FRA_stop_the_fall
+		icon = GFX_focus_FRA_stop_the_fall
+		x = 0
+		y = 2
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_requirements_for_germany
+		}
+		prerequisite = {
+			focus = FRA_put_pressure_on_reiland
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Национализировать банкротов
+	focus = {
+		id = FRA_nationalize_the_bankrupt
+		icon = GFX_focus_FRA_nationalize_the_bankrupt
+		x = -2
+		y = 3
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_stop_the_fall
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Запустить протекционизм
+	focus = {
+		id = FRA_run_protectionism
+		icon = GFX_focus_FRA_run_protectionism
+		x = 0
+		y = 3
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_stop_the_fall
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Дать народу обещания
+	focus = {
+		id = FRA_make_promises_to_the_people
+		icon = GFX_focus_FRA_make_promises_to_the_people
+		x = 2
+		y = 3
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_stop_the_fall
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Создание государственного блока
+	focus = {
+		id = FRA_creation_of_the_state_bloc
+		icon = GFX_focus_FRA_creation_of_the_state_bloc
+		x = -3
+		y = 4
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_nationalize_the_bankrupt
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Фабрики вновь открыты
+	focus = {
+		id = FRA_factories_reopened
+		icon = GFX_focus_FRA_factories_reopened
+		x = -1
+		y = 4
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_nationalize_the_bankrupt
+		}
+		prerequisite = {
+			focus = FRA_run_protectionism
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Французкие товары
+	focus = {
+		id = FRA_french_goods
+		icon = GFX_focus_FRA_french_goods
+		x = 1
+		y = 4
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_make_promises_to_the_people
+		}
+		prerequisite = {
+			focus = FRA_run_protectionism
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Русский хлеб в парижские дома
+	focus = {
+		id = FRA_russian_bread_in_parisian_houses
+		icon = GFX_focus_FRA_russian_bread_in_parisian_houses
+		x = 3
+		y = 4
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_make_promises_to_the_people
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Сталь и порох
+	focus = {
+		id = FRA_steel_and_gunpowder
+		icon = GFX_focus_FRA_steel_and_gunpowder
+		x = -2
+		y = 5
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_factories_reopened
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Хлеб и вино
+	focus = {
+		id = FRA_bread_and_wine
+		icon = GFX_focus_FRA_bread_and_wine
+		x = 2
+		y = 5
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_french_goods
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Большая народная стройка
+	focus = {
+		id = FRA_big_public_building
+		icon = GFX_focus_FRA_big_public_building
+		x = 0
+		y = 6
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_steel_and_gunpowder
+		}
+		prerequisite = {
+			focus = FRA_bread_and_wine
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Близки к восстановлению
+	focus = {
+		id = FRA_close_to_recovery
+		icon = GFX_focus_FRA_close_to_recovery
+		x = 0
+		y = 7
+
+		relative_position_id = FRA_survivors_of_the_storm
+
+		prerequisite = {
+			focus = FRA_big_public_building
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+
+	#Вторая Империя Мира
+	focus = {
+		id = FRA_second_empire_of_the_world
+		icon = GFX_focus_FRA_second_empire_of_the_world
+		x = 14
+		y = 0
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Пересмотр нашей доктрины
+	focus = {
+		id = FRA_revisiting_our_doctrine
+		icon = GFX_focus_FRA_revisiting_our_doctrine
+		x = 0
+		y = 1
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_second_empire_of_the_world
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Последствие Йебенского восстания
+	focus = {
+		id = FRA_aftermath_of_the_yeben_rebellion
+		icon = GFX_focus_FRA_aftermath_of_the_yeben_rebellion
+		x = -3
+		y = 2
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_revisiting_our_doctrine
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Давление на Рейланд
+	focus = {
+		id = FRA_pressure_on_reiland
+		icon = GFX_focus_FRA_pressure_on_reiland
+		x = -1
+		y = 2
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_revisiting_our_doctrine
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Испанские коллеги
+	focus = {
+		id = FRA_spanish_colleagues
+		icon = GFX_focus_FRA_spanish_colleagues
+		x = 1
+		y = 2
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_revisiting_our_doctrine
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Большая Африканская реформа
+	focus = {
+		id = FRA_great_african_reform
+		icon = GFX_focus_FRA_great_african_reform
+		x = 3
+		y = 2
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_revisiting_our_doctrine
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Докутрина Последней Обороны
+	focus = {
+		id = FRA_dokutrina_of_the_last_defense
+		icon = GFX_focus_FRA_dokutrina_of_the_last_defense
+		x = 0
+		y = 3
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus =  FRA_aftermath_of_the_yeben_rebellion
+		}
+		prerequisite = {
+			focus =  FRA_pressure_on_reiland
+		}
+		prerequisite = {
+			focus = FRA_spanish_colleagues
+		}
+		prerequisite = {
+			focus = FRA_great_african_reform
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Мажино или Макмагон
+	focus = {
+		id = FRA_maginot_or_mcmahon
+		icon = GFX_focus_FRA_maginot_or_mcmahon
+		x = -2
+		y = 4
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_dokutrina_of_the_last_defense
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Секретная делегация в Петрограде
+	focus = {
+		id = FRA_secret_delegation_in_petrograd
+		icon = GFX_focus_FRA_secret_delegation_in_petrograd
+		x = 0
+		y = 4
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_dokutrina_of_the_last_defense
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Альпийский рубеж
+	focus = {
+		id = FRA_alpine_frontier
+		icon = GFX_focus_FRA_alpine_frontier
+		x = 2
+		y = 4
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_dokutrina_of_the_last_defense
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Индийский фронт
+	focus = {
+		id = FRA_indian_front
+		icon = GFX_focus_FRA_indian_front
+		x = -2
+		y = 5
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_secret_delegation_in_petrograd
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Встреча в Люксембурге
+	focus = {
+		id = FRA_meeting_in_luxembourg
+		icon = GFX_focus_FRA_meeting_in_luxembourg
+		x = 0
+		y = 5
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_secret_delegation_in_petrograd
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Африканская опора
+	focus = {
+		id = FRA_african_prop
+		icon = GFX_focus_FRA_african_prop
+		x = 2
+		y = 5
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_secret_delegation_in_petrograd
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Франция переживёт!
+	focus = {
+		id = FRA_france_will_survive
+		icon = GFX_focus_FRA_france_will_survive
+		x = 0
+		y = 6
+
+		relative_position_id = FRA_second_empire_of_the_world
+
+		prerequisite = {
+			focus = FRA_indian_front
+		}
+		prerequisite = {
+			focus = FRA_meeting_in_luxembourg
+		}
+		prerequisite = {
+			focus = FRA_african_prop
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	#Большой армейский процесс
+	focus = {
+		id = FRA_big_army_process
+		icon = GFX_focus_FRA_big_army_process
+		x = 25
+		y = 0
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Заложить верфи
+	focus = {
+		id = FRA_lay_shipyards
+		icon = GFX_focus_FRA_lay_shipyards
+		x = -4
+		y = 1
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_big_army_process
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Подлодки и их польза
+	focus = {
+		id = FRA_submarines_and_their_benefits
+		icon = GFX_focus_FRA_submarines_and_their_benefits
+		x = -5
+		y = 2
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_lay_shipyards
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Полностью Французкий крейсер
+	focus = {
+		id = FRA_fully_french_cruiser
+		icon = GFX_focus_FRA_fully_french_cruiser
+		x = -4
+		y = 3
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_submarines_and_their_benefits
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Средиземноморская стройка!
+	focus = {
+		id = FRA_mediterranean_building
+		icon = GFX_focus_FRA_mediterranean_building
+		x = -3
+		y = 4
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_fully_french_cruiser
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Новые авиабазы
+	focus = {
+		id = FRA_new_air_bases
+		icon = GFX_focus_FRA_new_air_bases
+		x = 4
+		y = 1
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_big_army_process
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Лучшие умы
+	focus = {
+		id = FRA_the_best_minds
+		icon = GFX_focus_FRA_the_best_minds
+		x = 5
+		y = 2
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_new_air_bases
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Удешевление производства
+	focus = {
+		id = FRA_cheaper_production
+		icon = GFX_focus_FRA_cheaper_production
+		x = 4
+		y = 3
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_the_best_minds
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Расширить заводы
+	focus = {
+		id = FRA_expand_factories
+		icon = GFX_focus_FRA_expand_factories
+		x = 3
+		y = 4
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_cheaper_production
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Запустить станки!
+	focus = {
+		id = FRA_start_the_machines
+		icon = GFX_focus_FRA_start_the_machines
+		x = 0
+		y = 1
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_big_army_process
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Дёшево и прочно!
+	focus = {
+		id = FRA_cheap_and_durable
+		icon = GFX_focus_FRA_cheap_and_durable
+		x = -2
+		y = 2
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_start_the_machines
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Вторая волна призыва
+	focus = {
+		id = FRA_second_wave_of_summoning
+		icon = GFX_focus_FRA_second_wave_of_summoning
+		x = 0
+		y = 2
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_start_the_machines
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Порядок и мужество!
+	focus = {
+		id = FRA_order_and_courage
+		icon = GFX_focus_FRA_order_and_courage
+		x = 2
+		y = 2
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_start_the_machines
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Конница нового века
+	focus = {
+		id = FRA_new_age_cavalry
+		icon = GFX_focus_FRA_new_age_cavalry
+		x = -1
+		y = 3
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_cheap_and_durable
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Поколение героев
+	focus = {
+		id = FRA_generation_of_heroes
+		icon = GFX_focus_FRA_generation_of_heroes
+		x = 1
+		y = 3
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_order_and_courage
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Лучшая армия Европы!
+	focus = {
+		id = FRA_the_best_army_in_europe
+		icon = GFX_focus_FRA_the_best_army_in_europe
+		x = 0
+		y = 4
+
+		relative_position_id = FRA_big_army_process
+
+		prerequisite = {
+			focus = FRA_new_age_cavalry
+		}
+		prerequisite = {
+			focus = FRA_second_wave_of_summoning
+		}
+		prerequisite = {
+			focus = FRA_generation_of_heroes
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Демократичный блок Леброна
+	focus = {
+		id = FRA_lebron_democratic_bloc
+		icon = GFX_focus_FRA_lebron_democratic_bloc
+		x = 26
+		y = 6
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Либеральный поворот
+	focus = {
+		id = FRA_liberal_twist
+		icon = GFX_focus_FRA_liberal_twist
+		x = 0
+		y = 1
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_lebron_democratic_bloc
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Заручиться поддержкой интеллегенции
+	focus = {
+		id = FRA_enlist_the_support_of_the_intelligentsia
+		icon = GFX_focus_FRA_enlist_the_support_of_the_intelligentsia
+		x = 0
+		y = 2
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_liberal_twist
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Рабочие и их просьбы
+	focus = {
+		id = FRA_workers_and_their_requests
+		icon = GFX_focus_FRA_workers_and_their_requests
+		x = -2
+		y = 2
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_liberal_twist
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Новая политика фермерства
+	focus = {
+		id = FRA_new_farming_policy
+		icon = GFX_focus_FRA_new_farming_policy
+		x = -1
+		y = 3
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_workers_and_their_requests
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Банкиры и их требования
+	focus = {
+		id = FRA_bankers_and_their_demands
+		icon = GFX_focus_FRA_bankers_and_their_demands
+		x = 2
+		y = 2
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_liberal_twist
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Свободная экономика
+	focus = {
+		id = FRA_free_economy
+		icon = GFX_focus_FRA_free_economy
+		x = 1
+		y = 3
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_bankers_and_their_demands
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Перестройка Франции
+	focus = {
+		id = FRA_rebuilding_france
+		icon = GFX_focus_FRA_rebuilding_france
+		x = 0
+		y = 4
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_new_farming_policy
+		}
+		prerequisite = {
+			focus = FRA_enlist_the_support_of_the_intelligentsia
+		}
+		prerequisite = {
+			focus = FRA_free_economy
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Колониальная реформа
+	focus = {
+		id = FRA_colonial_reform
+		icon = GFX_focus_FRA_colonial_reform
+		x = -2
+		y = 5
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_rebuilding_france
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Самоопределение Рейланда
+	focus = {
+		id = FRA_reiland_self-determination
+		icon = GFX_focus_FRA_reiland_self-determination
+		x = 0
+		y = 5
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_rebuilding_france
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Полная открытость
+	focus = {
+		id = FRA_full_openness
+		icon = GFX_focus_FRA_full_openness
+		x = 2
+		y = 5
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_rebuilding_france
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Лучшая из республик!
+	focus = {
+		id = FRA_the_best_of_the_republics
+		icon = GFX_focus_FRA_the_best_of_the_republics
+		x = 0
+		y = 6
+
+		relative_position_id = FRA_lebron_democratic_bloc
+
+		prerequisite = {
+			focus = FRA_colonial_reform
+		}
+		prerequisite = {
+			focus = FRA_reiland_self-determination
+		}
+		prerequisite = {
+			focus = FRA_full_openness
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Неожиданная победа Ф.О.Р.
+	focus = {
+		id = FRA_an_unexpected_victory_for_for
+		icon = GFX_focus_FRA_an_unexpected_victory_for_for
+		x = 18
+		y = 7
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Парижский марш
+	focus = {
+		id = FRA_paris_march
+		icon = GFX_focus_FRA_paris_march
+		x = -1
+		y = 1
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_an_unexpected_victory_for_for
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Проверенные гарнизоны
+	focus = {
+		id = FRA_verified_garrisons
+		icon = GFX_focus_FRA_verified_garrisons
+		x = 1
+		y = 1
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_an_unexpected_victory_for_for
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Профсоюзный кризис
+	focus = {
+		id = FRA_union_crisis
+		icon = GFX_focus_FRA_union_crisis
+		x = -2
+		y = 2
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_paris_march
+		}
+		prerequisite = {
+			focus = FRA_verified_garrisons
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Армейский кризис
+	focus = {
+		id = FRA_army_crisis
+		icon = GFX_focus_FRA_army_crisis
+		x = 0
+		y = 2
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_paris_march
+		}
+		prerequisite = {
+			focus = FRA_verified_garrisons
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Печатный кризиз
+	focus = {
+		id = FRA_print_crisis
+		icon = GFX_focus_FRA_print_crisis
+		x = 2
+		y = 2
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_paris_march
+		}
+		prerequisite = {
+			focus = FRA_verified_garrisons
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Переформирование Ф.О.Р.
+	focus = {
+		id = FRA_reforming_for
+		icon = GFX_focus_FRA_reforming_for
+		x = 0
+		y = 3
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_union_crisis
+		}
+		prerequisite = {
+			focus = FRA_army_crisis
+		}
+		prerequisite = {
+			focus = FRA_print_crisis
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Пир рабочих!
+	focus = {
+		id = FRA_feast_of_workers
+		icon = GFX_focus_FRA_feast_of_workers
+		x = -3
+		y = 4
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_reforming_for
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Широкая национализация
+	focus = {
+		id = FRA_wide_nationalization
+		icon = GFX_focus_FRA_wide_nationalization
+		x = -1
+		y = 4
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_reforming_for
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Интернациональная держава
+	focus = {
+		id = FRA_international_power
+		icon = GFX_focus_FRA_international_power
+		x = 1
+		y = 4
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_reforming_for
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Ослабление верхов
+	focus = {
+		id = FRA_the_weakening_of_the_tops
+		icon = GFX_focus_FRA_the_weakening_of_the_tops
+		x = 3
+		y = 4
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_reforming_for
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Новый взгляд на самих себя
+	focus = {
+		id = FRA_a_new_look_at_ourselves
+		icon = GFX_focus_FRA_a_new_look_at_ourselves
+		x = 0
+		y = 5
+
+		relative_position_id = FRA_an_unexpected_victory_for_for
+
+		prerequisite = {
+			focus = FRA_feast_of_workers
+		}
+		prerequisite = {
+			focus = FRA_wide_nationalization
+		}
+		prerequisite = {
+			focus = FRA_international_power
+		}
+		prerequisite = {
+			focus = FRA_the_weakening_of_the_tops
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Абсолютный триумф Поля Думера
+	focus = {
+		id = FRA_the_absolute_triumph_of_paul_doumer
+		icon = GFX_focus_FRA_the_absolute_triumph_of_paul_doumer
+		x = 10
+		y = 7
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Коалиция консерваторов в парламенте
+	focus = {
+		id = FRA_conservative_coalition_in_parliament
+		icon = GFX_focus_FRA_conservative_coalition_in_parliament
+		x = 0
+		y = 1
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_the_absolute_triumph_of_paul_doumer
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Ослабить Ф.О.Р.
+	focus = {
+		id = FRA_weaken_f.o.r.
+		icon = GFX_focus_FRA_weaken_f.o.r.
+		x = -3
+		y = 2
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_conservative_coalition_in_parliament
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Укрепить доктрину
+	focus = {
+		id = FRA_strengthen_doctrine
+		icon = GFX_focus_FRA_strengthen_doctrine
+		x = -1
+		y = 2
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_conservative_coalition_in_parliament
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Создание северного щита
+	focus = {
+		id = FRA_creation_of_the_northern_shield
+		icon = GFX_focus_FRA_creation_of_the_northern_shield
+		x = -1
+		y = 3
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_weaken_f.o.r.
+		}
+		prerequisite = {
+			focus = FRA_strengthen_doctrine
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Увеличить ряды
+	focus = {
+		id = FRA_increase_ranks
+		icon = GFX_focus_FRA_increase_ranks
+		x = 1
+		y = 2
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_conservative_coalition_in_parliament
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Разгром военных заговоров
+	focus = {
+		id = FRA_defeat_of_military_conspiracies
+		icon = GFX_focus_FRA_defeat_of_military_conspiracies
+		x = 3
+		y = 2
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_conservative_coalition_in_parliament
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Сражаться насмерть!
+	focus = {
+		id = FRA_fight_to_the_death
+		icon = GFX_focus_FRA_fight_to_the_death
+		x = 1
+		y = 3
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_increase_ranks
+		}
+		prerequisite = {
+			focus = FRA_defeat_of_military_conspiracies
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Европа двух центров
+	focus = {
+		id = FRA_europe_of_two_centers
+		icon = GFX_focus_FRA_europe_of_two_centers
+		x = 0
+		y = 4
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_creation_of_the_northern_shield
+		}
+		prerequisite = {
+			focus = FRA_fight_to_the_death
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Французская экономическая экспансия
+	focus = {
+		id = FRA_french_economic_expansion
+		icon = GFX_focus_FRA_french_economic_expansion
+		x = -2
+		y = 5
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_europe_of_two_centers
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Мадридский конгресс
+	focus = {
+		id = FRA_congress_of_madrid
+		icon = GFX_focus_FRA_congress_of_madrid
+		x = 0
+		y = 5
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_europe_of_two_centers
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Вмешательство в Бенилюкс
+	focus = {
+		id = FRA_intervention_in_the_benelux
+		icon = GFX_focus_FRA_intervention_in_the_benelux
+		x = 2
+		y = 5
+
+		relative_position_id = FRA_the_absolute_triumph_of_paul_doumer
+
+		prerequisite = {
+			focus = FRA_europe_of_two_centers
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Переворот национальной коалиции
+	focus = {
+		id = FRA_national_coalition_coup
+		icon = GFX_focus_FRA_national_coalition_coup
+		x = 34
+		y = 3
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Привлечь полицию в наши ряды
+	focus = {
+		id = FRA_bring_the_police_into_our_ranks
+		icon = GFX_focus_FRA_bring_the_police_into_our_ranks
+		x = -1
+		y = 1
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_national_coalition_coup
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Вычистить армию от социалистов
+	focus = {
+		id = FRA_purge_the_army_of_socialists
+		icon = GFX_focus_FRA_purge_the_army_of_socialists
+		x = -1
+		y = 2
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_bring_the_police_into_our_ranks
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Служба национального контроля
+	focus = {
+		id = FRA_national_control_service
+		icon = GFX_focus_FRA_national_control_service
+		x = -4
+		y = 3
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_purge_the_army_of_socialists
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Большой армейский стол
+	focus = {
+		id = FRA_large_army_table
+		icon = GFX_focus_FRA_large_army_table
+		x = -2
+		y = 3
+
+		relative_position_id = FRA_national_coalition_coup
+
+		mutually_exclusive = { focus = FRA_parisian_brawl }
+
+		prerequisite = {
+			focus = FRA_purge_the_army_of_socialists
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Милитаризация народа
+	focus = {
+		id = FRA_militarization_of_the_people
+		icon = GFX_focus_FRA_militarization_of_the_people
+		x = -3
+		y = 4
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_large_army_table
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Все в армию!
+	focus = {
+		id = FRA_all_in_the_army
+		icon = GFX_focus_FRA_all_in_the_army
+		x = -3
+		y = 5
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_militarization_of_the_people
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Диктатура военных
+	focus = {
+		id = FRA_military_dictatorship
+		icon = GFX_focus_FRA_military_dictatorship
+		x = -1
+		y = 4
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_large_army_table
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Временная необходимость
+	focus = {
+		id = FRA_temporary_necessity
+		icon = GFX_focus_FRA_temporary_necessity
+		x = -1
+		y = 5
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_military_dictatorship
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Расширить влияние правых
+	focus = {
+		id = FRA_expand_the_influence_of_the_right
+		icon = GFX_focus_FRA_expand_the_influence_of_the_right
+		x = 1
+		y = 1
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_national_coalition_coup
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Привлечь фашистов в столицу
+	focus = {
+		id = FRA_attract_fascists_to_the_capital
+		icon = GFX_focus_FRA_attract_fascists_to_the_capital
+		x = 1
+		y = 2
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_expand_the_influence_of_the_right
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Боевые отряды нации
+	focus = {
+		id = FRA_combat_squads_of_the_nation
+		icon = GFX_focus_FRA_combat_squads_of_the_nation
+		x = 4
+		y = 3
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_attract_fascists_to_the_capital
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Парижский дебош
+	focus = {
+		id = FRA_parisian_brawl
+		icon = GFX_focus_FRA_parisian_brawl
+		x = 2
+		y = 3
+
+		relative_position_id = FRA_national_coalition_coup
+
+		mutually_exclusive = { focus = FRA_large_army_table }
+
+		prerequisite = {
+			focus = FRA_attract_fascists_to_the_capital
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Новый порядок
+	focus = {
+		id = FRA_new_order
+		icon = GFX_focus_FRA_new_order
+		x = 1
+		y = 4
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_parisian_brawl
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Человеческие идеалы
+	focus = {
+		id = FRA_human_ideals
+		icon = GFX_focus_FRA_human_ideals
+		x = 1
+		y = 5
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_new_order
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Необходимость расширения
+	focus = {
+		id = FRA_need_for_expansion
+		icon = GFX_focus_FRA_need_for_expansion
+		x = 3
+		y = 4
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_parisian_brawl
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Зачистка окраин
+	focus = {
+		id = FRA_cleaning_up_the_outskirts
+		icon = GFX_focus_FRA_cleaning_up_the_outskirts
+		x = 3
+		y = 5
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_need_for_expansion
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Закат третьей республики
+	focus = {
+		id = FRA_sunset_of_the_third_republic
+		icon = GFX_focus_FRA_sunset_of_the_third_republic
+		x = 0
+		y = 6
+
+		relative_position_id = FRA_national_coalition_coup
+
+		prerequisite = {
+			focus = FRA_national_control_service
+		}
+		prerequisite = {
+			focus = FRA_combat_squads_of_the_nation
+		}
+		prerequisite = {
+			focus = FRA_cleaning_up_the_outskirts
+			focus = FRA_all_in_the_army
+		}
+		prerequisite = {
+			focus = FRA_human_ideals
+			focus = FRA_temporary_necessity
+		}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+}

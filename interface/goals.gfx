@@ -1,6 +1,505 @@
 spriteTypes = {	
 
     SpriteType = {
+	name = "GFX_focus_FRA_national_coalition_coup"
+	texturefile = "gfx/interface/goals/france/focus_FRA_national_coalition_coup.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_bring_the_police_into_our_ranks"
+	texturefile = "gfx/interface/goals/france/focus_FRA_bring_the_police_into_our_ranks.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_purge_the_army_of_socialists"
+	texturefile = "gfx/interface/goals/france/focus_FRA_purge_the_army_of_socialists.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_national_control_service"
+	texturefile = "gfx/interface/goals/france/focus_FRA_national_control_service.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_large_army_table"
+	texturefile = "gfx/interface/goals/france/focus_FRA_large_army_table.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_militarization_of_the_people"
+	texturefile = "gfx/interface/goals/france/focus_FRA_militarization_of_the_people.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_all_in_the_army"
+	texturefile = "gfx/interface/goals/france/focus_FRA_all_in_the_army.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_military_dictatorship"
+	texturefile = "gfx/interface/goals/france/focus_FRA_military_dictatorship.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_temporary_necessity"
+	texturefile = "gfx/interface/goals/france/focus_FRA_temporary_necessity.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_expand_the_influence_of_the_right"
+	texturefile = "gfx/interface/goals/france/focus_FRA_expand_the_influence_of_the_right.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_attract_fascists_to_the_capital"
+	texturefile = "gfx/interface/goals/france/focus_FRA_attract_fascists_to_the_capital.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_combat_squads_of_the_nation"
+	texturefile = "gfx/interface/goals/france/focus_FRA_combat_squads_of_the_nation.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_parisian_brawl"
+	texturefile = "gfx/interface/goals/france/focus_FRA_parisian_brawl.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_new_order"
+	texturefile = "gfx/interface/goals/france/focus_FRA_new_order.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_human_ideals"
+	texturefile = "gfx/interface/goals/france/focus_FRA_human_ideals.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_need_for_expansion"
+	texturefile = "gfx/interface/goals/france/focus_FRA_need_for_expansion.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_cleaning_up_the_outskirts"
+	texturefile = "gfx/interface/goals/france/focus_FRA_cleaning_up_the_outskirts.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_sunset_of_the_third_republic"
+	texturefile = "gfx/interface/goals/france/focus_FRA_sunset_of_the_third_republic.png"
+	}
+
+
+    SpriteType = {
+	name = "GFX_focus_FRA_the_absolute_triumph_of_paul_doumer"
+	texturefile = "gfx/interface/goals/france/focus_FRA_the_absolute_triumph_of_paul_doumer.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_conservative_coalition_in_parliament"
+	texturefile = "gfx/interface/goals/france/focus_FRA_conservative_coalition_in_parliament.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_weaken_f.o.r."
+	texturefile = "gfx/interface/goals/france/focus_FRA_weaken_f.o.r..png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_strengthen_doctrine"
+	texturefile = "gfx/interface/goals/france/focus_FRA_strengthen_doctrine.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_creation_of_the_northern_shield"
+	texturefile = "gfx/interface/goals/france/focus_FRA_creation_of_the_northern_shield.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_increase_ranks"
+	texturefile = "gfx/interface/goals/france/focus_FRA_increase_ranks.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_defeat_of_military_conspiracies"
+	texturefile = "gfx/interface/goals/france/focus_FRA_defeat_of_military_conspiracies.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_fight_to_the_death"
+	texturefile = "gfx/interface/goals/france/focus_FRA_fight_to_the_death.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_europe_of_two_centers"
+	texturefile = "gfx/interface/goals/france/focus_FRA_europe_of_two_centers.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_french_economic_expansion"
+	texturefile = "gfx/interface/goals/france/focus_FRA_french_economic_expansion.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_congress_of_madrid"
+	texturefile = "gfx/interface/goals/france/focus_FRA_congress_of_madrid.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_intervention_in_the_benelux"
+	texturefile = "gfx/interface/goals/france/focus_FRA_intervention_in_the_benelux.png"
+	}
+
+
+    SpriteType = {
+	name = "GFX_focus_FRA_an_unexpected_victory_for_for"
+	texturefile = "gfx/interface/goals/france/focus_FRA_an_unexpected_victory_for_for.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_paris_march"
+	texturefile = "gfx/interface/goals/france/focus_FRA_paris_march.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_verified_garrisons"
+	texturefile = "gfx/interface/goals/france/focus_FRA_verified_garrisons.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_union_crisis"
+	texturefile = "gfx/interface/goals/france/focus_FRA_union_crisis.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_army_crisis"
+	texturefile = "gfx/interface/goals/france/focus_FRA_army_crisis.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_print_crisis"
+	texturefile = "gfx/interface/goals/france/focus_FRA_print_crisis.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_reforming_for"
+	texturefile = "gfx/interface/goals/france/focus_FRA_reforming_for.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_feast_of_workers"
+	texturefile = "gfx/interface/goals/france/focus_FRA_feast_of_workers.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_wide_nationalization"
+	texturefile = "gfx/interface/goals/france/focus_FRA_wide_nationalization.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_international_power"
+	texturefile = "gfx/interface/goals/france/focus_FRA_international_power.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_the_weakening_of_the_tops"
+	texturefile = "gfx/interface/goals/france/focus_FRA_the_weakening_of_the_tops.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_a_new_look_at_ourselves"
+	texturefile = "gfx/interface/goals/france/focus_FRA_a_new_look_at_ourselves.png"
+	}
+
+
+    SpriteType = {
+	name = "GFX_focus_FRA_lebron_democratic_bloc"
+	texturefile = "gfx/interface/goals/france/focus_FRA_lebron_democratic_bloc.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_liberal_twist"
+	texturefile = "gfx/interface/goals/france/focus_FRA_liberal_twist.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_enlist_the_support_of_the_intelligentsia"
+	texturefile = "gfx/interface/goals/france/focus_FRA_enlist_the_support_of_the_intelligentsia.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_workers_and_their_requests"
+	texturefile = "gfx/interface/goals/france/focus_FRA_workers_and_their_requests.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_new_farming_policy"
+	texturefile = "gfx/interface/goals/france/focus_FRA_new_farming_policy.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_bankers_and_their_demands"
+	texturefile = "gfx/interface/goals/france/focus_FRA_bankers_and_their_demands.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_free_economy"
+	texturefile = "gfx/interface/goals/france/focus_FRA_free_economy.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_rebuilding_france"
+	texturefile = "gfx/interface/goals/france/focus_FRA_rebuilding_france.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_colonial_reform"
+	texturefile = "gfx/interface/goals/france/focus_FRA_colonial_reform.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_reiland_self-determination"
+	texturefile = "gfx/interface/goals/france/focus_FRA_reiland_self-determination.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_full_openness"
+	texturefile = "gfx/interface/goals/france/focus_FRA_full_openness.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_the_best_of_the_republics"
+	texturefile = "gfx/interface/goals/france/focus_FRA_the_best_of_the_republics.png"
+	}
+
+
+    SpriteType = {
+	name = "GFX_focus_FRA_survivors_of_the_storm"
+	texturefile = "gfx/interface/goals/france/focus_FRA_survivors_of_the_storm.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_requirements_for_germany"
+	texturefile = "gfx/interface/goals/france/focus_FRA_requirements_for_germany.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_put_pressure_on_reiland"
+	texturefile = "gfx/interface/goals/france/focus_FRA_put_pressure_on_reiland.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_stop_the_fall"
+	texturefile = "gfx/interface/goals/france/focus_FRA_stop_the_fall.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_nationalize_the_bankrupt"
+	texturefile = "gfx/interface/goals/france/focus_FRA_nationalize_the_bankrupt.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_run_protectionism"
+	texturefile = "gfx/interface/goals/france/focus_FRA_run_protectionism.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_make_promises_to_the_people"
+	texturefile = "gfx/interface/goals/france/focus_FRA_make_promises_to_the_people.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_creation_of_the_state_bloc"
+	texturefile = "gfx/interface/goals/france/focus_FRA_creation_of_the_state_bloc.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_factories_reopened"
+	texturefile = "gfx/interface/goals/france/focus_FRA_factories_reopened.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_french_goods"
+	texturefile = "gfx/interface/goals/france/focus_FRA_french_goods.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_russian_bread_in_parisian_houses"
+	texturefile = "gfx/interface/goals/france/focus_FRA_russian_bread_in_parisian_houses.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_steel_and_gunpowder"
+	texturefile = "gfx/interface/goals/france/focus_FRA_steel_and_gunpowder.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_bread_and_wine"
+	texturefile = "gfx/interface/goals/france/focus_FRA_bread_and_wine.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_big_public_building"
+	texturefile = "gfx/interface/goals/france/focus_FRA_big_public_building.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_close_to_recovery"
+	texturefile = "gfx/interface/goals/france/focus_FRA_close_to_recovery.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_second_empire_of_the_world"
+	texturefile = "gfx/interface/goals/france/focus_FRA_second_empire_of_the_world.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_revisiting_our_doctrine"
+	texturefile = "gfx/interface/goals/france/focus_FRA_revisiting_our_doctrine.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_aftermath_of_the_yeben_rebellion"
+	texturefile = "gfx/interface/goals/france/focus_FRA_aftermath_of_the_yeben_rebellion.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_pressure_on_reiland"
+	texturefile = "gfx/interface/goals/france/focus_FRA_pressure_on_reiland.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_spanish_colleagues"
+	texturefile = "gfx/interface/goals/france/focus_FRA_spanish_colleagues.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_great_african_reform"
+	texturefile = "gfx/interface/goals/france/focus_FRA_great_african_reform.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_dokutrina_of_the_last_defense"
+	texturefile = "gfx/interface/goals/france/focus_FRA_dokutrina_of_the_last_defense.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_maginot_or_mcmahon"
+	texturefile = "gfx/interface/goals/france/focus_FRA_maginot_or_mcmahon.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_secret_delegation_in_petrograd"
+	texturefile = "gfx/interface/goals/france/focus_FRA_secret_delegation_in_petrograd.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_alpine_frontier"
+	texturefile = "gfx/interface/goals/france/focus_FRA_alpine_frontier.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_indian_front"
+	texturefile = "gfx/interface/goals/france/focus_FRA_indian_front.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_meeting_in_luxembourg"
+	texturefile = "gfx/interface/goals/france/focus_FRA_meeting_in_luxembourg.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_african_prop"
+	texturefile = "gfx/interface/goals/france/focus_FRA_african_prop.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_france_will_survive"
+	texturefile = "gfx/interface/goals/france/focus_FRA_france_will_survive.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_big_army_process"
+	texturefile = "gfx/interface/goals/france/focus_FRA_big_army_process.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_lay_shipyards"
+	texturefile = "gfx/interface/goals/france/focus_FRA_lay_shipyards.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_submarines_and_their_benefits"
+	texturefile = "gfx/interface/goals/france/focus_FRA_submarines_and_their_benefits.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_fully_french_cruiser"
+	texturefile = "gfx/interface/goals/france/focus_FRA_fully_french_cruiser.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_mediterranean_building"
+	texturefile = "gfx/interface/goals/france/focus_FRA_mediterranean_building.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_new_air_bases"
+	texturefile = "gfx/interface/goals/france/focus_FRA_new_air_bases.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_the_best_minds"
+	texturefile = "gfx/interface/goals/france/focus_FRA_the_best_minds.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_cheaper_production"
+	texturefile = "gfx/interface/goals/france/focus_FRA_cheaper_production.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_expand_factories"
+	texturefile = "gfx/interface/goals/france/focus_FRA_expand_factories.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_start_the_machines"
+	texturefile = "gfx/interface/goals/france/focus_FRA_start_the_machines.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_cheap_and_durable"
+	texturefile = "gfx/interface/goals/france/focus_FRA_cheap_and_durable.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_second_wave_of_summoning"
+	texturefile = "gfx/interface/goals/france/focus_FRA_second_wave_of_summoning.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_order_and_courage"
+	texturefile = "gfx/interface/goals/france/focus_FRA_order_and_courage.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_new_age_cavalry"
+	texturefile = "gfx/interface/goals/france/focus_FRA_new_age_cavalry.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_generation_of_heroes"
+	texturefile = "gfx/interface/goals/france/focus_FRA_generation_of_heroes.png"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_FRA_the_best_army_in_europe"
+	texturefile = "gfx/interface/goals/france/focus_FRA_the_best_army_in_europe.png"
+	}
+
+    SpriteType = {
 	name = "GFX_focus_TUR_Vozrozhdenie_iz_ruin"
 	texturefile = "gfx/interface/goals/Vozrozhdenie_iz_ruin.png"			
 	}

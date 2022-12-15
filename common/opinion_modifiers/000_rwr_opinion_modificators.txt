@@ -1,0 +1,14 @@
+opinion_modifiers = {
+	accelerated_payments = {
+		value = 5
+	}	
+	forced_to_fast_pay_reparations = {
+		value = -10
+	}	
+	resisted_our_demands = {
+		value = -20
+	}
+	pressed_by_force = {
+		value = -20
+	}	 
+}

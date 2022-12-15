@@ -1,0 +1,73 @@
+FRA_war_spec_operations_category = {
+
+	FRA_svo_in_germany = {
+
+		name = FRA_svo_in_germany
+
+		activation = {
+        	has_country_flag = svo_in_germany
+    	}
+
+		available = {
+			always = yes
+		}
+
+		icon = GFX_decision_border_war
+
+		is_good = yes
+
+		days_mission_timeout = 30
+    	selectable_mission = yes
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = svo_in_germany
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = start_frankfurt_svo_tt
+			hidden_effect = {
+				start_border_war = {
+ 					change_state_after_war = no
+ 					attacker = {
+ 						state = 28
+ 						num_provinces = 2
+ 						on_win = border_conflict.1
+ 						on_lose = border_conflict.3
+ 					} 
+ 					defender = {
+ 						state = 50
+ 						num_provinces = 1
+ 						on_win = border_conflict.4
+ 						on_lose = border_conflict.2
+ 					}
+				}
+			}
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = start_frankfurt_svo_tt
+			hidden_effect = {
+				start_border_war = {
+ 					change_state_after_war = no
+ 					attacker = {
+ 						state = 42
+ 						num_provinces = 2
+ 						on_win = border_conflict.1
+ 						on_lose = border_conflict.3
+ 					} 
+ 					defender = {
+ 						state = 55
+ 						num_provinces = 1
+ 						on_win = border_conflict.4
+ 						on_lose = border_conflict.2
+ 					}
+				}
+			}
+		}
+	}
+	
+}

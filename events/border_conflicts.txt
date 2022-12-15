@@ -1,0 +1,57 @@
+add_namespace = border_conflict
+
+country_event = { 
+	id = border_conflict.1
+	title = border_conflict.1.t
+	desc = border_conflict.1.d
+	
+	is_triggered_only = yes
+    hidden = yes
+	
+	option = {
+		name = border_conflict.1.a
+		country_event = { days = 1 id = FRA.3 }
+	}
+}
+
+country_event = { 
+	id = border_conflict.2
+	title = border_conflict.2.t
+	desc = border_conflict.2.d
+	
+	is_triggered_only = yes
+    hidden = yes
+	
+	option = {
+		name = border_conflict.2.a
+		country_event = { days = 1 id = GER.2 }
+	}
+}
+
+country_event = { 
+	id = border_conflict.3
+	title = border_conflict.3.t
+	desc = border_conflict.3.d
+	
+	is_triggered_only = yes
+    hidden = yes
+	
+	option = {
+		name = border_conflict.3.a
+		country_event = { days = 1 id = FRA.4 }
+	}
+}
+
+country_event = { 
+	id = border_conflict.4
+	title = border_conflict.4.t
+	desc = border_conflict.4.d
+	
+	is_triggered_only = yes
+    hidden = yes
+	
+	option = {
+		name = border_conflict.4.a
+		country_event = { days = 1 id = GER.3 }
+	}
+}

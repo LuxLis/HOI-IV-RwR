@@ -1,0 +1,87 @@
+add_namespace = FRA
+
+#Германия согласна на наши требования
+country_event = {
+	id = FRA.1
+	title = FRA.1.t
+	desc = FRA.1.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.1.a
+		add_political_power = 50
+		add_timed_idea = {
+    		idea = FRA_accelerated_german_payments
+    		days = 365
+		}
+		reverse_add_opinion_modifier = {
+    		target = GER
+    		modifier = forced_to_fast_pay_reparations
+		}
+	}
+}
+
+#Германия отказалась принимать требования
+country_event = {
+	id = FRA.2
+	title = FRA.2.t
+	desc = FRA.2.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.2.a
+		set_country_flag = svo_in_germany
+		custom_effect_tooltip = wait_svo_tt
+	}
+}
+
+#Ожидаемая победа
+country_event = {
+	id = FRA.3
+	title = FRA.3.t
+	desc = FRA.3.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.3.a
+		add_timed_idea = {
+    		idea = FRA_big_accelerated_german_payments
+    		days = 365
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+		army_experience = 5
+		add_opinion_modifier = {
+    		target = GER
+    		modifier = resisted_our_demands
+		}
+	}
+}
+
+#Унижение под Петерсауэ
+country_event = {
+	id = FRA.4
+	title = FRA.4.t
+	desc = FRA.4.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.4.a
+		add_stability = -0.05
+		add_political_power = -50
+		add_war_support = -0.05
+		army_experience = 5
+		add_opinion_modifier = {
+    		target = GER
+    		modifier = resisted_our_demands
+		}
+	}
+}
