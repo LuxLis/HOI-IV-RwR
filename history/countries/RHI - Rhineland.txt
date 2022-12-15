@@ -1,4 +1,4 @@
-﻿capital = 563
+﻿capital = 51
 
 set_research_slots = 3
 
@@ -43,6 +43,7 @@ add_ideas = {
 	RHI_army
 	RHI_fra
 	disarmed_nation
+	RHI_secret_nationalisation
 }
 
 	set_rule = {

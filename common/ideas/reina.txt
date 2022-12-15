@@ -82,6 +82,32 @@ ideas = {
 			}
 
 
-		}		
+		}	
+
+		RHI_secret_nationalisation = {
+			picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.075
+				stability_factor = 0.05
+			}
+		}	
+
 	}
 }
