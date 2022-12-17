@@ -168,7 +168,7 @@ country_event = {
 	}
 
 	option = {
-		name = RHI.2.a		
+		name = RHI.2.b	
 		remove_ideas = { RHI_secret_nationalisation } 
 	}
 }

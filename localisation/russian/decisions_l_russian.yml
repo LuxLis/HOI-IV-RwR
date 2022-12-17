@@ -39,3 +39,18 @@
 
  FRA_war_spec_operations_category: "Военные операции"
  FRA_svo_in_germany: "Выбивание репараций силой"
+
+ saar_referendum_decisions: "Самоопределение Саара"
+ saar_referendum_decision: "Референдум в Сааре"
+ saar: "Саар"
+
+ saar_bribe_administration: "Подкупить местную администрацию"
+ saar_sponsor_moods: "Спонсировать про[pro_who] настроения"
+ saar_add_arms: "Увеличить контингент войск [where_add_arms]"
+ saar_weekends_for_workers: "Устроить выходные местным рабочим"
+
+ profra: "французские"
+ prorhi: "рейнские"
+
+ on_border: "на границе"
+ in_saar: "в Сааре"

@@ -6,7 +6,33 @@
 # (The triggers need to be valid for the scope the key is called in
 # (eg Root or From.From).)
 # localization_key -> points to the localization key
-# that'll be used if trigger passes
+# that'll be used if trigger passes 
+
+defined_text = {
+ 	name = where_add_arms
+ 	text = {
+ 		trigger = {
+ 			original_tag = FRA
+ 		}
+ 		localization_key = on_border
+ 	}
+ 	text = {
+ 		localization_key = in_saar
+ 	}
+}
+
+defined_text = {
+ 	name = pro_who
+ 	text = {
+ 		trigger = {
+ 			original_tag = FRA
+ 		}
+ 		localization_key = profra
+ 	}
+ 	text = {
+ 		localization_key = prorhi
+ 	}
+}
 
 defined_text = { # Country
 	name = GetKdfWagenName

@@ -1,0 +1,147 @@
+saar_referendum_decisions = {
+
+	saar_referendum_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_global_flag = saar_referendum
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+
+		cost = 0
+
+		priority = 1
+
+		fire_only_once = yes
+
+		state_target = yes
+
+		targets = { state = 838 }
+
+		days_mission_timeout = 60
+    	selectable_mission = no
+
+		visible = {
+			always = yes					
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	saar_bribe_administration = {
+
+		icon = hol_attract_foreign_investors
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			always = yes					
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	saar_sponsor_moods = {
+		icon = hol_radio_oranje
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			always = yes					
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	saar_add_arms = {
+
+		icon = generic_military
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			always = yes					
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	saar_weekends_for_workers = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = RHI
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			always = yes					
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+}

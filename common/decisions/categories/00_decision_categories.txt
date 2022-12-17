@@ -1,3 +1,21 @@
+saar_referendum_decisions = {
+	icon = saar_referendum
+
+		on_map_area = {
+ 			state = 838
+ 			name = saar
+ 			zoom = 100
+		}
+
+	visible = {
+		has_global_flag = saar_referendum
+		OR = {
+			tag = RHI
+			tag = FRA
+		}
+	}
+}
+
 debug_decisions = {
 	icon = generic_research
 	visible = {

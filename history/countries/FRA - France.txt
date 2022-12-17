@@ -14,6 +14,15 @@ if = {
 set_research_slots = 3
 set_stability = 0.5
 
+set_popularities = {
+	socdem = 19
+	marxisms = 3
+	libsoc = 16
+	liberalisms = 38
+	democratic = 12
+	communism = 8
+	fascism = 4
+}
 
 # Starting tech
 set_technology = {

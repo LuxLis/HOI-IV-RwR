@@ -17,7 +17,7 @@ FRA_war_spec_operations_category = {
 		is_good = yes
 
 		days_mission_timeout = 30
-    	selectable_mission = yes
+    	selectable_mission = no
 
 		cost = 0
 

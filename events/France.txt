@@ -85,3 +85,18 @@ country_event = {
 		}
 	}
 }
+
+#Кёльн соглашается на требования Парижа
+country_event = {
+	id = FRA.5
+	title = FRA.5.t
+	desc = FRA.5.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.5.a
+		
+	}
+}
