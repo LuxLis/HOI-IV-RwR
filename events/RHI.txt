@@ -73,7 +73,7 @@ country_event = {
 					}
 				}
 				42 = {
-				prioritize = { 46 }
+				#prioritize = { 46 }
 				create_unit = {
 					division = "name = \"Legion\" division_template = \"Legion\" start_experience_factor = 1.0"
 					owner = RHW		
@@ -165,10 +165,12 @@ country_event = {
 	option = {
 		name = RHI.1.a		
 		remove_ideas = { RHI_secret_nationalisation } 
+		FRA = { country_event = { days = 1 id = FRA.5 } }
 	}
 
 	option = {
-		name = RHI.2.b	
-		remove_ideas = { RHI_secret_nationalisation } 
+		name = RHI.1.b
+		unlock_decision_category_tooltip = saar_referendum_decisions
+		FRA = { days = 1 id = FRA.6 }
 	}
 }

@@ -97,6 +97,23 @@ country_event = {
 	
 	option = {
 		name = FRA.5.a
-		
+		add_ideas = { FRA_secret_share_by_reiland }
+		add_offsite_building = { type = industrial_complex level = 3 }
+	}
+}
+
+#Кёльн предлагает компромисс
+country_event = {
+	id = FRA.6
+	title = FRA.6.t
+	desc = FRA.6.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.6.a
+		unlock_decision_category_tooltip = saar_referendum_decisions
+		set_global_flag = saar_referendum
 	}
 }

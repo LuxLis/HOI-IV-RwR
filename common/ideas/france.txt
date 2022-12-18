@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+	    
+		FRA_accelerated_german_payments = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+
+		FRA_big_accelerated_german_payments = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.125
+				stability_factor = 0.05
+			}
+		}
+
+		FRA_secret_share_by_reiland = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+	}
+}
