@@ -171,6 +171,6 @@ country_event = {
 	option = {
 		name = RHI.1.b
 		unlock_decision_category_tooltip = saar_referendum_decisions
-		FRA = { days = 1 id = FRA.6 }
+		FRA = { country_event = { days = 1 id = FRA.6 } }
 	}
 }

@@ -115,5 +115,7 @@ country_event = {
 		name = FRA.6.a
 		unlock_decision_category_tooltip = saar_referendum_decisions
 		set_global_flag = saar_referendum
+		set_variable = { pop_in_saar = 40 }
+		RHI = { set_variable = { pop_in_saar = 60 } }
 	}
 }

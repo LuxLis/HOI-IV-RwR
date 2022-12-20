@@ -1,12 +1,53 @@
-# Allows you to create your own dynamic keys
-# to be called in localization.
-# defined_text -> this is it, we're defining the text
-# text -> a discrete entry that can be picked to display in loc.
-# trigger -> determines if a text entry will be picked or not.
-# (The triggers need to be valid for the scope the key is called in
-# (eg Root or From.From).)
-# localization_key -> points to the localization key
-# that'll be used if trigger passes 
+defined_text = {
+    name = RHI_colour_pop_in_saar
+    text = {
+        trigger = {
+            check_variable = { RHI.pop_in_saar < 41 }
+        }
+        localization_key = red
+    }
+    text = {
+        trigger = {
+            check_variable = { RHI.pop_in_saar < 51 }
+        }
+        localization_key = yellow
+    }
+    text = {
+        localization_key = green
+    }
+}
+
+defined_text = {
+    name = FRA_colour_pop_in_saar
+    text = {
+        trigger = {
+            check_variable = { FRA.pop_in_saar < 41 }
+        }
+        localization_key = red
+    }
+    text = {
+        trigger = {
+            check_variable = { FRA.pop_in_saar < 51 }
+        }
+        localization_key = yellow
+    }
+    text = {
+        localization_key = green
+    }
+}
+
+defined_text = {
+ 	name = referendum_in_saar_desc
+ 	text = {
+ 		trigger = {
+ 			original_tag = FRA
+ 		}
+ 		localization_key = FRA_referendum_in_saar_desc
+ 	}
+ 	text = {
+ 		localization_key = RHI_referendum_in_saar_desc
+ 	}
+}
 
 defined_text = {
  	name = where_add_arms

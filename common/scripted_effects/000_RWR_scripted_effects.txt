@@ -1,0 +1,37 @@
+saar_pop_control = {
+    clamp_variable = { var = FRA.pop_in_saar max = 100 }
+    clamp_variable = { var = RHI.pop_in_saar max = 100 }
+    multiply_variable = { pop_in_saar = -1 }
+    if = {
+        limit = {
+            original_tag = FRA
+        }
+        set_variable = { RHI.pop_in_saar = 100 }
+        add_to_variable = { RHI.pop_in_saar = FRA.pop_in_saar }
+    }
+    else = {
+        set_variable = { FRA.pop_in_saar = 100 }
+        add_to_variable = { FRA.pop_in_saar = RHI.pop_in_saar }
+    }
+    multiply_variable = { pop_in_saar = -1 }
+}
+
+saar_add_pop_5 = {
+    add_to_variable = { pop_in_saar = 5 }
+    saar_pop_control = yes
+}
+
+saar_add_pop_75 = {
+    add_to_variable = { pop_in_saar = 7.5 }
+    saar_pop_control = yes
+}
+
+saar_add_pop_125 = {
+    add_to_variable = { pop_in_saar = 12.5 }
+    saar_pop_control = yes
+}
+
+saar_add_pop_10 = {
+    add_to_variable = { pop_in_saar = 10 }
+    saar_pop_control = yes
+}

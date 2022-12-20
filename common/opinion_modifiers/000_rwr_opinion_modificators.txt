@@ -11,4 +11,7 @@ opinion_modifiers = {
 	pressed_by_force = {
 		value = -20
 	}	 
+	military_presence_before_referendum = {
+		value = -5
+	}
 }
