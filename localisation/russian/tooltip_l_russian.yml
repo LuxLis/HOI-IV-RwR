@@ -1,16 +1,16 @@
 ﻿l_russian:
  escalation_france_tt: "§RПри отказе Франция может принять серьезные меры по отношению к нам!§!"
  start_frankfurt_svo_tt: "Мы начнем военную операцию на немецкой границе"
- wait_svo_tt: "Мы начинаем месячную подготовку к специальной операции в Германии"
+ wait_svo_tt: "Мы начинаем двухнедельную подготовку к специальной операции в Германии"
 
  saar_add_pop_75_tt: "Прирост поддержки в Сааре: §G+7.5%§!"
  saar_add_pop_125_tt: "Прирост поддержки в Сааре: §G+12.5%§!"
  saar_add_pop_5_tt: "Прирост поддержки в Сааре: §G+5%§!"
  saar_add_pop_10_tt: "Прирост поддержки в Сааре: §G+10%§!"
 
- saar_wait_3_days_tt: "Прошло 3 дня с прошлых действий в Сааре"
+ saar_wait_3_days_tt: "Прошло 3 дня с прошлых наших действий в Сааре"
 
- end_saar_referendum_tt: "Произойдёт референдум и его итоги"
+ end_saar_referendum_tt: "Произойдёт референдум в Сааре"
 
  need_250_infantry_tt: "£infantry_equipment_text_icon  §Y250§!"
  need_250_infantry_tt_blocked: "£infantry_equipment_text_icon  §R250§!"

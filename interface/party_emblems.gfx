@@ -1,0 +1,72 @@
+﻿    # Generic
+
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+	}
+	
+	
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ideology_democratic_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_libsoc_group"
+		texturefile = "gfx/interface/ideologies/libsoc_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_liberalisms_group"
+		texturefile = "gfx/interface/ideologies/liberalisms_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_strasserism_group"
+		texturefile = "gfx/interface/ideologies/strasserism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_paternalism_group"
+		texturefile = "gfx/interface/ideologies/paternalism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_socdem_group"
+		texturefile = "gfx/interface/ideologies/socdem_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_marxisms_group"
+		texturefile = "gfx/interface/ideologies/marxisms_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_anarchism"
+		texturefile = "gfx/interface/ideologies/anarchism.dds"
+	}
+
+    # Консерватизм
+
+	spriteType = {
+		name = "GFX_ideology_RHI_democratic_group"
+		texturefile = "gfx/interface/ideologies/RHI/RHI_party.dds"
+	}
+}

@@ -68,7 +68,7 @@ saar_referendum_decisions = {
 
 		cost = 25
 
-		days_remove = 20
+		days_remove = 25
 
 		days_re_enable = 25
 
@@ -119,6 +119,8 @@ saar_referendum_decisions = {
 
 		cost = 10
 
+		days_remove = 15
+
 		days_re_enable = 15
 
 		ai_will_do = {
@@ -131,6 +133,10 @@ saar_referendum_decisions = {
 
 		visible = {
 			always = yes					
+		}
+
+		modifier = {
+			political_power_factor = -0.1
 		}
 
 		complete_effect = {
@@ -163,6 +169,8 @@ saar_referendum_decisions = {
 		}
 
 		cost = 0
+
+		days_remove = 30
 
 		days_re_enable = 30
 

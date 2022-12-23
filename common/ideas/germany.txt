@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+	
+		GER_humanitarian_disaster = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+				war_support_factor = -0.5
+			}
+		}
+		
+		GER_big_humanitarian_disaster = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.125
+				stability_factor = -0.05
+				war_support_factor = -0.5
+			}
+		}
+		
+	}
+}

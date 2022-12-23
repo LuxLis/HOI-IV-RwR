@@ -163,13 +163,15 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = RHI.1.a		
+		name = RHI.1.a
+		ai_chance = { base = 6 }
 		remove_ideas = { RHI_secret_nationalisation } 
 		FRA = { country_event = { days = 1 id = FRA.5 } }
 	}
 
 	option = {
 		name = RHI.1.b
+		ai_chance = { base = 4 }
 		unlock_decision_category_tooltip = saar_referendum_decisions
 		FRA = { country_event = { days = 1 id = FRA.6 } }
 	}

@@ -1,9 +1,14 @@
 ﻿l_russian:
 
+ #Общее
+ generic_the_great_depression_1: "Великая депрессия"
+ generic_the_great_depression_2: "Великая депрессия"
+
  #Франция
  FRA_accelerated_german_payments: "Ускоренные немецкие выплаты"
  FRA_big_accelerated_german_payments: "Ускоренные немецкие выплаты"
  FRA_secret_share_by_reiland: "Рейнланд отдаёт долю с национализации"
+ FRA_state_economy_intervention: "Государственное вмешательство в экономику"
 
  #Германия
  GER_humanitarian_disaster: "Гуманитарная катастрофа"
