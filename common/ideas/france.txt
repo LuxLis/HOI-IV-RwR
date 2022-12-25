@@ -3,7 +3,7 @@ ideas = {
 	    
 		FRA_accelerated_german_payments = { 
 
-			#picture = 
+			picture = FRA_german_payments
 		
 			allowed = {
 				always = no
@@ -23,7 +23,7 @@ ideas = {
 
 		FRA_big_accelerated_german_payments = { 
 
-			#picture = 
+			picture = FRA_german_payments
 		
 			allowed = {
 				always = no
@@ -42,8 +42,6 @@ ideas = {
 		}
 
 		FRA_secret_share_by_reiland = { 
-
-			#picture = 
 		
 			allowed = {
 				always = no
@@ -73,10 +71,95 @@ ideas = {
 			}
 
 			removal_cost = -1
+
+			research_bonus = {
+				industry = 0.05
+			}
 			
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		FRA_nationalization_of_bankrupts_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+				global_building_slots_factor = 0.05
+			}
+		}
+
+		FRA_rule_france_by_the_seas_1 = {
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+
+		FRA_rule_france_by_the_seas_2 = {
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				navy_submarine_defence_factor = 0.05
+				navy_submarine_attack_factor = 0.05
+			}
+		}
+
+		FRA_rule_france_by_the_seas_3 = {
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				navy_submarine_defence_factor = 0.05
+				navy_submarine_attack_factor = 0.05
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
 			}
 		}
 

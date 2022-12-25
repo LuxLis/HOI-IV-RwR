@@ -1,5 +1,25 @@
 spriteTypes = {	
-    
+
+	SpriteType = {
+		name = "GFX_idea_RHI_secret_nationalisation"
+		texturefile = "gfx/interface/ideas/RHI/secret_nationalisation.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_humanitarian_disaster"
+		texturefile = "gfx/interface/ideas/GER/humanitarian_disaster.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_FRA_secret_share_by_reiland"
+		texturefile = "gfx/interface/ideas/FRA/secret_share_by_reiland.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_FRA_german_payments"
+		texturefile = "gfx/interface/ideas/FRA/accelerated_german_payments.png"
+	}
+
 	SpriteType = {
 		name = "GFX_idea_TUR_afrod"
 		texturefile = "gfx/interface/ideas/TUR/afrod.png"
