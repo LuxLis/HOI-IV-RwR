@@ -750,5 +750,20 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
+		
+		RUS_support_france_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+			consumer_goods_factor = 0.05
+			
+						
+				
+			}
+		}
 	}
 }

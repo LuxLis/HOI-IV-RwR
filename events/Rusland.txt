@@ -727,3 +727,84 @@ country_event = {
 		
 	}
 }
+
+#просьба франции о зерне
+country_event = {
+	id = russia.500
+	title = russia.500.t
+	desc = russia.500.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.500.a
+		ai_chance = { factor = 50 }
+		FRA = { country_event = { days = 1 id = FRA.8 } }
+		TUR = { country_event = { days = 1 id = turkey.499 } }
+		add_opinion_modifier = {
+				target = FRA
+				modifier = supported_us_in_hard_times
+								}
+		add_timed_idea = {
+    			idea =  RUS_support_france_idea
+    			days = 365
+			}
+
+		
+	
+					
+	}
+	option = {
+		name = russia.500.b
+		ai_chance = { factor = 50 }
+		FRA = { country_event = { days = 1 id = FRA.9 } }
+		add_opinion_modifier = {
+				target = FRA
+				modifier = not_supported_us_in_hard_times
+								}
+	}
+}
+
+
+#ТУРКИ УКРАЛИ ЗЕРНО!!!!!
+country_event = {
+	id = russia.501
+	title = russia.501.t
+	desc = russia.501.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.501.a
+		ai_chance = { factor = 100 }	
+			}				
+	}
+
+
+
+#зерно приплыло без происшествий
+country_event = {
+	id = russia.502
+	title = russia.502.t
+	desc = russia.502.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.502.a
+		ai_chance = { factor = 100 }	
+		
+		add_political_power = 50
+		
+		add_opinion_modifier = {
+				target = FRA
+				modifier = vipolnenii_obeshania
+								}
+		
+			}				
+	}
+
+

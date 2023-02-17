@@ -28,5 +28,20 @@ on_actions = {
 			}
 		}
 	}
-
+	
+	on_daily_FRA = {
+	    effect = {
+		    if = {
+				limit = {
+					and = {
+						date > 1928.9.8
+						date < 1928.9.12
+					}
+				}
+				FRA = { country_event = { days = 1 id = FRA.800 } }
+			}
+		}
+	}
+	
+	
 }

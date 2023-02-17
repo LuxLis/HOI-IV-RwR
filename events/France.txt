@@ -119,3 +119,518 @@ country_event = {
 		RHI = { set_variable = { pop_in_saar = 60 } }
 	}
 }
+
+
+#Просьба бездомных
+country_event = {
+	id = FRA.7
+	title = FRA.7.t
+	desc = FRA.7.d
+	#picture = GFX_report_event_physics_lab_01
+	hidden = yes
+	is_triggered_only = yes
+						
+#	option = {
+#		name = FRA.7.a
+#	}
+#	option = {
+#		name = FRA.7.b
+#		country_event = {
+#				id = FRA.8
+#						}
+		immediate = {
+		set_country_flag = FRA_congress_investment
+		if = {
+			limit = { has_event_target = FRA_congress_investment_state }
+			clear_global_event_target = FRA_congress_investment_state
+		}
+		random_list = {
+			20 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					
+					save_global_event_target_as = FRA_congress_investment_state
+					state_event = { id = FRA.706 trigger_for = controller }
+				}
+			}
+			20 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = air_base
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 0
+							include_locked = no
+						}
+					}
+					
+					save_global_event_target_as = FRA_congress_investment_state
+					state_event = { id = FRA.705 trigger_for = controller }
+				}
+			}
+			20 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					save_global_event_target_as = FRA_congress_investment_state
+					state_event = { id = FRA.702 trigger_for = controller }
+				}
+			}
+			20 = { 
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = no
+						}
+					}
+					save_global_event_target_as = FRA_congress_investment_state
+					state_event = { id = FRA.704 trigger_for = controller }
+				}
+			}
+			20 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					save_global_event_target_as = FRA_congress_investment_state
+					state_event = { id = FRA.703 trigger_for = controller }
+				}
+			}
+		}
+#		hidden_effect = {
+#			country_event = { id = FRA.50 days = 70 random_days = 10 }
+#		}
+	}				
+										
+#	}
+}
+
+
+# народ просит фабрику
+country_event = {
+	id = FRA.706
+	title = FRA.706.t
+	desc = FRA.706.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = FRA.706.a #accept
+		ai_chance = {
+			factor = 50
+		}
+		unlock_decision_tooltip = { decision = FRA_invest_in_state_factory show_effect_tooltip = yes }
+		event_target:FRA_congress_investment_state = {
+			set_state_flag = FRA_congress_build_factory
+			set_variable = { factory_goal = industrial_complex_level }
+			add_to_variable = { factory_goal = 1 }
+		}
+	}
+	option = {
+		name = FRA.706.b #refuse
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = { clr_country_flag = FRA_congress_investment }
+		clear_global_event_target = FRA_congress_investment_state
+		
+		random_list = {
+				30 = {  }
+				70 = { add_ideas = FRA_depresed_people_idea  }
+			} 
+	}
+}
+
+# народ просит военный завод
+country_event = {
+	id = FRA.702
+	title = FRA.702.t
+	desc = FRA.702.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = FRA.702.a #accept
+		ai_chance = {
+			factor = 50
+		}
+		unlock_decision_tooltip = { decision = FRA_invest_in_state_arms_factory show_effect_tooltip = yes }
+		event_target:FRA_congress_investment_state = {
+			set_state_flag = FRA_congress_build_arms_factory
+			set_variable = { arms_factory_goal = arms_factory_level }
+			add_to_variable = { arms_factory_goal = 1 }
+		}
+	}
+	option = {
+		name = FRA.702.b #refuse
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = { clr_country_flag = FRA_congress_investment }
+		clear_global_event_target = FRA_congress_investment_state
+		
+		random_list = {
+				30 = {  }
+				70 = { add_ideas = FRA_depresed_people_idea  }
+			}
+	}
+}
+# народ просит инфраструктуру
+country_event = {
+	id = FRA.703
+	title = FRA.703.t
+	desc = FRA.703.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = FRA.703.a #accept
+		ai_chance = {
+			factor = 50
+		}
+		unlock_decision_tooltip = { decision = FRA_invest_in_state_infrastructure show_effect_tooltip = yes }
+		event_target:FRA_congress_investment_state = {
+			set_state_flag = FRA_congress_build_infrastructure
+			set_variable = { infrastructure_goal = infrastructure_level }
+			add_to_variable = { infrastructure_goal = 1 }
+		}
+	}
+	option = {
+		name = FRA.703.b #refuse
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = { clr_country_flag = FRA_congress_investment }
+		clear_global_event_target = FRA_congress_investment_state
+		
+		random_list = {
+				30 = {  }
+				70 = { add_ideas = FRA_depresed_people_idea  }
+			}
+	}
+}
+# народ просит верфь
+country_event = {
+	id = FRA.704
+	title = FRA.704.t
+	desc = FRA.704.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = FRA.704.a #accept
+		ai_chance = {
+			factor = 50
+		}
+		unlock_decision_tooltip = { decision = FRA_invest_in_state_dockyard show_effect_tooltip = yes }
+		event_target:FRA_congress_investment_state = {
+			set_state_flag = FRA_congress_build_dockyard
+			set_variable = { dockyard_goal = building_level@dockyard }
+			add_to_variable = { dockyard_goal = 1 }
+		}
+	}
+	option = {
+		name = FRA.704.b #refuse
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = { clr_country_flag = FRA_congress_investment }
+		clear_global_event_target = FRA_congress_investment_state
+		
+		random_list = {
+				30 = {  }
+				70 = { add_ideas = FRA_depresed_people_idea  }
+			}
+	}
+}
+
+# народ просит авиабазу
+country_event = {
+	id = FRA.705
+	title = FRA.705.t
+	desc = FRA.705.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = FRA.705.a #accept
+		ai_chance = {
+			factor = 50
+		}
+		unlock_decision_tooltip = { decision = FRA_invest_in_air_base show_effect_tooltip = yes }
+		event_target:FRA_congress_investment_state = {
+			set_state_flag = FRA_congress_build_air_base
+			set_variable = { air_base_goal = building_level@air_base }
+			add_to_variable = { air_base_goal = 1 }
+		}
+	}
+	option = {
+		name = FRA.705.b #refuse
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = { clr_country_flag = FRA_congress_investment }
+		clear_global_event_target = FRA_congress_investment_state
+		
+		random_list = {
+				30 = {  }
+				70 = { add_ideas = FRA_depresed_people_idea  }
+			}
+	}
+}
+
+
+#Россия одобряет зерновую сделку
+country_event = {
+	id = FRA.8
+	title = FRA.8.t
+	desc = FRA.8.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.8.a
+	}
+}
+#Россия отвергает зерновую сделку
+country_event = {
+	id = FRA.9
+	title = FRA.9.t
+	desc = FRA.9.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.9.a
+	}
+}
+#ТУРКИ УКРАЛИ ЗЕРНО!!!!
+country_event = {
+	id = FRA.10
+	title = FRA.10.t
+	desc = FRA.10.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.10.a
+	}
+}
+#зерно в марселе, порядок
+country_event = {
+	id = FRA.11
+	title = FRA.11.t
+	desc = FRA.11.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.11.a
+		remove_idea = FRA_prodovolstvie_crysis_idea  
+		remove_ideas = FRA_prodovolstvie_crysis_idea
+		add_timed_idea = {
+    		idea = FRA_chernomorskoe_zerno_idea
+    		days = 540
+		}
+
+		
+	}
+}
+
+#Продовольственный кризис
+country_event = {
+	id = FRA.800
+	title = FRA.800.t
+	desc = FRA.800.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.800.a
+		add_ideas = { FRA_prodovolstvie_crysis_idea }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

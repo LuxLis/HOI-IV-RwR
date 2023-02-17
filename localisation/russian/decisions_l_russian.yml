@@ -39,6 +39,18 @@
 
  FRA_war_spec_operations_category: "Военные операции"
  FRA_svo_in_germany: "Выбивание репараций силой"
+ 
+ FRE_invest_in_state_factory: "Инфестиции в фабрики"
+ FRA_invest_in_state_arms_factory: "Инфестиции в военные заводы"
+ FRA_invest_in_state_dockyard: "Инфестиции в верфи"
+ FRA_invest_in_state_infrastructure: "Инфестиции в инфраструктуру"
+ FRA_invest_in_air_base: "Инфестиции в новый аэропорт"
+ FRA_prosba_naroda_category: "Просьба народа"
+ 
+ TUR_ukrast_zerno_mission: "Попытаться захватить российские сухогрузы"
+ TUR_vorovat_zerno: "Сорвать сделку"
+ TUR_ukrast_zerno: "Сорвать сделку"
+ TUR_ukrast_zerno_desc: "Недавно между Россией и Францией было подписано соглашение, согласно которому во французский порт Марсель в течение месяца российское государство обязуется поставить 2,5 миллиона тонн зерна. Мы не можем так просто отказаться от столь хорошей возможности пополнить свои опустошённые европейцами зернохранилища. После всех тех пережитых турками страданий, наш народ больше заслуживает права быть сытым."
 
  saar_referendum_decisions: "Плебисцит в Сааре"
  saar_referendum_decisions_desc: "[referendum_in_saar_desc]\n\n[FRA.GetFlag]Профранцузское настроение: [FRA_colour_pop_in_saar][?FRA.pop_in_saar]%§!\n[RHI.GetFlag]Прорейнское настроение: [RHI_colour_pop_in_saar][?RHI.pop_in_saar]%§!\n"

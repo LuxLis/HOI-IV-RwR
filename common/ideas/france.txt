@@ -102,6 +102,337 @@ ideas = {
 				global_building_slots_factor = 0.05
 			}
 		}
+		
+		FRA_protectionism_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			civilian_intel_to_others = -10.0
+			consumer_goods_factor = 0.05	
+			line_change_production_efficiency_factor = 0.1
+			industry_repair_factor = 0.15
+			
+			Intelligence_agency_defense = 2
+				
+								
+			}
+		}
+		
+		FRA_prosbabezdomnih_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			drift_defence_factor = 0.05					
+			}
+		}
+		
+		FRA_viktory_against_hydra_pereproizvodstva_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			drift_defence_factor = 0.1
+			consumer_goods_factor = -0.05
+			stability_factor = 0.15
+			monthly_population = 0.05
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.1
+			war_support_factor = 0.1
+			political_power_factor = 0.10
+			production_speed_buildings_factor = 0.10			
+			}
+		}
+		
+		FRA_big_national_bilding_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				industry = 0.35
+
+			}
+			
+			modifier = {
+			political_power_factor = -0.45
+			production_speed_buildings_factor = 1				
+			research_bonus = {
+				industry = 0.35
+
+			}			
+			}
+		}
+		
+		FRA_hleb_and_wine_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+					
+	
+			
+					
+			modifier = {
+			consumer_goods_factor = 0.05	
+			monthly_population = 0.1
+			industrial_capacity_factory = -0.05
+			drift_defence_factor = 0.1
+			stability_factor = 0.05	
+			
+			add_popularity = {
+			ideology =	liberalism 	
+			popularity = 0.5
+			}	
+				
+			}
+		}
+		
+		FRA_steel_and_gunpowder_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+										
+			modifier = {
+			production_speed_buildings_factor = 0.05						
+			}
+		}
+		
+		FRA_french_tovar_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+										
+			modifier = {
+			consumer_goods_factor = -0.05
+			civilian_intel_to_others = 5.0
+			production_speed_buildings_factor = 0.1	
+			global_building_slots_factor = 0.1
+			trade_opinion_factor = 0.15
+			
+			}
+		}
+		
+		FRA_fabric_opend_again_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+										
+			modifier = {
+			production_speed_buildings_factor = 0.05				
+			}
+		}
+		
+		FRA_great_depression_tree_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+										
+			modifier = {
+			industrial_capacity_factory = -0.05
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.05
+			stability_factor = -0.05
+			}
+		}
+		
+		FRA_depresed_people_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+										
+			modifier = {
+			stability_factor = -0.05
+			industrial_capacity_factory = -0.05
+			drift_defence_factor = -0.075
+			war_support_factor = -0.03
+			
+			}
+		}
+		
+		FRA_happy_people_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+								
+
+
+								
+			modifier = {
+			stability_factor = 0.05
+			industrial_capacity_factory = 0.05
+			drift_defence_factor = 0.075
+			political_power_factor = 0.05
+
+			add_popularity = {
+				ideology = liberalisms
+				popularity = 0.075
+							}				
+			}
+		}
+		
+		
+		
+		
+		FRA_prodovolstvie_crysis_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				industry = -0.1
+			}
+										
+			modifier = {
+			
+			consumer_goods_factor = 0.1
+			production_speed_buildings_factor = -0.05	
+			stability_factor = -0.05		
+			communism_drift = 0.01
+			}
+		}
+		
+		
+		FRA_chernomorskoe_zerno_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				industry = 0.1
+			}
+										
+			modifier = {
+			
+			consumer_goods_factor = -0.1
+			monthly_population = 0.015
+			stability_factor = 0.05		
+
+			}
+		}
+	
+		
+		
 
 		FRA_rule_france_by_the_seas_1 = {
 			#picture = 

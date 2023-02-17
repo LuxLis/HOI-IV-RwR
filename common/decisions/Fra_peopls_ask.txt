@@ -1,0 +1,279 @@
+FRA_prosba_naroda_category = {
+
+	FRA_invest_in_state_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_congress_invest_in_state_factory_tt
+				any_owned_state = {
+					has_state_flag = FRA_congress_build_factory
+					check_variable = { factory_goal = industrial_complex_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = FRA_congress_build_factory
+			}
+		}
+
+		days_mission_timeout = 180
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = FRA_congress_build_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_factory
+				}
+				clr_state_flag = FRA_congress_build_factory
+				clear_variable = factory_goal
+			}			
+			add_ideas = FRA_depresed_people_idea 
+			add_political_power = -50	
+			clr_country_flag = FRA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_factory
+				}
+				clr_state_flag = FRA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			ROOT = {
+				clr_country_flag = FRA_congress_investment
+			}
+			add_ideas = FRA_happy_people_idea 
+			add_political_power = 50		
+			
+		}
+	}
+	FRA_invest_in_state_arms_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_congress_invest_in_state_arms_factory_tt
+				any_owned_state = {
+					has_state_flag = FRA_congress_build_arms_factory
+					check_variable = { arms_factory_goal = arms_factory_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = FRA_congress_build_arms_factory
+			}
+		}
+
+
+		days_mission_timeout = 180
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = FRA_congress_build_arms_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_arms_factory
+				}
+				clr_state_flag = FRA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			
+			add_ideas = FRA_depresed_people_idea 
+			add_political_power = -50	
+			clr_country_flag = FRA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_arms_factory
+				}
+				clr_state_flag = FRA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			ROOT = {
+				clr_country_flag = FRA_congress_investment
+			}
+			add_ideas = FRA_happy_people_idea 	
+			add_political_power = 50	
+			
+		}
+	}
+	FRA_invest_in_state_dockyard = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_congress_invest_in_dockyard_tooltip
+				any_owned_state = {
+					has_state_flag = FRA_congress_build_dockyard
+					check_variable = { dockyard_goal = building_level@dockyard }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = FRA_congress_build_dockyard
+			}
+		}
+
+		days_mission_timeout = 180
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = FRA_congress_build_dockyard
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_dockyard
+				}
+				clr_state_flag = FRA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			add_ideas = FRA_depresed_people_idea 
+			add_political_power = -50	
+			clr_country_flag = FRA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_dockyard
+				}
+				clr_state_flag = FRA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			ROOT = {
+				clr_country_flag = FRA_congress_investment
+			}
+			add_ideas = FRA_happy_people_idea 	
+			add_political_power = 50	
+		}
+	}
+	FRA_invest_in_state_infrastructure = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_congress_invest_in_state_infrastructure_tt
+				any_owned_state = {
+					has_state_flag = FRA_congress_build_infrastructure
+					check_variable = { infrastructure_goal = infrastructure_level }
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = FRA_congress_build_infrastructure
+			}
+		}
+		days_mission_timeout = 180
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = FRA_congress_build_infrastructure
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_infrastructure
+				}
+				clr_state_flag = FRA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			
+			add_ideas = FRA_depresed_people_idea 
+			add_political_power = -50	
+			clr_country_flag = FRA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_infrastructure
+				}
+				clr_state_flag = FRA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			ROOT = {
+				clr_country_flag = FRA_congress_investment
+			}
+			add_ideas = FRA_happy_people_idea 	
+			add_political_power = 50	
+			
+		}
+	}
+	
+	
+	FRA_invest_in_air_base = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_invest_in_air_base_tt
+				any_owned_state = {
+					has_state_flag = FRA_congress_build_air_base
+					check_variable = { air_base_goal = air_base_level }
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = FRA_congress_build_air_base
+			}
+		}
+		days_mission_timeout = 180
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = FRA_congress_build_air_base
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_air_base
+				}
+				clr_state_flag = FRA_congress_build_air_base
+				clear_variable = air_base_goal
+			}
+			
+			add_ideas = FRA_depresed_people_idea 
+			add_political_power = -50	
+			clr_country_flag = FRA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = FRA_congress_build_air_base
+				}
+				clr_state_flag = FRA_congress_build_air_base
+				clear_variable = air_base_goal
+			}
+			ROOT = {
+				clr_country_flag = FRA_congress_investment
+			}
+			add_ideas = FRA_happy_people_idea 	
+			add_political_power = 50	
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+
+
+
+}

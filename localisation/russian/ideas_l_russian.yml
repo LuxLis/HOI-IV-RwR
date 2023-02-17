@@ -9,10 +9,26 @@
  FRA_big_accelerated_german_payments: "Ускоренные немецкие выплаты"
  FRA_secret_share_by_reiland: "Рейнланд отдаёт долю с национализации"
  FRA_state_economy_intervention: "Государственное вмешательство в экономику"
- FRA_nationalization_of_bankrupts_idea: "Национализация банкротов"
+ FRA_nationalization_of_bankrupts_idea: "Национализация банкротов" 
+ FRA_protectionism_idea: "Политика Протекционизма"
+ FRA_prosbabezdomnih_idea: "Просьба бездомных"
+ FRA_viktory_against_hydra_pereproizvodstva_idea: "Победа над гидрой перепроизводства"
+ FRA_big_national_bilding_idea: "Большая народная стройка"
+ FRA_hleb_and_wine_idea: "Хлеб и вино"
+ FRA_steel_and_gunpowder_idea: "Сталь и порох"
+ FRA_french_tovar_idea: "Французские товары"
+ FRA_fabric_opend_again_idea: "Фабрики вновь открыты"
+ FRA_great_depression_tree_idea: "Великая депрессия"
+ FRA_depresed_people_idea: "Разочарованный народ"
+ FRA_happy_people_idea: "Удолетворённый народ"
+ FRA_prodovolstvie_crysis_idea: "Продовольственный кризис"
+ FRA_chernomorskoe_zerno_idea: "Черноморское зерно"
  FRA_rule_france_by_the_seas_1: "Правь, Франция, морями!"
  FRA_rule_france_by_the_seas_2: "Правь, Франция, морями!"
  FRA_rule_france_by_the_seas_3: "Правь, Франция, морями!"
+
+ #Россия
+ RUS_support_france_idea: "Подарок французам"
 
  #Германия
  GER_humanitarian_disaster: "Гуманитарная катастрофа"

@@ -173,7 +173,11 @@
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_protectionism_idea
+				days = 730
+				}
+			add_ideas = limited_exports			
 		}
 	}
 
@@ -197,6 +201,10 @@
 		}
 
 		completion_reward = {
+				
+		add_ideas = FRA_prosbabezdomnih_idea 			
+						
+			FRA = { country_event = { days = 1 id = FRA.7 } }
 			
 		}
 	}
@@ -252,7 +260,143 @@
 		}
 
 		completion_reward = {
+		
+		
+		16 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		18 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+			}	
+		24 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}	
+		27 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+			}	
+		17 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+			}	
+		785 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}	
+		29 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}	
+		19 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}	
+		31 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		20 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		33 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}	
 			
+		swap_ideas = {
+				remove_idea = generic_the_great_depression_2
+				add_idea = FRA_great_depression_tree_idea
+			}			
 		}
 	}
 
@@ -279,6 +423,13 @@
 		}
 
 		completion_reward = {
+		add_political_power = 150
+		add_timed_idea = {
+    			idea = FRA_french_tovar_idea
+    			days = 548
+			}
+		add_ideas = free_trade	
+		
 			
 		}
 	}
@@ -299,10 +450,19 @@
 		cost = 5
 
 		available = {
-
+			has_idea = FRA_prodovolstvie_crysis_idea
+			any_country = {
+				original_tag = RUS
+				NOT = { has_war_with = ROOT }
+			}
 		}
 
 		completion_reward = {
+		
+		add_political_power = -50
+		
+		RUS = { country_event = { days = 1 id = russia.500 } }
+				
 			
 		}
 	}
@@ -327,8 +487,114 @@
 		}
 
 		completion_reward = {
+		
+		add_ideas = FRA_steel_and_gunpowder_idea
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.1
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}			
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 0.15
+				uses = 3
+				category = support_tech
+			}	
+			add_tech_bonus = {
+				name = infantry_bonus
+				ahead_reduction = 0.25
+				uses = 2
+				category = infantry_weapons
+			}	
+			add_tech_bonus = {
+				name = support_bonus
+				ahead_reduction = 0.2
+				uses = 2
+				category = support_tech
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				ahead_reduction = 0.2
+				uses = 2
+				category = artillery
+			}
+				
+			16 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			24 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			14 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			28 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			
-		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}								
+		
 	}
 
 	#Хлеб и вино
@@ -351,7 +617,12 @@
 		}
 
 		completion_reward = {
-			
+		add_stability = 0.05
+		add_political_power = 50
+		add_timed_idea = {
+    			idea = FRA_hleb_and_wine_idea
+    			days = 365
+			}			
 		}
 	}
 
@@ -378,7 +649,11 @@
 		}
 
 		completion_reward = {
-			
+		add_political_power = -100
+		add_timed_idea = {
+    			idea = FRA_big_national_bilding_idea
+    			days = 365
+			}	
 		}
 	}
 
@@ -402,6 +677,13 @@
 		}
 
 		completion_reward = {
+		add_political_power = 250
+		add_stability = 0.05
+			swap_ideas = {
+				remove_idea = FRA_great_depression_tree_idea
+				add_idea = FRA_viktory_against_hydra_pereproizvodstva_idea
+			}
+		
 			
 		}
 	}

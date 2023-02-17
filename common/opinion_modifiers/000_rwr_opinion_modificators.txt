@@ -14,4 +14,18 @@ opinion_modifiers = {
 	military_presence_before_referendum = {
 		value = -5
 	}
+	
+	supported_us_in_hard_times = {
+		value = 20
+	}
+	
+	not_supported_us_in_hard_times = {
+		value = -10
+	}
+	
+	vipolnenii_obeshania = {
+		value = 15
+	}
+	
+	
 }

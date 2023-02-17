@@ -1,0 +1,88 @@
+TUR_vorovat_zerno = {
+
+
+	TUR_ukrast_zerno_mission = {
+
+		allowed = { tag = TUR }
+		
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_country_flag = missia_vipolenna
+		}
+		
+		activation = {
+			check_variable = { tur_zerno > 0 }
+		}
+		
+		Is_good = yes
+		
+		days_mission_timeout = 7
+		
+		timeout_effect = {
+		FRA = { country_event = { days = 1 id = FRA.11 } } 
+		RUS = { country_event = { days = 1 id = russia.502 } }	
+		}
+		
+		complete_effect = {
+		
+			random_list = {
+				35 = { TUR = { country_event = { days = 1 id = turkey.500 } } }
+				65 = { TUR = { country_event = { days = 1 id = turkey.501 } } }
+			} 
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}		
+		
+	}
+
+
+
+
+
+
+
+
+
+
+	TUR_ukrast_zerno = {
+
+		icon = eng_trade_unions_support
+		dirty = tur_zerno
+		
+		available = {
+			check_variable = { tur_zerno > 0 }
+		}
+		visible = {
+			check_variable = { tur_zerno > 0 }
+		}
+		cost = 50
+		fire_only_once = yes
+#		days_remove = 1
+#		remove_effect = { FRA = { country_event = { days = 1 id = FRA.11 } } }
+		
+		ai_will_do = {
+			factor = 1
+		}		
+		complete_effect = {
+		
+			set_country_flag = missia_vipolenna
+		
+#			random_list = {
+#				35 = { TUR = { country_event = { days = 1 id = turkey.500 } } }
+#				65 = { TUR = { country_event = { days = 1 id = turkey.501 } } }
+#			}
+		}
+	}
+	
+
+
+}		
+
+
+
+

@@ -6,3 +6,13 @@ FRA_war_spec_operations_category = {
 		has_country_flag = svo_in_germany
 	}
 }
+
+
+FRA_prosba_naroda_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = FRA_congress_investment
+	}
+}
