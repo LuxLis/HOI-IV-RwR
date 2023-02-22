@@ -542,10 +542,57 @@ country_event = {
     		idea = FRA_chernomorskoe_zerno_idea
     		days = 540
 		}
+	}
+}
 
+#Генерал был замешан в коррупционном скандале
+country_event = {
+	id = FRA.12
+	title = FRA.12.t
+	desc = FRA.12.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.12.a
+		remove_ideas = FRA_army_corruption_idea
+		
+		clear_variable = france_repression		
+				
+		ai_chance = {
+			base = 10
+		}
+		
+		custom_effect_tooltip = FRA_characters_will_be_purged_tt
+		
+		random_list = {
+		
+		10 = { FRA_jean_de_lattre_de_tassigny = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_juin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maurice_gamelin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maxime_weygand = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_georges = { remove_unit_leader_role = yes } }
+		10 = { FRA_antoinemariebenoit_besson = { remove_unit_leader_role = yes } }
+		10 = { FRA_philippe_leclerc = { remove_unit_leader_role = yes } }
+		10 = { FRA_henri_giraud = { remove_unit_leader_role = yes } }
+		10 = { FRA_charles_huntziger = { remove_unit_leader_role = yes } }
+		10 = { FRA_gastonhenri_billotte = { remove_unit_leader_role = yes } }
+		
+		}		
+	}
+	
+	option = {
+		name = FRA.12.b 
+		
+		set_variable = { france_repression = 1 } 
+		
 		
 	}
 }
+
+
+
 
 #Продовольственный кризис
 country_event = {

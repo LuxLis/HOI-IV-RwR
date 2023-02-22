@@ -24,6 +24,11 @@ set_popularities = {
 	fascism = 4
 }
 
+add_ideas = {
+	FRA_frezed_army_reforms_idea
+	FRA_army_corruption_idea
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -253,15 +258,7 @@ set_popularities = {
 	fascism = 9
 }
 
-add_ideas = {
-	FRA_victors_of_wwi
-	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
-	limited_conscription
-	FRA_full_employment
-	FRA_political_violence
-	FRA_inefficient_economy_2
-}
+
 
 give_guarantee = RHI
 give_guarantee = SIA
@@ -299,6 +296,12 @@ create_country_leader = {
 		
 	}
 }
+
+
+if = {
+		limit = { check_variable = { france_repression > 0 } }
+	}
+
 
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"

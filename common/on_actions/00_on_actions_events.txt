@@ -43,5 +43,14 @@ on_actions = {
 		}
 	}
 	
+	on_monthly_FRA = {
+		effect = {
+		    if = {
+				limit = { check_variable = { france_repression > 0 } }
+				FRA = { country_event = { days = 1 id = FRA.12 } }
+			}
+		}
+	}
+	
 	
 }

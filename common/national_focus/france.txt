@@ -1049,6 +1049,8 @@
 		}
 
 		completion_reward = {
+
+		country_event = { days = 1 id = FRA.12 }	
 			
 		}
 	}
@@ -1271,7 +1273,58 @@
 		}
 
 		completion_reward = {
-			
+		add_ideas = FRA_new_aviabases_idea
+		air_experience = 15
+
+		16 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 3
+    				instant_build = yes
+				}
+			}
+		735 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		30 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		24 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 1
+    				instant_build = yes
+				}
+			}	
+		28 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 1
+    				instant_build = yes
+				}
+			}	
+		32 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 1
+    				instant_build = yes
+				}
+			}	
+		20 = {
+				add_building_construction = {
+    				type = air_base
+    				level = 1
+    				instant_build = yes
+				}
+			}							
 		}
 	}
 
@@ -1295,7 +1348,14 @@
 		}
 
 		completion_reward = {
-			
+		
+		add_ideas = FRA_best_intelect_idea
+		
+		add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = air_equipment
+			}		
 		}
 	}
 
@@ -1319,6 +1379,10 @@
 		}
 
 		completion_reward = {
+		
+		add_ideas = FRA_udeshevlenie_produktion_idea
+		
+		air_experience = 20
 			
 		}
 	}
@@ -1342,7 +1406,10 @@
 
 		}
 
-		completion_reward = {
+		completion_reward = {	
+		
+			add_ideas = FRA_rasshirit_zavodi_idea 	
+			add_political_power = -25
 			
 		}
 	}
@@ -1363,11 +1430,24 @@
 		cost = 5
 
 		available = {
-
+		OR = {
+				controls_state = 16
+			}
 		}
-
-		completion_reward = {
-			
+		
+		completion_reward = {	
+		add_political_power = -50
+		
+		add_ideas = FRA_start_factories_idea 	
+		
+		16 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+    				type = arms_factory
+    				level = 8
+    				instant_build = yes
+				}
+			}		
 		}
 	}
 
@@ -1390,8 +1470,13 @@
 
 		}
 
-		completion_reward = {
-			
+		completion_reward = {			
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = FRA }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = FRA }
+		
+		add_ideas = FRA_deshevo_and_prochno_idea 
+
+		
 		}
 	}
 
@@ -1414,8 +1499,66 @@
 
 		}
 
-		completion_reward = {
-			
+		completion_reward = {		
+		add_ideas = partial_economic_mobilisation	
+		add_ideas = extensive_conscription
+		add_manpower = 10000
+		
+		
+		if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = FRA
+						is_fully_controlled_by = ROOT
+					}
+				}
+				
+				division_template = { 
+						name = "French novobranci"
+						division_names_group = FRA_CAM_02
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+
+				
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = FRA
+						is_fully_controlled_by = ROOT
+					}
+					prioritize = { 16 } 
+					custom_effect_tooltip = FRA_train_irregulars_eritrea_tt
+					hidden_effect = {
+						create_unit = {
+							division = "division_template = \"French novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 3
+						}
+						create_unit = {
+							division = "division_template = \"French novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 2
+						}
+					}
+				}
+			}			
 		}
 	}
 
@@ -1438,8 +1581,8 @@
 
 		}
 
-		completion_reward = {
-			
+		completion_reward = {		
+		add_ideas = FRA_order_and_mujestvo_idea		
 		}
 	}
 
@@ -1463,7 +1606,19 @@
 		}
 
 		completion_reward = {
-			
+		
+		add_ideas = FRA_new_age_cavalery_idea 
+				
+		add_tech_bonus = {
+    		bonus = 0.35
+    		uses = 3
+    		category = mechanized_equipment
+		}
+		add_tech_bonus = {
+    		bonus = 0.40
+    		uses = 1
+    		category = armor
+		}		
 		}
 	}
 
@@ -1487,7 +1642,68 @@
 		}
 
 		completion_reward = {
-			
+		add_ideas = FRA_generation_of_heroes_idea		
+		
+		army_experience = 50
+		navy_experience = 30
+		air_experience = 25
+		
+		
+		if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = FRA
+						is_fully_controlled_by = ROOT
+					}
+				}
+				
+				division_template = { 
+						name = "French veterani"
+						division_names_group = FRA_CAM_02
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 1 y = 0 }							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 1 }
+							artillery_brigade = { x = 0 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							artillery = { x = 0 y = 1 }
+
+						}
+						priority = 0
+					}
+
+				
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = FRA
+						is_fully_controlled_by = ROOT
+					}
+					prioritize = { 28 } 
+					custom_effect_tooltip = FRA_train_veterans_eritrea_tt
+					hidden_effect = {
+						create_unit = {
+							division = "division_template = \"French veterani\" start_experience_factor = 1 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 1
+						}
+						create_unit = {
+							division = "division_template = \"French veterani\" start_experience_factor = 1 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 2
+						}
+					}
+				}
+			}
+	
 		}
 	}
 
@@ -1517,6 +1733,11 @@
 		}
 
 		completion_reward = {
+		
+		army_experience = 10
+		add_war_support = 0.05
+	
+		remove_ideas = FRA_frezed_army_reforms_idea
 			
 		}
 	}
