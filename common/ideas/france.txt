@@ -105,7 +105,7 @@ ideas = {
 		
 		FRA_protectionism_idea = { 
 
-			#picture = 
+			picture = FRA_politic_of_protection
 		
 			allowed = {
 				always = no
@@ -177,7 +177,7 @@ ideas = {
 		
 		FRA_big_national_bilding_idea = { 
 
-			#picture = 
+			picture = FRA_big_country_construktion
 		
 			allowed = {
 				always = no
@@ -257,7 +257,7 @@ ideas = {
 		
 		FRA_french_tovar_idea = { 
 
-			#picture = 
+			picture = FRA_french_tovar
 		
 			allowed = {
 				always = no
@@ -726,7 +726,8 @@ ideas = {
 		
 
 		FRA_rule_france_by_the_seas_1 = {
-			#picture = 
+		
+			picture = FRA_rule_france_the_ways
 		
 			allowed = {
 				always = no
@@ -744,7 +745,8 @@ ideas = {
 		}
 
 		FRA_rule_france_by_the_seas_2 = {
-			#picture = 
+		
+			picture = FRA_rule_france_the_ways
 		
 			allowed = {
 				always = no
@@ -764,7 +766,8 @@ ideas = {
 		}
 
 		FRA_rule_france_by_the_seas_3 = {
-			#picture = 
+		
+			picture = FRA_rule_france_the_ways
 		
 			allowed = {
 				always = no

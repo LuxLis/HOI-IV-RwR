@@ -19,6 +19,35 @@ spriteTypes = {
 		name = "GFX_idea_FRA_german_payments"
 		texturefile = "gfx/interface/ideas/FRA/accelerated_german_payments.png"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_big_country_construktion"
+		texturefile = "gfx/interface/ideas/FRA/big_country_construktion.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_french_tovar"
+		texturefile = "gfx/interface/ideas/FRA/french_tovar.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_politic_of_protection"
+		texturefile = "gfx/interface/ideas/FRA/politic_of_protection.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_rule_france_the_ways"
+		texturefile = "gfx/interface/ideas/FRA/rule_france_the_ways.png"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	SpriteType = {
 		name = "GFX_idea_TUR_afrod"
